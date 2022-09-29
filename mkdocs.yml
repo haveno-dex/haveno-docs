@@ -47,16 +47,16 @@ extra:
   version:
     #provider: mike  # https://squidfunk.github.io/mkdocs-material/setup/setting-up-versioning/
   social:
-    - icon: fontawesome/brands/twitter 
-      link: https://twitter.com/HavenoDEX
+    - icon: material/web
+      link: https://haveno.exchange
     - icon: fontawesome/brands/github
       link: https://github.com/haveno-dex/
+    - icon: fontawesome/brands/twitter 
+      link: https://twitter.com/HavenoDEX
     - icon: simple/matrix
       link: https://matrix.to/#/#haveno:haveno.network
     - icon: material/chat
       link: irc://irc.libera.chat/#haveno
-    - icon: material/web
-      link: https://haveno.exchange
 
 nav:
   - Home: 'index.md'
