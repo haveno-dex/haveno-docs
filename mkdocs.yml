@@ -23,6 +23,9 @@ theme:
         icon: material/weather-sunny
         name: Switch to light mode
 
+plugins:
+    - macros
+
 markdown_extensions:
   - admonition  # https://squidfunk.github.io/mkdocs-material/reference/admonitions/
   - pymdownx.details
@@ -43,9 +46,8 @@ extra_css:
   - stylesheets/extra.css
 
 extra:
-  homepage: https://homepage.org
   version:
-    #provider: mike  # https://squidfunk.github.io/mkdocs-material/setup/setting-up-versioning/
+    haveno: v0.0.2
   social:
     - icon: material/web
       link: https://haveno.exchange
