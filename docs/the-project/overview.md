@@ -13,7 +13,7 @@ Haveno, unlike a centralized exchange, doesn't provide any liquidity to the netw
 
 ## The Haveno Ecosystem
 
-Haveno it's revolutionary not only because brings native, decentralized trades based on Monero, but also because of the structure of its ecosystem, composed of multiple independent entities, each with a very specific role:
+Haveno is revolutionary not only because it brings native, decentralized trades based on Monero, but also because of the structure of its ecosystem, composed of multiple independent entities, each with a very specific role:
 
 - [Haveno Core Team](roles/core-team.md): Works on the code of the platform and marketing, but doesn't run it.
 - [Motoro](roles/motoro.md): It's the entity that receives all the fees paid by users on Haveno, appoints arbitrators, and votes on Motoro proposals.
