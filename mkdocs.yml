@@ -1,6 +1,6 @@
 site_name: Haveno Documentation
 site_url: https://docs.haveno.exchange
-copyright: Copyright &copy; 2022 Haveno
+copyright: Copyright &copy; 2024 Haveno
 
 theme:
   name: material
