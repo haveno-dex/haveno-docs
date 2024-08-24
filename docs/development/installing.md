@@ -1,10 +1,12 @@
-# Set up environment
+# Build and run Haveno
 
-These are the steps needed to build Haveno. You can test it locally or on our test network.
+These are the steps needed to build and run Haveno. You can test it locally or on our test network using the official Haveno repository.
 
 !!! note
     Trying to use Haveno on mainnet?
+
     The official Haveno repository does not operate or endorse any mainnet network. Find a third party network and use their installer or build their repository.
+
     Alternatively you can [create your own mainnet network](https://github.com/haveno-dex/haveno/blob/master/docs/create-mainnet.md).
 
 ## Install dependencies
@@ -12,6 +14,7 @@ These are the steps needed to build Haveno. You can test it locally or on our te
 On Ubuntu: `sudo apt install make wget git`
 
 On Windows, first install MSYS2:
+
   1. Install [MSYS2](https://www.msys2.org/).
   2. Start MSYS2 MINGW64 or MSYS MINGW32 depending on your system. Use MSYS2 for all commands throughout this document.
   4. Update pacman: `pacman -Syy`
@@ -53,9 +56,10 @@ make clean && make
 
 !!! note
     When you run Haveno, your application folder will be installed to:
-    * Linux: `~/.local/share/Haveno/`
-    * macOS: `~/Library/Application\ Support/Haveno/`
-    * Windows: `~\AppData\Roaming\Haveno\`
+    
+    - Linux: `~/.local/share/Haveno/`
+    - macOS: `~/Library/Application\ Support/Haveno/`
+    - Windows: `~\AppData\Roaming\Haveno\`
 
 ### Mainnet
 
