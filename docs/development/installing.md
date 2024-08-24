@@ -5,9 +5,9 @@ These are the steps needed to build and run Haveno. You can test it locally or o
 !!! note
     Trying to use Haveno on mainnet?
 
-    The official Haveno repository does not operate or endorse any mainnet network. Find a third party network and use their installer or build their repository.
+    The official Haveno repository does not operate or endorse any mainnet network.
 
-    Alternatively you can [create your own mainnet network](https://github.com/haveno-dex/haveno/blob/master/docs/create-mainnet.md).
+    Find a third party network and use their installer or build their repository. Alternatively [create your own mainnet network](https://github.com/haveno-dex/haveno/blob/master/docs/create-mainnet.md).
 
 ## Install dependencies
 
@@ -56,7 +56,7 @@ make clean && make
 
 !!! note
     When you run Haveno, your application folder will be installed to:
-    
+
     - Linux: `~/.local/share/Haveno/`
     - macOS: `~/Library/Application\ Support/Haveno/`
     - Windows: `~\AppData\Roaming\Haveno\`
