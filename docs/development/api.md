@@ -12,7 +12,7 @@ If you are interested in integrating Haveno into your app, let us know and we'll
 
 Documentation is automatically generate using Typedoc: 
 
-[:material-web: API Docs](https://api.haveno.exchange/classes/HavenoClient.HavenoClient-1.html){ .md-button .md-button--primary }
+[:material-web: API Docs](https://haveno-dex.github.io/haveno-ts/classes/HavenoClient.HavenoClient.html){ .md-button .md-button--primary }
 
 
 ## Run API tests

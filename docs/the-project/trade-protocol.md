@@ -4,7 +4,7 @@ Haveno is a decentralized network where people meet to exchange XMR for fiat or 
 
 ## Secure trade with multisignature
 
-trades are secured using Monero's "Multisignature" technology
+Trades are secured using Monero's "Multisignature" technology
 
 In Haveno we use 2-of-3 multisignature wallets because the number of keys generated is 3, but only 2 of those are needed to send a transaction.
 
@@ -18,7 +18,7 @@ The two traders will start the trade. So one of the two will have to send crypto
 !!! info "Remember"
     The payment happens outside of Haveno, which is mostly used to hold the two trader's deposits in escrow and the amount of XMR to be exchanged.
 
-When the recipient of the payment confirms that they received the money (for example, a bank transfer), they will sign a transaction using the key they received when they added their deposit. All this is process is made as simple as needing to click "send payment" after a payment is sent and "payment received", after it's received.
+When the recipient of the payment confirms that they received the money (for example, a bank transfer), they will sign a transaction using the key they received when they added their deposit. All this process is made as simple as needing to click "Send Payment" after a payment is sent and "Payment Received", after it's received.
 
 ## Overview of a trade
 
