@@ -17,7 +17,7 @@ These are the cryptocurrencies currently listed on Haveno:
 
 ![Bitcoin](../resources/img/crypto/bitcoin.svg){ .crypto-logos } [Bitcoin](https://bitcoin.org)
 
-![Litecoin](../resources/img/crypto/litecoin.svg){ .crypto-logos } [Litecoin](https:/litecoin.org)
+![Litecoin](../resources/img/crypto/litecoin.svg){ .crypto-logos } [Litecoin](https://litecoin.org)
 
 ![BitcoinCash](../resources/img/crypto/bitcoincash.svg){ .crypto-logos } [Bitcoin Cash](https://bitcoincash.org)
 

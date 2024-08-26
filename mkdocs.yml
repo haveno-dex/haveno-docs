@@ -68,16 +68,13 @@ nav:
     - Conflict Resolution: 'the-project/conflict-resolution.md'
     - Roles:
       - Core Team: 'the-project/roles/core-team.md'
-      - Motoro: 'the-project/roles/motoro.md'
       - Arbitrators: 'the-project/roles/arbitrators.md'
       - Publishers: 'the-project/roles/publishers.md'
     - Assets and Payment Methods: 'the-project/assets.md'
   - Development:
     - Install and Run Haveno: 'development/installing.md'
     - User Interface: 'development/haveno-ui.md'
-    - API: 
-      - haveno-ts: 'development/haveno-ts.md'
-      - API Docs: 'https://api.haveno.exchange/classes/HavenoClient.HavenoClient-1.html'
+    - API: development/api.md'
     - Bounties: 'development/bounties.md'
     - Import Development Environment: 'development/importing.md'
     - Contributor Guidelines: 'development/contributor-guidelines.md'

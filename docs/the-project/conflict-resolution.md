@@ -6,21 +6,6 @@ As we explained in the [trade protocol](trade-protocol.md) page, trades are secu
 
 Once the arbitrator is summoned, they will assess which party is in the right and which one is in the wrong and use the key they were provided to side with one of the two traders.
 
-## Safety Assurances
-
-Arbitrators are appointed by the [Konsilio](roles/motoro.md#the-konsilio) and they are given one key for each trade so that when they are called, they have the power to side with one of the traders and move funds.
-
-This makes the arbitrator a sensitive role. Since a trade can be completed if 2 of the 3 keys confirm the transaction, a trader could find themselves in a situation where a malicious arbitrator sides with the other trader with no merit and push the transaction to them, resulting in the honest traded being factually scammed.
-
-We take multiple measures to make this situation very unlikely and discouraged:
-
-- The arbitrator is picked randomly from the pull of available arbitrators.
-- Arbitrators will be anonymous on the platform.
-- Arbitrators will be people with a high reputation in the Monero and Haveno communities.
-
-!!! note
-    Bonds are a powerful tool to ensure an arbitrator doesn't behave maliciously and they will be probably added in the future.
-
 ## Conflict resolution example
 
 A practical example of a conflict resolved by an arbitrator on Haveno:
