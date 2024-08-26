@@ -74,7 +74,7 @@ nav:
   - Development:
     - Install and Run Haveno: 'development/installing.md'
     - User Interface: 'development/haveno-ui.md'
-    - API: development/api.md'
+    - API: 'development/api.md'
     - Bounties: 'development/bounties.md'
     - Import Development Environment: 'development/importing.md'
     - Contributor Guidelines: 'development/contributor-guidelines.md'
