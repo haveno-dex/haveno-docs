@@ -1,0 +1,17 @@
+.md-footer__inner:not([hidden]) {
+    display: none
+}
+
+[data-md-color-scheme="youtube"] {
+    --md-primary-fg-color: #0b65da;
+}
+
+[dir="ltr"] .md-header__title {
+    margin-left: 0;
+}
+
+.crypto-logos {
+    display: inline-block;
+    vertical-align: middle;
+    max-height: 1.5rem;
+}
