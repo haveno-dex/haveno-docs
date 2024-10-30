@@ -56,7 +56,7 @@ extra:
       link: https://haveno.exchange
     - icon: fontawesome/brands/github
       link: https://github.com/haveno-dex/
-    - icon: fontawesome/brands/twitter 
+    - icon: fontawesome/brands/twitter
       link: https://twitter.com/HavenoDEX
     - icon: simple/matrix
       link: https://matrix.to/#/#haveno:haveno.network
@@ -74,6 +74,9 @@ nav:
       - Arbitrators: 'the-project/roles/arbitrators.md'
       - Publishers: 'the-project/roles/publishers.md'
     - Assets and Payment Methods: 'the-project/assets.md'
+      - Cash By Mail (national): 'the-project/payment-methods/cash-by-mail-national.md'
+      - SEPA: 'the-project/payment-methods/sepa.md'
+      - SEPA Instant: 'the-project/payment-methods/sepa-instant.md'
   - Development:
     - Install and Run Haveno: 'development/installing.md'
     - User Interface: 'development/haveno-ui.md'
