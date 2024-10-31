@@ -74,6 +74,7 @@ nav:
       - Arbitrators: 'the-project/roles/arbitrators.md'
       - Publishers: 'the-project/roles/publishers.md'
     - Assets and Payment Methods: 'the-project/assets.md'
+    - Payment Methods:
       - Cash By Mail (national): 'the-project/payment-methods/cash-by-mail-national.md'
       - SEPA: 'the-project/payment-methods/sepa.md'
       - SEPA Instant: 'the-project/payment-methods/sepa-instant.md'
