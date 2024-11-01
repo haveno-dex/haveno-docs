@@ -26,5 +26,5 @@ These are the cryptocurrencies currently listed on Haveno:
 
 ## Payment Methods and fiat currencies
 
-!!! warning
-    Payment methods and supported fiat currencies will be updated in the future.
+!!! info
+    Overview of Payment methods and supported fiat currencies [table](payment-methods/A_all-methods.md)

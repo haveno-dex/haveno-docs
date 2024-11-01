@@ -50,7 +50,7 @@ extra_css:
 
 extra:
   version:
-    haveno: 1.0.10
+    haveno: 1.0.12
   social:
     - icon: material/web
       link: https://haveno.exchange
@@ -75,7 +75,7 @@ nav:
       - Publishers: 'the-project/roles/publishers.md'
     - Assets and Payment Methods: 'the-project/assets.md'
     - Payment Methods:
-      - Payment Methods table: 'trade-recommendations/payment_methods/README.md'
+      - Payment Methods table: 'trade-recommendations/payment_methods/A_all-methods.md'
       - ACH: 'trade-recommendations/payment_methods/ACH.md'
       - Amazon eGift card: 'trade-recommendations/payment_methods/Amazon_eGift_card.md'
       - Bizum: 'trade-recommendations/payment_methods/Bizum.md'
