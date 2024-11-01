@@ -100,7 +100,7 @@ nav:
       - Strike: 'the-project/payment_methods/Strike.md'
       - SWIFT: 'the-project/payment_methods/SWIFT.md'
       - TransferWise: 'the-project/payment_methods/TransferWise.md'
-      - UBI: 'the-project/payment_methods/UBI.md'
+      - UBI: 'the-project/payment_methods/UPI.md'
       - US Postal Money Order: 'the-project/payment_methods/US_Postal_Money_Order.md'
       - Verse: 'the-project/payment_methods/Verse.md'
   - Development:
