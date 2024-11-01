@@ -1,8 +1,9 @@
 # Interac e-transfer
- 
+
 As per [Interac's website](https://www.interac.ca/en/) Interac e-Transfer is "a fast, secure and convenient way to send money to anyone in Canada using online banking. The participating bank or credit union transfers the funds using established and secure banking procedures. Transfers are almost instant, but can take up to 30 minutes depending on your bank or credit union." For more information visit their [FAQ](https://www.interac.ca/en/consumers/support/faq-consumers/#) page.
 
-****Contents:**:**
+**Contents:**
+
 - 1 Creating the account in Haveno
 - 2 Using Interac e-Transfer for Haveno trades
 
@@ -26,4 +27,4 @@ After your trade has been accepted and your transaction confirmed, the taker wil
 
 #### Ease of use
 
-This payment method is very practical and streamlined, after you've set up an email contact for Interac e-Tranfers, subsequent trades with the same Haveno trading partner become extremely quick and easy. 
+This payment method is very practical and streamlined, after you've set up an email contact for Interac e-Tranfers, subsequent trades with the same Haveno trading partner become extremely quick and easy.

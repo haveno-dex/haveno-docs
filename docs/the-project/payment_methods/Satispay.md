@@ -1,5 +1,4 @@
-Satispay
- 
+# Satispay
 
 Satispay' is a payment method added in Haveno. Satispay is an Italian mobile payment method linked to a bank account that can be used to transfer money easily using phone numbers.
 
@@ -37,7 +36,7 @@ The maximum trade time is 1 day. Generally Satispay transfers are instant.
 
 #### What is the maximum XMR limit for an Satispay trade?
 
-12 XMR.
+12 XMR
 
 #### Is Satispay a payment method that can be signed?
 
@@ -111,4 +110,4 @@ If a dispute occurs the arbitrator may ask the buyer to send them information sh
 
 The arbitrator may ask the seller to send them information to prove their account details are correct, or in the case of the XMR Buyer making a payment late, or of the wrong amount.
 
-For more information see dispute resolution. 
+For more information see dispute resolution.

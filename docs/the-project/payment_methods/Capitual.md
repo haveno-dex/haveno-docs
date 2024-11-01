@@ -10,7 +10,8 @@ Capitual operate in 48+ countries (unfortunately US residents are excluded). Cur
 - Signing required: No
 - Haveno buy/sell limits: 12 XMR
 
-****Contents:**:**
+**Contents:**
+
 - 1 Where can I find out more about Capitual?
 - 2 What countries are available for Capitual?
 - 3 What currencies are available for Capitual?
@@ -60,7 +61,7 @@ The maximum trade time is 1 day. Generally Capitual transfers will be completed 
 
 #### What is the maximum XMR limit for an Capitual trade?
 
-12 XMR.
+12 XMR
 
 #### Is Capitual a payment method that can be signed?
 
@@ -129,4 +130,4 @@ Transfer crypto to other users 	Free
 Deposit BRL or EUR 	Free
 Withdraw BRL or EUR 	Free
 Deposit crypto 	Free
-Withdraw crypto 	XMR 0.0001, LTC 0.01, DSH 0.01, ETH 0.01, USDT 0.50, BUSD 0.50, USDC 0.50, DAI 0.50 
+Withdraw crypto 	XMR 0.0001, LTC 0.01, DSH 0.01, ETH 0.01, USDT 0.50, BUSD 0.50, USDC 0.50, DAI 0.50

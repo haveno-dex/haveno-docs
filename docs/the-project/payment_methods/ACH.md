@@ -3,6 +3,7 @@
 ACH Transfers are one of the main two bank transfer payment method in the the US. The other being Domestic Wire transfer.
 
 **Contents:**
+
 -- 1 What countries are available for ACH?
 -2 What currencies are available for ACH?
 -3 What is the maximum trading duration for ACH?
@@ -30,7 +31,7 @@ The maximum trade time is 5 days. Generally ACH transfers will be completed with
 
 #### What is the maximum XMR limit for an ACH trade?
 
-12 XMR.
+12 XMR
 
 #### Is ACH a payment method that can be signed?
 
@@ -96,4 +97,4 @@ If a dispute occurs the arbitrator may ask the buyer to send them information sh
 
 The arbitrator may ask the seller to send them information to prove their account details are correct, or in the case of the XMR Buyer making a payment late, or of the wrong amount.
 
-For more information see dispute resolution. 
+For more information see dispute resolution.

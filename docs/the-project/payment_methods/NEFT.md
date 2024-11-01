@@ -3,6 +3,7 @@
 National Electronic Funds Transfer (NEFT) is an electronic funds transfer system maintained by the Reserve Bank of India. NEFT enables bank customers in India to transfer funds for free between any two NEFT-enabled bank accounts.
 
 **Contents:**
+
 - 1 Where can I find out more about NEFT?
 - 2 What countries are available for NEFT?
 - 3 What currencies are available for NEFT?
@@ -37,7 +38,7 @@ The maximum trade time is X days. Generally NEFT transfers will be completed wit
 
 #### What is the maximum XMR limit for an NEFT trade?
 
-0.01 XMR.
+12.5 XMR
 
 #### Is NEFT a payment method that can be signed?
 

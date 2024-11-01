@@ -8,7 +8,8 @@ Paysera is a multi-currency mobile payment provider and web app based in Lithuan
 
 Paysera is an established multi-currency payment service that provides users with the option to trade in multiple currencies instantly for low fees with the functionality of a mobile and banking app.
 
-**Contents:**:
+**Contents:**
+
 - 1 Where can I find out more about Paysera?
 - 2 What countries are available for Paysera?
 - 3 What currencies are available for Paysera?
@@ -47,7 +48,7 @@ The maximum trade time is 1 day. Generally Paysera transfers will be completed i
 
 #### What is the maximum XMR limit for an Paysera trade?
 
-12 XMR.
+12 XMR
 
 #### Is Paysera a payment method that can be signed?
 
@@ -125,4 +126,4 @@ Paysera is also useful to send / receive SWIFT payments the fees are about 7 Eur
 
 If a dispute occurs the arbitrator may ask the buyer to send them information showing that they made the payment of the correct amount to the XMR Seller within the correct time frame.
 
-The arbitrator may ask the seller to send them information to prove their account details are correct, or in the case of the XMR Buyer making a payment late, or of the wrong amount. 
+The arbitrator may ask the seller to send them information to prove their account details are correct, or in the case of the XMR Buyer making a payment late, or of the wrong amount.

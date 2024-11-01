@@ -1,7 +1,6 @@
-IMPS
- 
+# IMPS
 
-IMPS is a payment method added in Haveno , Immediate Payment Service (IMPS) is an instant payment inter-bank electronic funds transfer system in India. IMPS offers an inter-bank electronic fund transfer service through mobile phones. IMPS is managed by the National Payments Corporation of India. This is an umbrella organization for operating retail payments and settlement systems in India.
+IMPS is a payment method added in Haveno, Immediate Payment Service (IMPS) is an instant payment inter-bank electronic funds transfer system in India. IMPS offers an inter-bank electronic fund transfer service through mobile phones. IMPS is managed by the National Payments Corporation of India. This is an umbrella organization for operating retail payments and settlement systems in India.
 
 **Contents:**
 
@@ -40,8 +39,9 @@ The maximum trade time is 1 day. Generally IMPS transfers are instant.
 
 #### What is the maximum XMR limit for an IMPS trade?
 
-12 XMR.
-Is IMPS a payment method that can be signed?
+12 XMR
+
+#### Is IMPS a payment method that can be signed?
 
 No, IMPS accounts do not require signing.
 
@@ -128,4 +128,4 @@ If a dispute occurs the arbitrator may ask the buyer to send them information sh
 
 The arbitrator may ask the seller to send them information to prove their account details are correct, or in the case of the XMR Buyer making a payment late, or of the wrong amount.
 
-For more information see dispute resolution. 
+For more information see dispute resolution.

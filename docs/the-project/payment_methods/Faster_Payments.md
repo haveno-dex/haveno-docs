@@ -5,6 +5,7 @@ Faster Payments is a payment method added used in Haveno for buying and selling 
 Faster Payments is the most common way people in the UK send and receive payment to each other via their banks.
 
 Faster Payments usually instant, but can take up to 24 hours depending on the senders or receivers your bank.
+
 **Contents:**
 
 - 1 Where can I find out more about Faster Payments?
@@ -45,7 +46,7 @@ The maximum trade time is 1 day. Generally Faster Payments will be completed wit
 
 #### What is the maximum XMR limit for an Faster Payments trade?
 
-12 XMR.
+12 XMR
 
 #### Is Faster Payments a payment method that can be signed?
 
@@ -109,4 +110,4 @@ If a dispute occurs the arbitrator may ask the buyer to send them information sh
 
 The arbitrator may ask the seller to send them information to prove their account details are correct, or in the case of the XMR Buyer making a payment late, or of the wrong amount.
 
-For more information see dispute resolution. 
+For more information see dispute resolution.

@@ -1,5 +1,4 @@
 # SWIFT
- 
 
 SWIFT (international wire transfer) is a network that allows financial institutions worldwide to send and receive payments internationally in multiple currencies.
 
@@ -8,6 +7,7 @@ Sender and receiver typically incur fees and payment times can also be slow (up 
 See this table for up-to-date trade limits and signing requirements.
 
 **Contents:**
+
 - Background
 - Setting up the payment account
 - Notes on buying XMR
@@ -90,4 +90,4 @@ When sending a SWIFT transfer the sender has three fee options to choose from:
 
 Haveno requires buyers to use the SHA (SHAred) fee option for SWIFT transfers. If a XMR buyer sends a payment using the BEN (BENeficiary) fee option, they will likely incur a penalty to compensate the XMR seller.
 
-Please make sure you are aware of your bank's fee schedule for the SHA (SHAred) fee option. Normally it will be $5-25 USD equivalent, but every bank is different. 
+Please make sure you are aware of your bank's fee schedule for the SHA (SHAred) fee option. Normally it will be $5-25 USD equivalent, but every bank is different.

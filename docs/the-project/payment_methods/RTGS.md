@@ -1,10 +1,11 @@
 # RTGS
 
-RTGS is a payment method added in Haveno  
+RTGS is a payment method added in Haveno
 
 Real-Time Gross Settlement (RTGS) is an electronic funds transfer system maintained by the Reserve Bank of India. RTGS payment enable immediate and large remittances (minimum of 200,000 INR) by banking customers in India to transfer funds for between any two RTGS enabled bank accounts.
 
 **Contents:**
+
 - 1 Where can I find out more about RTGS?
 - 2 What countries are available for RTGS?
 - 3 What currencies are available for RTGS?
@@ -39,7 +40,7 @@ The maximum trade time is X days. Generally RTGS transfers will be completed wit
 
 #### What is the maximum XMR limit for an RTGS trade?
 
-12 XMR.
+12 XMR
 
 #### Is RTGS a payment method that can be signed?
 
@@ -119,4 +120,4 @@ If a dispute occurs the arbitrator may ask the buyer to send them information sh
 
 The arbitrator may ask the seller to send them information to prove their account details are correct, or in the case of the XMR Buyer making a payment late, or of the wrong amount.
 
-For more information see dispute resolution. 
+For more information see dispute resolution.

@@ -1,4 +1,4 @@
-Strike
+# Strike
 
 Strike is a payments application developed by Zap Solutions. Strike allowing users to send and receive USD instantly around the world, for free. Strike moves fiat by buying and selling Bitcoin in real time over the Lightning Network
 
@@ -42,7 +42,7 @@ The maximum trade time is 1 day. Generally Strike transfers will be completed in
 
 #### What is the maximum XMR limit for an Strike trade?
 
-12 XMR.
+12 XMR
 
 #### Is Strike a payment method that can be signed?
 
@@ -154,4 +154,4 @@ USD to USD is free.
 
 If a dispute occurs the arbitrator may ask the buyer to send them information showing that they made the payment of the correct amount to the XMR Seller within the correct time frame.
 
-The arbitrator may ask the seller to send them information to prove their account details are correct, or in the case of the XMR Buyer making a payment late, or of the wrong amount. 
+The arbitrator may ask the seller to send them information to prove their account details are correct, or in the case of the XMR Buyer making a payment late, or of the wrong amount.

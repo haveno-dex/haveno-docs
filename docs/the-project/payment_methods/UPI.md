@@ -3,6 +3,7 @@
 Unified Payments Interface (UPI) is an instant real-time payment system developed by National Payments Corporation of India facilitating inter-bank transactions. This is an umbrella organization for operating retail payments and settlement systems in India.
 
 **Contents:**
+
 - 1 Where can I find out more about UPI?
 - 2 What countries are available for UPI?
 - 3 What currencies are available for UPI?
@@ -38,7 +39,7 @@ The maximum trade time is 1 day. Generally UPI transfers will be completed insta
 
 #### What is the maximum XMR limit for an UPI trade?
 
-0.025 XMR.
+12.5 XMR
 
 #### Is UPI a payment method that can be signed?
 
