@@ -1,4 +1,4 @@
-Paxum
+# Paxum
 
 Paxum is a Global Payment Service for Businesses and Individuals. Paxum provides payment services for businesses in higher risk industries such as adult work and affiliate marketing. Paxum provides it's users with virtual payment accounts. For example SEPA, ACH and Faster Payment accounts are provided for the currencies EUR, USD, and GBP.
 
@@ -49,7 +49,7 @@ The maximum trade time is 1 day. Generally Paxum transfers will be completed ins
 
 #### What is the maximum XMR limit for an Paxum trade?
 
-12 XMR.
+12 XMR
 
 #### Is Paxum a payment method that can be signed?
 
@@ -110,4 +110,4 @@ It costs about $5 to deposit and withdraw funds from to Paxum.
 
 If a dispute occurs the arbitrator may ask the buyer to send them information showing that they made the payment of the correct amount to the XMR Seller within the correct time frame.
 
-The arbitrator may ask the seller to send them information to prove their account details are correct, or in the case of the XMR Buyer making a payment late, or of the wrong amount. 
+The arbitrator may ask the seller to send them information to prove their account details are correct, or in the case of the XMR Buyer making a payment late, or of the wrong amount.

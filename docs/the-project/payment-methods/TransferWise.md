@@ -1,11 +1,13 @@
 # TransferWise
-TransferWise (now Wise), is a suuported payment method
+
+TransferWise (now Wise), is a supported payment method
 
 TransferWise can be used in SEPA trades as well, where one peer uses SEPA and another uses TransferWise. This article discusses TransferWise-to-TransferWise trades, where both peers use TransferWise.
 
 TransferWise is a web- and app-based money transfer service that supports multiple currencies. TransferWise to TransferWise payments allow users to send payment from any supported currency to any other supported currency. Payments utilize the TransferWise multi-currency account. This is available for users in most countries.
 
-**Contents:**:
+**Contents:**
+
 - 1 Setting up a TransferWise Account
 - 2 Setting up a TransferWise Account in Haveno
 - 3 Getting your TransferWise account ready for trading
@@ -62,4 +64,4 @@ To set up a transfer to an email address, follow these steps:
 
 You can then choose how you would like to pay. You can even pay by credit or debit card!
 
-On the case that the payment was made with a name different from the email address (which is allowed) and could create some confusion, the receiver could verify that the name of the XMR buyer is correct by writing his email on a new payment and see if the name matches the one he received it from. *Of course do not go through resending them any funds, there is no need in order to verify the name. 
+On the case that the payment was made with a name different from the email address (which is allowed) and could create some confusion, the receiver could verify that the name of the XMR buyer is correct by writing his email on a new payment and see if the name matches the one he received it from. *Of course do not go through resending them any funds, there is no need in order to verify the name.
