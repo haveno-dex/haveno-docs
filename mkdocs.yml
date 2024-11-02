@@ -75,7 +75,7 @@ nav:
       - Publishers: 'the-project/roles/publishers.md'
     - Assets and Payment Methods: 'the-project/assets.md'
     - Payment Methods:
-      - Overview - Currently supported: 'the-project/payment_methods/A_all-methods.md'
+      - Overview - Currently supported: 'the-project/payment_methods/0-all-methods.md'
       - ACH: 'the-project/payment_methods/ACH.md'
       - Amazon eGift card: 'the-project/payment_methods/Amazon_eGift_card.md'
       - Bizum: 'the-project/payment_methods/Bizum.md'

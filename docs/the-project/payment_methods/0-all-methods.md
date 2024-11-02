@@ -6,12 +6,7 @@ Every offer on Haveno designates a payment method for traders to settle payments
 
 Unlike cryptocurrency transfers, many fiat payment transfers are riddled with flaws and limitations that require Haveno to employ special measures to encourage fair and honest trades. One of these measures is lower per-trade limits, which are covered below. Another key measure is account signing.
 
-**Contents:**
-- 1 Fiat payment methods
-- 1.1 Payment method guides
-- 2 Altcoin payment methods
-
-#### 1. Fiat payment methods
+## 1. Fiat payment methods
 
 The payment methods vary in chargeback risk, regional availability, transaction size, fees, privacy, verifiability, and other characteristics. The top consideration for maintaining payment methods is chargeback risk.
 
@@ -19,9 +14,10 @@ We welcome suggestions for new payment methods on Haveno, especially for those t
 
 Below is a list of fiat payment methods Haveno currently supports.
 
-**Note:** The maximum trade sizes listed below are not available for most newly-created payment accounts. Please refer to Account signing for details on how to enable larger trade sizes for your payment accounts.
+!!! note
+    The maximum trade sizes listed below are not available for most newly-created payment accounts. Please refer to Account signing for details on how to enable larger trade sizes for your payment accounts.
 
-#### 1.1 FIAT payment methods
+#### 1.1 Fiat payment methods
 
 |        Payment method         |             Region               | Trading-period |          Limit per trade         |                                     Notes                                          |
 |---------------------------|----------------------------------|----------------|-----------------------------|----------------------------------------------------------------------------------|
@@ -80,7 +76,7 @@ Below is a list of fiat payment methods Haveno currently supports.
 !!! note
     * These payment methods do not need to be signed to attain buying limits higher than 3 XMR.
 
-#### 2. Altcoin payment methods
+## 2. Altcoin payment methods
 
 Haveno also supports a variety of cryptocurrencies for buying and selling Monero, like BTC, ETH, LTC, BCH. Because altcoin transfers are irreversible and relatively quick, altcoin trades can be up to 96 XMR in size right away (no need to wait for account aging or account signing).
 
