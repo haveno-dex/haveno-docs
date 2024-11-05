@@ -4,15 +4,6 @@ US Postal Money Orders (USPMO) are one of the most private payment methods on Ha
 
 This article covers tips and tricks on using this payment method for buying and selling Monero on Haveno.
 
-**Contents:**
-
-- Setting up a payment account in Haveno
-- Buying the money order
-- Sending a money order in the mail
-- Redeeming a money order
-- For cash
-- For new USPMOs
-
 #### Setting up a payment account in Haveno
 
 To buy and sell Monero using US Postal Money orders, you will need to set up a corresponding payment account in Haveno.
@@ -29,7 +20,9 @@ Things to keep in mind:
 
 Again, please note that incorrect information in Haveno payment accounts is generally against Haveno trade protocol. Buying Monero with USPMO is a rare exception.
 
-**Note:** Trading using US Postal Money Orders (USPMO) on Haveno requires that you understand the following:
+!!! Note
+    Trading using US Postal Money Orders (USPMO) on Haveno requires that you understand the following:
+
 - XMR buyers must write the XMR Seller’s name in both the Payer and the Payee’s fields & take a high-resolution photo of the USPMO and envelope with proof of tracking before sending.
 - XMR buyers must send the USPMO to the XMR seller with Delivery Confirmation.
 
@@ -54,6 +47,7 @@ Also consider:
 - placing the USPMO out of sight upon receiving it, and filling it out elsewhere (away from cameras)
 
 #### Sending a money order in the mail
+
 Figure 1. Extra paper for extra privacy in the envelope.
 
 Address the envelope as appropriate.

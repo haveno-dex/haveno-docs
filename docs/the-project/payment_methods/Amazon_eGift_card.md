@@ -2,7 +2,6 @@
 
 Amazon eGift Cards are one of the more private payment methods on Haveno. They tend to be quick and convenient, but funds must be spent on Amazon.
 
-| | |
 |-|-|
 | Chargeback risk | Low |
 | Privacy protection | Very high |

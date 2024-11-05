@@ -1,6 +1,6 @@
 # Face to Face (F2F) trading with Haveno
 
-Haveno can help users arrange face-to-face (F2F) trades to buy and sell monero.
+Haveno can help users arrange face-to-face (F2F) trades to buy and sell Monero.
 
 Done correctly, this may be the only payment method that can be both private and anonymous. But there are a number of things you should consider when doing a F2F trade on Haveno.
 
@@ -16,8 +16,10 @@ When setting up a F2F payment account in Haveno, you will be asked to enter the 
 - Additional information (for example where you would like to complete the trade, do NOT place direct contact information here!)
 
 You can only select one currency for a single F2F account. If you would like to trade with more than one currency, please create separate accounts for each currency. Define any special terms, conditions, or details you would like to be displayed with your offers in the 'Additional Information' field. Users can see this field before taking the offer by clicking the info icon of the offer.
-***Note:** Consider setting up separate F2F accounts for buying and selling so you can specify special instructions for each.*
- 
+
+!!! Note
+    Consider setting up separate F2F accounts for buying and selling so you can specify special instructions for each.
+
 ### Making a F2F offer
 
 Make sure to state any special terms or conditions in the 'Additional Information' field of the payment account before making an offer. The person taking the offer will be accepting these terms and conditions by taking the offer. For example you could include that you are looking to complete the trade in a Starbucks within the city center.
@@ -66,4 +68,4 @@ This is why we highly recommend that both parties bring laptops and acknowledge 
 
 Otherwise, the same dispute process is in place for F2F trades, but be advised that arbitrators and arbitrators often won’t have a way to settle disputes. In such cases, aggrieved traders can send deposit funds arbitration and make an appeal to the Haveno's team.
 
-Having said that, arbitrators and arbitrators may attempt different tactics to get a handle on the situation. 
+Having said that, arbitrators and arbitrators may attempt different tactics to get a handle on the situation.

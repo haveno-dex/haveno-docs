@@ -8,22 +8,6 @@ Paysera is a multi-currency mobile payment provider and web app based in Lithuan
 
 Paysera is an established multi-currency payment service that provides users with the option to trade in multiple currencies instantly for low fees with the functionality of a mobile and banking app.
 
-**Contents:**
-
-- 1 Where can I find out more about Paysera?
-- 2 What countries are available for Paysera?
-- 3 What currencies are available for Paysera?
-- 4 What is the maximum trading duration for Paysera?
-- 5 What is the maximum XMR limit for an Paysera trade?
-- 6 Is Paysera a payment method that can be signed?
-- 7 How do I set up a Paysera account?
-- 8 How do I add Paysera as a payment method in Haveno?
-- 9 How do I buy XMR with my Paysera account?
-- 10 How do I sell XMR with my Paysera account?
-- 11 Are there any limits for me to be aware of when using my Paysera account?
-- 12 Are there any fees for me to be aware of when using my Paysera account?
-- 13 How does dispute resolution when trading with Paysera?
-
 #### Where can I find out more about Paysera?
 
 Here is a list of Paysera resources:
@@ -101,6 +85,7 @@ Once you receive payment from the XMR Buyer you should confirm payment has been 
 #### Are there any limits for me to be aware of when using my Paysera account?
 
 Paysera offers four levels of identification. The levels determine how much you can transfer daily, monthly and annually. You can move up in levels at any time for free, but you might need to provide additional information.
+
 |-------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Level | Description                                                                                                                                                                                                                                                   |
 |-------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

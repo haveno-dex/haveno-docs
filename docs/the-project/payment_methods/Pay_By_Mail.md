@@ -61,6 +61,7 @@ Please make sure you have all the necessary items arranged before taking an offe
 **It is highly recommended for peers to make use of Haveno's trader chat to communicate directly with one another. This is the most promising way to resolve any issues that may arise during the trade.**
 
 Regarding dispute resolution, please **Note:**
+
 - Arbitrators can consider your case and make a suggestion, but they are NOT guaranteed to help.
 - If a trader rejects an arbitrator suggestion, it could lead to lose both trading and deposit funds.
 - Arbitrators will make a decision based on the evidence provided to them. Therefore, please follow and document the above processes to have evidence in case of dispute. For cash-by-mail trades, arbitrator decisions are final, meaning reimbursement requests to the Haveno's arbitrator team for any funds lost in cash-by-mail trades will NOT be considered.

@@ -2,20 +2,6 @@
 
 Nequi is a commonly used fintech neobank that allows people to send money to anyone in any part of Colombia.
 
-**Contents:**
-
-- 1 What countries are available for Nequi?
-- 2 What currencies are available for Nequi?
-- 3 What is the maximum trading duration for Nequi?
-- 4 What is the maximum XMR limit for an Nequi trade?
-- 5 Is Nequi a payment method that can be signed?
-- 6 How do I set up a Nequi account?
-- 7 How do I add Nequi as a payment method in Haveno?
-- 8 How do I buy XMR with my Nequi account?
-- 9 How do I sell XMR with my Nequi account?
-- 10 Are there any limits or fees for me to be aware of when using my Nequi account?
-- 11 How does dispute resolution when trading with Nequi?
-
 #### What countries are available for Nequi?
 
 Nequi is available in Colombia.
@@ -55,7 +41,9 @@ It is easy to add your Nequi account to Haveno.
 If you have more than one Nequi account you wish to add to Haveno you can create different accounts for each.
 
 Make sure all the details are correct when you add.
-**Warning**, please make sure to include your phone number that matches your phone number from your Nequi account.
+
+!!! warning
+    Please make sure to include your phone number that matches your phone number from your Nequi account.
 
 When users set up a Nequi account payment limits are set to a maximum of ~ 7,000,000 COP that can be sent per month.
 
@@ -75,7 +63,9 @@ When the offer is confirmed Haveno will provide you with the XMR Sellers Nequi d
 If you have the option to include a payment reference please leave it blank. If your bank requires one, please just use your name that matches your bank account.
 
 Once the XMR Seller receives your payment they will confirm in Haveno and your security deposit and your purchased trade amount will be available in your wallet.
-**Warning**, please send payment only to phone number provided in the XMR Seller's Haveno account.
+
+!!! warning
+    Please send payment only to phone number provided in the XMR Seller's Haveno account.
 
 When users set up a Nequi account payment limits are set to a maximum of ~ 7,000,000 COP that can be sent per month.
 
@@ -93,7 +83,9 @@ You can sell XMR with Nequi on Haveno in 2 waysː
 When the offer is confirmed Haveno will provide with the XMR Buyer with your Nequi details for you to complete the payment. They should send payment at their first opportunity and confirm they have done so in Haveno by clicking 'payment started'.
 
 Once you receive payment from the XMR Buyer you should confirm payment has been received in Haveno. One you have done this the XMR Buyer will receive their funds and you will receive your security deposit back.
-**Warning**, please checked that the payment received matches the pone number provided in the XMR Buyer's Haveno account.
+
+!!! warning
+    Please checked that the payment received matches the pone number provided in the XMR Buyer's Haveno account.
 
 When users set up a Nequi account payment limits are set to a maximum of ~ 7,000,000 COP that can be sent per month.
 

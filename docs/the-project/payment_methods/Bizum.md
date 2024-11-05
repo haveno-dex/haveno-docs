@@ -2,22 +2,6 @@
 
 Bizum is a mobile payment provider service based in Spain. Bizium is a result of the collaboration of almost all of the Spanish banks to create a system of instant payments between individuals and shopping in stores.
 
-**Contents:**
-
-- 1 Where can I find out more about Bizum?
-- 2 What countries are available for Bizum?
-- 3 What currencies are available for Bizum?
-- 4 What is the maximum trading duration for Bizum?
-- 5 What is the maximum XMR limit for an Bizum trade?
-- 6 Is Bizum a payment method that can be signed?
-- 7 How do I set up a Bizum account?
-- 8 How do I add Bizum as a payment method in Haveno?
-- 9 How do I buy XMR with my Bizum account?
-- 10 How do I sell XMR with my Bizum account?
-- 11 Are there any limits for me to be aware of when using my Bizum account?
-- 12 Are there any fees for me to be aware of when using my Bizum account?
-- 13 How does dispute resolution when trading with Bizum?
-
 #### Where can I find out more about Bizum?
 
 Here is a list of Bizum resources:
@@ -118,4 +102,4 @@ If a dispute occurs the arbitrator may ask the buyer to send them information sh
 
 The arbitrator may ask the seller to send them information to prove their account details are correct, or in the case of the XMR Buyer making a payment late, or of the wrong amount.
 
-For more information see dispute resolution.
+For more information see [Conflict Resolution](../conflict-resolution.md).

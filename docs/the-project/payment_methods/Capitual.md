@@ -10,21 +10,6 @@ Capitual operate in 48+ countries (unfortunately US residents are excluded). Cur
 - Signing required: No
 - Haveno buy/sell limits: 12 XMR
 
-**Contents:**
-
-- 1 Where can I find out more about Capitual?
-- 2 What countries are available for Capitual?
-- 3 What currencies are available for Capitual?
-- 4 What is the maximum trading duration for Capitual?
-- 5 What is the maximum XMR limit for an Capitual trade?
-- 6 Is Capitual a payment method that can be signed?
-- 7 How do I add Capitual as a payment method in Haveno?
-- 8 What are CapCodes?
-- 9 How do I buy XMR with my Capitual account?
-- 10 How do I sell XMR with my Capitual account?
-- 11 Are there any limits for me to be aware of when using my Capitual account?
-- 12 Are there any fees for me to be aware of when using my Capitual account?
-
 #### Where can I find out more about Capitual?
 
 Here is a list of Capitual resources:
@@ -124,10 +109,11 @@ Unconfirmed accounts have a fixed transfer limit of US$ 9,999.00. As this limit 
 #### Are there any fees for me to be aware of when using my Capitual account?
 
 There are a few fees to be aware of when using your Capitual Account. Almost everything is fee free apart from crypto withdrawals. Here is a table showing fees correct of September 2021:
-Description 	Fee
-Transfer fiat to other users 	Free
-Transfer crypto to other users 	Free
-Deposit BRL or EUR 	Free
-Withdraw BRL or EUR 	Free
-Deposit crypto 	Free
-Withdraw crypto 	XMR 0.0001, LTC 0.01, DSH 0.01, ETH 0.01, USDT 0.50, BUSD 0.50, USDC 0.50, DAI 0.50
+
+- Description 	Fee
+- Transfer fiat to other users 	Free
+- Transfer crypto to other users 	Free
+- Deposit BRL or EUR 	Free
+- Withdraw BRL or EUR 	Free
+- Deposit crypto 	Free
+- Withdraw crypto 	XMR 0.0001, LTC 0.01, DSH 0.01, ETH 0.01, USDT 0.50, BUSD 0.50, USDC 0.50, DAI 0.50

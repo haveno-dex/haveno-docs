@@ -2,21 +2,6 @@
 
 Domestic Wire Transfers are one of the two bank transfer payment method in the the US. The other being ACH.
 
-**Contents:**
-
-- 1 What countries are available for Domestic Wire Transfer?
-- 2 What currencies are available for Domestic Wire Transfer?
-- 3 What is the maximum trading duration for Domestic Wire Transfer?
-- 4 What is the maximum XMR limit for an Domestic Wire Transfer trade?
-- 5 Is Domestic Wire Transfer a payment method that can be signed?
-- 6 How do I set up a Domestic Wire Transfer account?
-- 7 How do I add Domestic Wire Transfer as a payment method in Haveno?
-- 8 How do I buy XMR with my Domestic Wire Transfer account?
-- 9 How do I sell XMR with my Domestic Wire Transfer account?
-- 10 Are there any limits for me to be aware of when using my Domestic Wire Transfer account?
-- 11 Are there any fees for me to be aware of when using my Domestic Wire Transfer account?
-- 12 How does dispute resolution when trading with a Domestic Wire Transfer account?
-
 #### What countries are available for Domestic Wire Transfer?
 
 Domestic Wire Transfers are available in the United States.
@@ -44,6 +29,7 @@ Domestic Wire Transfers should be possible with any checking account. You can ch
 #### How do I add Domestic Wire Transfer as a payment method in Haveno?
 
 It is easy to add your Domestic Wire Transfer account to Haveno:
+
 - Go to the top menu in Haveno and select Account.
 - Then select National Currency Accounts.
 - Click add new account
@@ -100,4 +86,4 @@ If a dispute occurs the arbitrator may ask the buyer to send them information sh
 
 The arbitrator may ask the seller to send them information to prove their account details are correct, or in the case of the XMR Buyer making a payment late, or of the wrong amount.
 
-For more information see dispute resolution.
+For more information see [Conflict Resolution](../conflict-resolution.md).

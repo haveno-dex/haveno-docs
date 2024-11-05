@@ -4,22 +4,6 @@ RTGS is a payment method added in Haveno
 
 Real-Time Gross Settlement (RTGS) is an electronic funds transfer system maintained by the Reserve Bank of India. RTGS payment enable immediate and large remittances (minimum of 200,000 INR) by banking customers in India to transfer funds for between any two RTGS enabled bank accounts.
 
-**Contents:**
-
-- 1 Where can I find out more about RTGS?
-- 2 What countries are available for RTGS?
-- 3 What currencies are available for RTGS?
-- 4 What is the maximum trading duration for RTGS?
-- 5 What is the maximum XMR limit for an RTGS trade?
-- 6 Is RTGS a payment method that can be signed?
-- 7 How do I set up a RTGS account?
-- 8 How do I add RTGS as a payment method in Haveno?
-- 9 How do I buy XMR with my RTGS account?
-- 10 How do I sell XMR with my RTGS account?
-- 11 Are there any limits for me to be aware of when using my RTGS account?
-- 12 Are there any fees for me to be aware of when using my RTGS account?
-- 13 How does dispute resolution when trading with RTGS?
-
 #### Where can I find out more about RTGS?
 
 Here is a list of RTGS resources:
@@ -65,7 +49,9 @@ It is easy to add your RTGS account to Haveno.
 If you have more than one RTGS account you wish to add to Haveno you can create different accounts for each.
 
 Make sure all the details are correct when you add.
-**Warning**, RTGS is for payments of large trades of Rs. 200,000 or over.
+
+!!! warning
+    RTGS is for payments of large trades of Rs. 200,000 or over.
 
 When setting up your RTGS payment account please make sure to include your:
 
@@ -88,7 +74,9 @@ When the offer is confirmed Haveno will provide you with the XMR Sellers RTGS de
 If you have the option to include a payment reference please leave it blank. If your bank requires one, please just use your name that matches your bank account.
 
 Once the XMR Seller receives your payment they will confirm in Haveno and your security deposit and your purchased trade amount will be available in your wallet.
-**Warning**, please send payment only to the account details provided in Haveno.
+
+!!! warning
+    Please send payment only to the account details provided in Haveno.
 
 Please be aware there is a minimum trade amount of Rs. 200,000 that can be sent per transaction. If you are trading under this amount either the trade would get cancelled or both traders would have to agree on another payment method (eg IMPS or UPI).
 
@@ -102,7 +90,9 @@ You can sell XMR with RTGS on Haveno in 2 waysː
 When the offer is confirmed Haveno will provide with the XMR Buyer with your RTGS details for you to complete the payment. They should send payment at their first opportunity and confirm they have done so in Haveno by clicking 'payment started'.
 
 Once you receive payment from the XMR Buyer you should confirm payment has been received in Haveno. One you have done this the XMR Buyer will receive their funds and you will receive your security deposit back.
-**Warning**, please be aware there is a minimum trade amount of Rs. 200,000 that can be sent per transaction. If you are trading under this amount either the trade would get cancelled or both traders would have to agree on another payment method (eg IMPS or UPI).
+
+!!! warning
+    Please be aware there is a minimum trade amount of Rs. 200,000 that can be sent per transaction. If you are trading under this amount either the trade would get cancelled or both traders would have to agree on another payment method (eg IMPS or UPI).
 
 #### Are there any limits for me to be aware of when using my RTGS account?
 
@@ -120,4 +110,4 @@ If a dispute occurs the arbitrator may ask the buyer to send them information sh
 
 The arbitrator may ask the seller to send them information to prove their account details are correct, or in the case of the XMR Buyer making a payment late, or of the wrong amount.
 
-For more information see dispute resolution.
+For more information see [Conflict Resolution](../conflict-resolution.md).

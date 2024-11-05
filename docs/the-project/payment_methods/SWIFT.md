@@ -6,17 +6,6 @@ Sender and receiver typically incur fees and payment times can also be slow (up 
 
 See this table for up-to-date trade limits and signing requirements.
 
-**Contents:**
-
-- Background
-- Setting up the payment account
-- Notes on buying XMR
-- Send payment in correct currency
-- Put an appropriate reason for payment
-- Use the correct fee option
-- Notes on selling XMR
-- Understanding SWIFT fees
-
 #### Background
 
 Almost all banks have access to the SWIFT network. Some money transfer services also give users access to the SWIFT Network.
@@ -41,9 +30,11 @@ When creating a new payment account for SWIFT, keep the following in mind:
 - Traders using SWIFT on Haveno could be anywhere in the world, so please fill all fields completely and accurately
 - If you are not comfortable sharing your own address, provide the address of your bank
 
-**Note:** By default, Haveno sets up your SWIFT account to make and take offers from any country and any currency. This means SWIFT accounts on Haveno are able to trade on ALL fiat currency markets. The currency for a particular trade will always be specified by the maker in their offer.
+!!! Note
+    By default, Haveno sets up your SWIFT account to make and take offers from any country and any currency. This means SWIFT accounts on Haveno are able to trade on ALL fiat currency markets. The currency for a particular trade will always be specified by the maker in their offer.
 
-**Note:** if you transact in a currency that is not native to your bank account (as either maker OR taker), your bank may make you pay currency exchange fees. It is your responsibility to cover these fees. Please make 100% sure you're aware of what to expect before making or taking an offer.
+!!! Note
+    If you transact in a currency that is not native to your bank account (as either maker OR taker), your bank may make you pay currency exchange fees. It is your responsibility to cover these fees. Please make 100% sure you're aware of what to expect before making or taking an offer.
 
 #### Notes on buying XMR
 
@@ -73,6 +64,7 @@ SWIFT transfers for Haveno trades should use the SHA (SHAred) fee option. More o
 #### Notes on selling XMR
 
 You can sell XMR with SWIFT on Haveno in 2 waysː
+
 - Make an offer to sell XMR on a currency market of your choosing
 - Take an offer to sell XMR on the currency market specified in the offer
 

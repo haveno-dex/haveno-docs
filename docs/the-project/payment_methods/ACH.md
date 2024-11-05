@@ -29,6 +29,7 @@ ACH Transfers should be possible with any checking account. You can check the fe
 #### How do I add ACH as a payment method in Haveno?
 
 It is easy to add your ACH account to Haveno:
+
 - Go to the top menu in Haveno and select Account.
 - Then select National Currency Accounts.
 - Click add new account
@@ -44,6 +45,7 @@ Make sure all the details are correct when you add.
 #### How do I buy XMR with my ACH account?
 
 You can buy XMR with ACH on Haveno in 2 waysː
+
 - Make an offer to buy XMR on the USD market.
 - Take an offer to buy XMR on the USD market.
 
@@ -82,4 +84,4 @@ If a dispute occurs the arbitrator may ask the buyer to send them information sh
 
 The arbitrator may ask the seller to send them information to prove their account details are correct, or in the case of the XMR Buyer making a payment late, or of the wrong amount.
 
-For more information see dispute resolution.
+For more information see [Conflict Resolution](../conflict-resolution.md).

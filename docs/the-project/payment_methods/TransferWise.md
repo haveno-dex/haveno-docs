@@ -6,13 +6,6 @@ TransferWise can be used in SEPA trades as well, where one peer uses SEPA and an
 
 TransferWise is a web- and app-based money transfer service that supports multiple currencies. TransferWise to TransferWise payments allow users to send payment from any supported currency to any other supported currency. Payments utilize the TransferWise multi-currency account. This is available for users in most countries.
 
-**Contents:**
-
-- 1 Setting up a TransferWise Account
-- 2 Setting up a TransferWise Account in Haveno
-- 3 Getting your TransferWise account ready for trading
-- 4 Making payments with TransferWise
-
 #### 1. Setting up a TransferWise Account
 
 Set up an account. Go to TransferWise and register for an account. KYC will be required.
@@ -56,6 +49,7 @@ This section is primarily for XMR buyers using TransferWise. Because of the way 
 TransferWise has a useful guide about this in their [help section](https://transferwise.com/help/articles/2932105/can-i-send-money-to-someone-with-only-their-email-address).
 
 To set up a transfer to an email address, follow these steps:
+
 - Start a transfer by clicking the Send money button
 - At the recipient step, choose Someone else or Business or charity
 - Untick the box next to I know their bank details
