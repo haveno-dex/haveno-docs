@@ -58,4 +58,4 @@ To set up a transfer to an email address, follow these steps:
 
 You can then choose how you would like to pay. You can even pay by credit or debit card!
 
-On the case that the payment was made with a name different from the email address (which is allowed) and could create some confusion, the receiver could verify that the name of the XMR buyer is correct by writing his email on a new payment and see if the name matches the one he received it from. *Of course do not go through resending them any funds, there is no need in order to verify the name.
+On the case that the payment was made with a name different from the email address (which is allowed) and could create some confusion, the receiver could verify that the name of the XMR buyer is correct by writing his email on a new payment and see if the name matches the one he received it from. **Of course do not go through resending them any funds, there is no need in order to verify the name.**

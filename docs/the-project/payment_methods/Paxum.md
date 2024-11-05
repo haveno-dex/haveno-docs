@@ -4,7 +4,7 @@ Paxum is a Global Payment Service for Businesses and Individuals. Paxum provides
 
 Paxum to Paxum transfers are instant.
 
-- Currencies accepted; USD, CAD, EUR, DKK, CZK, AUD, ZAR, THB, CHF, SEK, RON, PLN, NZD, NOK, INR, IDR, HUF, GBP
+- Currencies accepted: USD, CAD, EUR, DKK, CZK, AUD, ZAR, THB, CHF, SEK, RON, PLN, NZD, NOK, INR, IDR, HUF, GBP
 - Trade window: 24 hours
 - Signing required: No
 - Haveno buy/sell Limits: 12 XMR

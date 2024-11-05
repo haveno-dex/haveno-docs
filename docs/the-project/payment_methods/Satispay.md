@@ -89,11 +89,11 @@ Satispay account limits are individually set. If you want to trade increased amo
 
 #### Are there any limits for me to be aware of when using my Satispay account?
 
-Account limits are individually set. If you want to trade increased amounts you will need to contact Satispay support to increase your limits: https://support.satispay.com/en/articles/increase-maximum-budget
+Account limits are individually set. If you want to trade increased amounts you will need to contact Satispay support to increase your limits: [Support Satispay increase-maximum-budget](https://support.satispay.com/en/articles/increase-maximum-budget)
 
 #### Are there any fees for me to be aware of when using my Satispay account?
 
-It is free for personal use to send and receive payments. For more info see: https://satispay.com/en-it/pricing/
+It is free for personal use to send and receive payments. For more info see: [Satispay Pricing](https://satispay.com/en-it/pricing/)
 
 #### How does dispute resolution when trading with Satispay?
 

@@ -60,7 +60,7 @@ When setting up your RTGS payment account please make sure to include your:
 - IFSC number
 - These details should match your bank account that you will use for sending / receiving payments.
 
-Please be aware there is a minimum trade amount of Rs. 200,000 that can be sent per transaction. If you are trading under this amount either the trade would get cancelled or both traders would have to agree on another payment method (eg IMPS or UPI).
+Please be aware there is a minimum trade amount of Rs. 200,000 that can be sent per transaction. If you are trading under this amount either the trade would get cancelled or both traders would have to agree on another payment method (e.g. IMPS or UPI).
 
 #### How do I buy XMR with my RTGS account?
 
@@ -78,7 +78,7 @@ Once the XMR Seller receives your payment they will confirm in Haveno and your s
 !!! warning
     Please send payment only to the account details provided in Haveno.
 
-Please be aware there is a minimum trade amount of Rs. 200,000 that can be sent per transaction. If you are trading under this amount either the trade would get cancelled or both traders would have to agree on another payment method (eg IMPS or UPI).
+Please be aware there is a minimum trade amount of Rs. 200,000 that can be sent per transaction. If you are trading under this amount either the trade would get cancelled or both traders would have to agree on another payment method (e.g. IMPS or UPI).
 
 #### How do I sell XMR with my RTGS account?
 
@@ -92,11 +92,11 @@ When the offer is confirmed Haveno will provide with the XMR Buyer with your RTG
 Once you receive payment from the XMR Buyer you should confirm payment has been received in Haveno. One you have done this the XMR Buyer will receive their funds and you will receive your security deposit back.
 
 !!! warning
-    Please be aware there is a minimum trade amount of Rs. 200,000 that can be sent per transaction. If you are trading under this amount either the trade would get cancelled or both traders would have to agree on another payment method (eg IMPS or UPI).
+    Please be aware there is a minimum trade amount of Rs. 200,000 that can be sent per transaction. If you are trading under this amount either the trade would get cancelled or both traders would have to agree on another payment method (e.g. IMPS or UPI).
 
 #### Are there any limits for me to be aware of when using my RTGS account?
 
-Minimum amount per transaction is Rs.200,000.
+Minimum amount per transaction is Rs. 200,000
 
 Maximum of 1,000,000 INR can be sent per day.
 

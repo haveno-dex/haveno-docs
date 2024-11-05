@@ -100,7 +100,7 @@ Please note some banks have different limits for their customers.
 
 #### Are there any limits for me to be aware of when using my NEFT account?
 
-Maximum amount limited to per transaction is Rs.50000 within India
+Maximum amount limited to per transaction is Rs. 50000 within India
 
 Maximum of 50,000 INR can be sent per transaction.
 

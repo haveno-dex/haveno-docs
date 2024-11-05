@@ -31,7 +31,7 @@ Verse operates in the following countries: Austria, Belgium, Denmark, Finland, F
 
 #### What currencies are available for Verse?
 
-Verse supports the following currencies; EUR, SEK, HUF, DKK, PLN
+Verse supports the following currencies: EUR, SEK, HUF, DKK, PLN
 
 You can change between currencies in the your Verse account. Your default currency is decided by your phone number's country code. You can switch currencies every time you make a payment (the currency menu is right above the amount you are paying) and the change will be made immediately.
 

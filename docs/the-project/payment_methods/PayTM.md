@@ -5,6 +5,7 @@ PayTM is an e-commerce payment system and financial technology company, based in
 #### Where can I find out more about PayTM?
 
 Here is a list of PayTM resources:
+
 - [PayTM website](https://paytm.com/)
 - [PayTM video explainer](https://www.youtube.com/watch?v=_twGGicE_OQ)
 - [PayTM wallet blog post](https://paytm.com/blog/paytm-help/what-is-paytm-wallet-and-how-to-use-it/)

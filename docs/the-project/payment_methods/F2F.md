@@ -29,7 +29,8 @@ Please note it is against Haveno rules to use the 'Additional Information' field
 ### Taking a F2F offer
 
 Make sure to check the offer maker's terms and conditions before taking a F2F offer. If you cannot fulfill the terms, do not take the the offer. If you have specific terms you would prefer, consider making your own offer instead.
-Meeting your trading partner
+
+#### Meeting your trading partner
 
 Doing a transaction face-to-face means you’ll be coming within close proximity of a stranger to exchange relatively substantial value.
 

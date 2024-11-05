@@ -10,9 +10,9 @@ Faster Payments usually instant, but can take up to 24 hours depending on the se
 
 Here is a list of Faster Payments resources:
 
-- Faster Payments Wikipedia Page
-- Pay.UK Faster Payments operator
-- Sort Code Checker
+- [Faster Payments Wikipedia Page](https://en.wikipedia.org/wiki/Faster_Payments)
+- [Pay.UK Faster Payments operator](https://www.wearepay.uk/what-we-do/payment-systems/faster-payment-system/)
+- [Sort Code Checker](https://www.sortcodes.co.uk/)
 
 #### What countries are available for Faster Payments?
 

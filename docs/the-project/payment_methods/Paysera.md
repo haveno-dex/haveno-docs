@@ -1,6 +1,7 @@
 # Paysera
 
 Paysera is a multi-currency mobile payment provider and web app based in Lithuania. It providing standard banking services but it is not a registered bank.
+
 - Currencies accepted: AUD, BGN, BYN, CAD, CHF, CNY, CZK, DKK, EUR, GBP, GEL, HKD, HRK, HUF, ILS, INR, JPY, KZT, MXN, NOK, NZD, PHP, PLN, RON, RSD, RUB, SEK, SGD, THB, TRY, USD, ZAR
 - Trade window: 24 hours
 - Signing required: No
@@ -86,6 +87,7 @@ Once you receive payment from the XMR Buyer you should confirm payment has been 
 
 Paysera offers four levels of identification. The levels determine how much you can transfer daily, monthly and annually. You can move up in levels at any time for free, but you might need to provide additional information.
 
+|       |                                                                                                                                                                                                                                                               |
 |-------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Level | Description                                                                                                                                                                                                                                                   |
 |-------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

@@ -8,6 +8,7 @@ This payment method has special requirements you should be aware of, so please r
 ### Setting up a CBM account in Haveno
 
 When setting up cash-by-mail payment account in Haveno, you will be asked to enter the following information:
+
 - Name or nym the package should be addressed to
 - Postal address
 - Currency

@@ -34,7 +34,7 @@ No, Strike accounts do not require signing.
 
 #### How do I set up a Strike account?
 
-Sign up at https://strike.me/
+Sign up at [Strike website](https://strike.me/)
 
 #### How do I add Strike as a payment method in Haveno?
 

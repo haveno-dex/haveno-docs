@@ -14,7 +14,7 @@ Things to keep in mind:
 - Consider using an online name generator (search "random name generator" on your favorite search engine) for a more bias-free suggestion for the sender's name.
 - For the sender's address, you may want to be more careful, because if your envelope is returned, you'll want to be able to retrieve it.
 - Option 1: Use an actual fake address (search internet for "random address generator"). If your envelope is returned for any reason, you'll probably lose it for good.
-- Option 2: Use another address. That of a neighbor, a friend, or a nearby building (e.g., apartment leasing office, local mom-and-pop shop, etc). This way, you'll have a higher chance of retrieving a returned envelope, but you'll reveal a bit of information about your location.
+- Option 2: Use another address. That of a neighbor, a friend, or a nearby building (e.g.: apartment leasing office, local mom-and-pop shop, etc). This way, you'll have a higher chance of retrieving a returned envelope, but you'll reveal a bit of information about your location.
 - If selling, name and address must be correct (address must be correct in order to receive the envelope, and name must match photo ID to cash it).
 - To maximize privacy, consider setting up 2 separate payment accounts: one with fake information for buying Monero and one with real information for selling Monero.
 

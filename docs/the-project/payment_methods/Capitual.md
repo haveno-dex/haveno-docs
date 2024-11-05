@@ -13,6 +13,7 @@ Capitual operate in 48+ countries (unfortunately US residents are excluded). Cur
 #### Where can I find out more about Capitual?
 
 Here is a list of Capitual resources:
+
 - [Capitual Website](https://www.capitual.com/)
 - [Capitual Fees & Limits](https://exchange.capitual.com/)
 - [Capitual GitHub](https://github.com/capitual)
@@ -68,7 +69,7 @@ Make sure all the details are correct when you add.
 
 #### What are CapCodes?
 
-Transfers take place using CapCodes. CapCodes are like coupon codes you can generate at any time and use it to transfer funds
+Transfers take place using CapCodes. CapCodes are like coupon codes you can generate at any time and use it to transfer funds.
 
 CapCodes are an electronic cheque system that makes it possible to store amounts of money, precious metals or cryupto-currencies in a short code, easy to be written down, that can be written in a piece of paper to make transactions even when you are not connected to the internet.
 
