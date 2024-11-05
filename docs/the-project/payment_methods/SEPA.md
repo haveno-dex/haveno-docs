@@ -3,7 +3,8 @@
 - SEPA is a payment method added used in Haveno for buying and selling XMR for Euros (EUR).
 SEPA is the most common way people in the EU send and receive payment to each other via their banks. Those payments usually take a couple of working days to complete, but can take up to 6 days depending on weekends / public holidays.
 
-****Contents:**:**
+**Contents:**
+
 - 1 Where can I find out more about SEPA?
 - 2 What countries are available for SEPA?
 - 3 What currencies are available for SEPA?
@@ -34,7 +35,7 @@ SEPA allows peer to peer payments of:
 The maximum trade time is 6 days. Generally SEPA payments will be completed within 2 working days. SEPA payments are usually not processed on Saturday, Sundays or bank holidays.
 
 #### 5. What is the maximum XMR limit for a SEPA trade?
-12 XMR.
+12 XMR
 
 #### 6. Is SEPA a payment method that can be signed?
 Yes, SEPA payment accounts on Haveno require signing to lift limits to above 0.01 XMR.
@@ -86,4 +87,4 @@ It is free to send and receive SEPA payments (as in the SEPA network itself do n
 
 #### 13. How does dispute resolution when trading with SEPA?
 If a dispute occurs the arbitrator may ask the buyer to send them information showing that they made the payment of the correct amount to the XMR Seller within the correct time frame.
-The arbitrator may ask the seller to send them information to prove their account details are correct, or in the case of the XMR Buyer making a payment late, or of the wrong amount. 
+The arbitrator may ask the seller to send them information to prove their account details are correct, or in the case of the XMR Buyer making a payment late, or of the wrong amount.

@@ -31,7 +31,7 @@ The maximum trade time is 1 day. Generally Pix transfers will be completed withi
 
 #### What is the maximum XMR limit for an Pix trade?
 
-12 XMR.
+12 XMR
 
 #### Is Pix a payment method that can be signed?
 
@@ -98,4 +98,4 @@ It is generally free to send and receive Pix payments.
 
 If a dispute occurs the arbitrator may ask the buyer to send them information showing that they made the payment of the correct amount to the XMR Seller within the correct time frame.
 
-The arbitrator may ask the seller to send them information to prove their account details are correct, or in the case of the XMR Buyer making a payment late, or of the wrong amount. 
+The arbitrator may ask the seller to send them information to prove their account details are correct, or in the case of the XMR Buyer making a payment late, or of the wrong amount.

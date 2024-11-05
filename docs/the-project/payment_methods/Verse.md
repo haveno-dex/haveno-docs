@@ -1,4 +1,4 @@
-Verse
+# Verse
 
 Verse is a mobile payment app based in Europe owned by Square. Users can pay and request money from your friends. Payments are immediate and free. It is easy to use. Verse is multi currency, easy to use and payments are instant and free.
 
@@ -16,6 +16,7 @@ Money can be added by debit / credit card. Verse accepts VISA and MasterCard. Wi
 Why Verse is like the European Cash App. It is multi currency, easy to use and payments are instant and free.
 
 **Contents:**
+
 - 1 Where can I find out more about Verse?
 - 2 What countries are available for Verse?
 - 3 What currencies are available for Verse?
@@ -59,7 +60,7 @@ Users making withdrawals from Verse (sending funds to their bank account) should
 
 #### What is the maximum XMR limit for an Verse trade?
 
-12 XMR.
+12 XMR
 
 #### Is Verse a payment method that can be signed?
 
@@ -136,4 +137,4 @@ Free. For payment operations that involve currency conversion and currency excha
 
 If a dispute occurs the arbitrator may ask the buyer to send them information showing that they made the payment of the correct amount to the XMR Seller within the correct time frame.
 
-The arbitrator may ask the seller to send them information to prove their account details are correct, or in the case of the XMR Buyer making a payment late, or of the wrong amount. 
+The arbitrator may ask the seller to send them information to prove their account details are correct, or in the case of the XMR Buyer making a payment late, or of the wrong amount.

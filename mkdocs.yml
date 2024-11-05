@@ -50,13 +50,13 @@ extra_css:
 
 extra:
   version:
-    haveno: 1.0.10
+    haveno: 1.0.12
   social:
     - icon: material/web
       link: https://haveno.exchange
     - icon: fontawesome/brands/github
-      link: https://github.com/haveno-dex/
-    - icon: fontawesome/brands/twitter 
+      link: https://github.com/haveno-dex
+    - icon: fontawesome/brands/twitter
       link: https://twitter.com/HavenoDEX
     - icon: simple/matrix
       link: https://matrix.to/#/#haveno:haveno.network
@@ -74,6 +74,35 @@ nav:
       - Arbitrators: 'the-project/roles/arbitrators.md'
       - Publishers: 'the-project/roles/publishers.md'
     - Assets and Payment Methods: 'the-project/assets.md'
+    - Payment Methods:
+      - Overview - Currently supported: 'the-project/payment_methods/0-all-methods.md'
+      - ACH: 'the-project/payment_methods/ACH.md'
+      - Amazon eGift card: 'the-project/payment_methods/Amazon_eGift_card.md'
+      - Bizum: 'the-project/payment_methods/Bizum.md'
+      - Capitual: 'the-project/payment_methods/Capitual.md'
+      - Domestic Wire Transfer: 'the-project/payment_methods/Domestic_Wire_Transfer.md'
+      - F2F: 'the-project/payment_methods/F2F.md'
+      - Faster Payments: 'the-project/payment_methods/Faster_Payments.md'
+      - IMPS: 'the-project/payment_methods/IMPS.md'
+      - Interac e-transfer: 'the-project/payment_methods/interac_e-transfer.md'
+      - Monese: 'the-project/payment_methods/Monese.md'
+      - NEFT: 'the-project/payment_methods/NEFT.md'
+      - Nequi: 'the-project/payment_methods/Nequi.md'
+      - Paxum: 'the-project/payment_methods/Paxum.md'
+      - Pay By Mail: 'the-project/payment_methods/Pay_By_Mail.md'
+      - Paysera: 'the-project/payment_methods/Paysera.md'
+      - PayTM: 'the-project/payment_methods/PayTM.md'
+      - Pix: 'the-project/payment_methods/Pix.md'
+      - Revolut: 'the-project/payment_methods/Revolut.md'
+      - RTGS: 'the-project/payment_methods/RTGS.md'
+      - Satispay: 'the-project/payment_methods/Satispay.md'
+      - SEPA: 'the-project/payment_methods/SEPA.md'
+      - Strike: 'the-project/payment_methods/Strike.md'
+      - SWIFT: 'the-project/payment_methods/SWIFT.md'
+      - TransferWise: 'the-project/payment_methods/TransferWise.md'
+      - UBI: 'the-project/payment_methods/UPI.md'
+      - US Postal Money Order: 'the-project/payment_methods/US_Postal_Money_Order.md'
+      - Verse: 'the-project/payment_methods/Verse.md'
   - Development:
     - Install and Run Haveno: 'development/installing.md'
     - User Interface: 'development/haveno-ui.md'

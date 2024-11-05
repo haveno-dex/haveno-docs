@@ -3,6 +3,7 @@
 PayTM is an e-commerce payment system and financial technology company, based in India. PayTM has around 350 million users. Users can send funds to each other via the PayTM wallet.
 
 **Contents:**
+
 - 1 Where can I find out more about PayTM?
 - 2 What countries are available for PayTM?
 - 3 What currencies are available for PayTM?
@@ -39,7 +40,7 @@ The maximum trade time is 1 day. Generally PayTM transfers will be completed ins
 
 #### What is the maximum XMR limit for an PayTM trade?
 
-0.025 XMR.
+12.5 XMR
 
 #### Is PayTM a payment method that can be signed?
 
@@ -139,4 +140,4 @@ Payment is made on bank smart phone app. Screenshots / videos can be used for ve
 
 If a dispute occurs the arbitrator may ask the buyer to send them information showing that they made the payment of the correct amount to the XMR Seller within the correct time frame.
 
-The arbitrator may ask the seller to send them information to prove their account details are correct, or in the case of the XMR Buyer making a payment late, or of the wrong amount. 
+The arbitrator may ask the seller to send them information to prove their account details are correct, or in the case of the XMR Buyer making a payment late, or of the wrong amount.

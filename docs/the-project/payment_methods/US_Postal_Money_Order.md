@@ -5,6 +5,7 @@ US Postal Money Orders (USPMO) are one of the most private payment methods on Ha
 This article covers tips and tricks on using this payment method for buying and selling Monero on Haveno.
 
 **Contents:**
+
 - Setting up a payment account in Haveno
 - Buying the money order
 - Sending a money order in the mail
@@ -77,4 +78,4 @@ One user has reported a workaround involving spreading the transaction to other 
 
 Another option is to redeem the USPMO you receive for another USPMO. Some cashiers will claim this isn't possible, but it is. Gently call a manager or colleague to help in case your cashier doesn't cooperate.
 
-Why redeem a USPMO for another USPMO? Because a USPMO is almost as good as cash—you can mail USPMO to billers to pay bills (without banks!), for example. 
+Why redeem a USPMO for another USPMO? Because a USPMO is almost as good as cash—you can mail USPMO to billers to pay bills (without banks!), for example.

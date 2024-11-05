@@ -3,6 +3,7 @@
 Nequi is a commonly used fintech neobank that allows people to send money to anyone in any part of Colombia.
 
 **Contents:**
+
 - 1 What countries are available for Nequi?
 - 2 What currencies are available for Nequi?
 - 3 What is the maximum trading duration for Nequi?
@@ -29,7 +30,7 @@ The maximum trade time is 1 day. Generally Nequi transfers are instant.
 
 #### What is the maximum XMR limit for an Nequi trade?
 
-12 XMR.
+12 XMR
 
 #### Is Nequi a payment method that can be signed?
 
@@ -110,4 +111,4 @@ If you intend to trade amount of over 7,000,000 COP per trade you will need to c
 
 If a dispute occurs the arbitrator may ask the buyer to send them information showing that they made the payment of the correct amount to the XMR Seller within the correct time frame.
 
-The arbitrator may ask the seller to send them information to prove their account details are correct, or in the case of the XMR Buyer making a payment late, or of the wrong amount. 
+The arbitrator may ask the seller to send them information to prove their account details are correct, or in the case of the XMR Buyer making a payment late, or of the wrong amount.

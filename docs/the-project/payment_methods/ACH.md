@@ -2,20 +2,6 @@
 
 ACH Transfers are one of the main two bank transfer payment method in the the US. The other being Domestic Wire transfer.
 
-**Contents:**
--- 1 What countries are available for ACH?
--2 What currencies are available for ACH?
--3 What is the maximum trading duration for ACH?
--4 What is the maximum XMR limit for an ACH trade?
--5 Is ACH a payment method that can be signed?
--6 How do I set up a ACH account?
--7 How do I add ACH as a payment method in Haveno?
--8 How do I buy XMR with my ACH account?
--9 How do I sell XMR with my ACH account?
--10 Are there any limits for me to be aware of when using my ACH account?
--11 Are there any fees for me to be aware of when using my ACH account?
--12 How does dispute resolution when trading with ACH?
-
 #### What countries are available for ACH?
 
 ACH is available in the United States.
@@ -30,7 +16,7 @@ The maximum trade time is 5 days. Generally ACH transfers will be completed with
 
 #### What is the maximum XMR limit for an ACH trade?
 
-12 XMR.
+12 XMR
 
 #### Is ACH a payment method that can be signed?
 
@@ -96,4 +82,4 @@ If a dispute occurs the arbitrator may ask the buyer to send them information sh
 
 The arbitrator may ask the seller to send them information to prove their account details are correct, or in the case of the XMR Buyer making a payment late, or of the wrong amount.
 
-For more information see dispute resolution. 
+For more information see dispute resolution.
