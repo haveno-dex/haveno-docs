@@ -30,17 +30,17 @@ The maximum trade time is 6 days. Generally SEPA payments will be completed with
 
 #### 6. Is SEPA a payment method that can be signed?
 
-Yes, SEPA payment accounts on Haveno require signing to lift limits to above 0.01 XMR.
+Yes, SEPA payment accounts on Haveno require signing to lift limits to above 3 XMR.
 
 #### 7. How do I set up a SEPA account?
 
 SEPA are supported by all EU based banks, some EU based payment providers as well as some non-EU European banks and payment providers.
 
-#### 8. How do I add a SEPA account as a payment method in SEPA?
+#### 8. How do I add a SEPA account as a payment method in Haveno?
 
 It is easy to add your SEPA account to Haveno.
 
-- Go to the top menu in SEPA and select Account.
+- Go to the top menu in Haveno and select Account.
 - Then select National Currency Accounts.
 - Click add new account
 - Select SEPA
@@ -48,7 +48,9 @@ It is easy to add your SEPA account to Haveno.
 - Choose to use a custom account name this helps makes it easier for you to manage multiple payment methods in Haveno (this will be visible only to you, for example: SEPA - EUR - Jan Franco
 - Click save new account
 
-Make sure all the details are correct when you add. Make sure to include both your Name as shown by the bank when you send payment (eg Jan Franco, or Franco. Jan), your IBAN and BIC number.
+Make sure all the details are correct when you add.
+
+Make sure to include both your Name as shown by the bank when you send payment (eg Jan Franco, or Franco. Jan), your IBAN and BIC number.
 
 !!! warning
     Revolut SEPA accounts are not allowed on Haveno due to poor acceptance by other banks
@@ -67,7 +69,7 @@ If you have the option to include a payment reference please leave it blank. If 
 Once the XMR Seller receives your payment they will confirm in Haveno and your security deposit and your purchased trade amount will be available in your wallet.
 
 !!! warning
-    Please send payment only to the details provided by the XMR Seller in their Haveno account, and the payment description blank.
+    Please send payment only to the details provided by the XMR Seller in their Haveno account. Please leave the payment description blank.
 
 #### 10. How do I sell XMR with my SEPA account?
 
@@ -78,10 +80,10 @@ You can sell XMR with SEPA on Haveno in 2 waysː
 
 When the offer is confirmed Haveno will provide with the XMR Buyer with your SEPA details for you to complete the payment. They should send payment at their first opportunity and confirm they have done so in Haveno by clicking 'payment started'.
 
-Once you receive payment from the XMR Buyer you should confirm payment has been received in Haveno. One you have done this the XMR Buyer will receive their funds and you will receive your security deposit back.
+Once you receive payment from the XMR Buyer you should confirm payment has been received in Haveno. Once you have done this the XMR Buyer will receive their funds and you will receive your security deposit back.
 
 !!! warning
-    XMR Sellers should expect to receive payment from the name shown in the XMR Buyer's Haveno account. Not all banks will show the IBAN and XMR number the payment came from but the name must match.
+    XMR Sellers should expect to receive payment from the name shown in the XMR Buyer's Haveno account. Not all banks will show the IBAN and BIC number the payment came from but the name must match.
 
 #### 11. Are there any limits for me to be aware of when using my SEPA account?
 
@@ -95,3 +97,8 @@ It is free to send and receive SEPA payments (as in the SEPA network itself do n
 
 If a dispute occurs the arbitrator may ask the buyer to send them information showing that they made the payment of the correct amount to the XMR Seller within the correct time frame.
 The arbitrator may ask the seller to send them information to prove their account details are correct, or in the case of the XMR Buyer making a payment late, or of the wrong amount.
+
+For more information see [Conflict Resolution](../conflict-resolution.md).
+
+!!! note
+    For SEPA payments from banks outside the European Economic Area (e.g. GB, CH), it is often necessary to provide the address of the payee in payment transactions. It usually works if the address is only approximately correct (e.g.: City of your bank and a valid street address in that city) Trading partners can discuss this in Haveno's integrated chat.
