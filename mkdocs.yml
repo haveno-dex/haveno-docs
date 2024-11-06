@@ -97,6 +97,7 @@ nav:
       - RTGS: 'the-project/payment_methods/RTGS.md'
       - Satispay: 'the-project/payment_methods/Satispay.md'
       - SEPA: 'the-project/payment_methods/SEPA.md'
+      - SEPA Instant: 'the-project/payment_methods/SEPA_Instant.md'
       - Strike: 'the-project/payment_methods/Strike.md'
       - SWIFT: 'the-project/payment_methods/SWIFT.md'
       - TransferWise: 'the-project/payment_methods/TransferWise.md'
