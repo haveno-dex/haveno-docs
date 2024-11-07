@@ -80,6 +80,6 @@ When sending a SWIFT transfer the sender has three fee options to choose from:
 - OUR – payer (sender of the payment) incurs all payment transaction fees. Normally you are billed separately for the payment transfer. The payee (recipient of the payment) does not pay any transaction fees. The beneficiary receives the full payment amount.
 - SHA (SHAred) – payer (sender of the payment) pays all fees charged by the sending bank, which are billed separately. The payee (recipient of the payment) pays all fees charged by their receiving bank. The recipient receives the payment minus any applicable fees.
 
-Haveno requires buyers to use the SHA (SHAred) fee option for SWIFT transfers. If a XMR buyer sends a payment using the BEN (BENeficiary) fee option, they will likely incur a penalty to compensate the XMR seller.
+**Haveno requires buyers to use the SHA (SHAred) fee option for SWIFT transfers.** If a XMR buyer sends a payment using the BEN (BENeficiary) fee option, they will likely incur a penalty to compensate the XMR seller.
 
 Please make sure you are aware of your bank's fee schedule for the SHA (SHAred) fee option. Normally it will be $5-25 USD equivalent, but every bank is different.

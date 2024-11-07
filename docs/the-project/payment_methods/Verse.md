@@ -103,7 +103,7 @@ Verse users are limited to sending or receiving €10,000 per year (or equivalen
 You can sell XMR with Verse on Haveno in 2 waysː
 
 - Make an offer to sell XMR on the EUR, SEK, HUF, DKK, or PLN market.
-- l XMR on the EUR, SEK, HUF, DKK, or PLN market.
+- Take an offer to sell XMR on the EUR, SEK, HUF, DKK, or PLN market.
 
 When the offer is confirmed Haveno will provide with the XMR Buyer with your Verse details for you to complete the payment. They should send payment at their first opportunity and confirm they have done so in Haveno by clicking 'payment started'.
 
@@ -120,10 +120,12 @@ Verse users are limited to sending or receiving €10,000 per year (or equivalen
 
 #### Are there any fees for me to be aware of when using my Verse account?
 
-Free. For payment operations that involve currency conversion and currency exchange services, the exchange rate will be calculated based on the currency sale or purchase rates, as applicable, by Visa International
+Free. For payment operations that involve currency conversion and currency exchange services, the exchange rate will be calculated based on the currency sale or purchase rates, as applicable, by Visa International.
 
 #### How does dispute resolution when trading with Verse?
 
 If a dispute occurs the arbitrator may ask the buyer to send them information showing that they made the payment of the correct amount to the XMR Seller within the correct time frame.
 
 The arbitrator may ask the seller to send them information to prove their account details are correct, or in the case of the XMR Buyer making a payment late, or of the wrong amount.
+
+For more information see [Conflict Resolution](../conflict-resolution.md).
