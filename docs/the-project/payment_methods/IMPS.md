@@ -2,22 +2,6 @@
 
 IMPS is a payment method added in Haveno, Immediate Payment Service (IMPS) is an instant payment inter-bank electronic funds transfer system in India. IMPS offers an inter-bank electronic fund transfer service through mobile phones. IMPS is managed by the National Payments Corporation of India. This is an umbrella organization for operating retail payments and settlement systems in India.
 
-**Contents:**
-
-- Where can I find out more about IMPS?
-- 2 What countries are available for IMPS?
-- 3 What currencies are available for IMPS?
-- 4 What is the maximum trading duration for IMPS?
-- 5 What is the maximum XMR limit for an IMPS trade?
-- 6 Is IMPS a payment method that can be signed?
-- 7 How do I set up a IMPS account?
-- 8 How do I add IMPS as a payment method in Haveno?
-- 9 How do I buy XMR with my IMPS account?
-- 10 How do I sell XMR with my IMPS account?
-- 11 Are there any limits for me to be aware of when using my IMPS account?
-- 12 Are there any fees for me to be aware of when using my IMPS account?
-- 13 How does dispute resolution when trading with IMPS?
-
 #### Where can I find out more about IMPS?
 
 Here is a list of IMPS resources:
@@ -66,6 +50,7 @@ If you have more than one IMPS account you wish to add to Haveno you can create 
 Make sure all the details are correct when you add.
 
 **Please make sure to include your:**
+
 - Account owner full name
 - Account number
 - IFSC number
@@ -78,6 +63,7 @@ Some banks have different limits for their customers.
 #### How do I buy XMR with my IMPS account?
 
 You can buy XMR with IMPS on Haveno in 2 waysː
+
 - Make an offer to buy XMR on the INR market.
 - An offer to buy XMR on the INR market.
 
@@ -86,13 +72,16 @@ When the offer is confirmed Haveno will provide you with the XMR Sellers IMPS de
 If you have the option to include a payment reference please leave it blank. If your bank requires one, please just use your name that matches your bank account.
 
 Once the XMR Seller receives your payment they will confirm in Haveno and your security deposit and your purchased trade amount will be available in your wallet.
-**Warning**, Please send payment only to the account details provided in Haveno.
+
+!!! warning
+    Please send payment only to the account details provided in Haveno.
 
 The maximum trade size is Rs. 200,000 per transaction.
 
 If your trade is over Rs. 200,000 you will have to make multiple transfers. However be aware their is a maximum limit of Rs. 1,000,000 that can be sent per day.
 
-**Note:** some banks have different limits for their customers.
+!!! Note
+    Some banks have different limits for their customers.
 
 #### How do I sell XMR with my IMPS account?
 
@@ -104,7 +93,9 @@ You can sell XMR with IMPS on Haveno in 2 waysː
 When the offer is confirmed Haveno will provide with the XMR Buyer with your IMPS details for you to complete the payment. They should send payment at their first opportunity and confirm they have done so in Haveno by clicking 'payment started'.
 
 Once you receive payment from the XMR Buyer you should confirm payment has been received in Haveno. One you have done this the XMR Buyer will receive their funds and you will receive your security deposit back.
-**Warning**, if you intend to receive over Rs. 200,000 per trade you should expect the buyer to have to make multiple transfers. However be aware their is a maximum limit of Rs. 1,000,000 that can be sent per day.
+
+!!! warning
+    If you intend to receive over Rs. 200,000 per trade you should expect the buyer to have to make multiple transfers. However be aware their is a maximum limit of Rs. 1,000,000 that can be sent per day.
 
 Please **Note:** some banks have different limits for their customers.
 
@@ -128,4 +119,4 @@ If a dispute occurs the arbitrator may ask the buyer to send them information sh
 
 The arbitrator may ask the seller to send them information to prove their account details are correct, or in the case of the XMR Buyer making a payment late, or of the wrong amount.
 
-For more information see dispute resolution.
+For more information see [Conflict Resolution](../conflict-resolution.md).

@@ -2,25 +2,10 @@
 
 Unified Payments Interface (UPI) is an instant real-time payment system developed by National Payments Corporation of India facilitating inter-bank transactions. This is an umbrella organization for operating retail payments and settlement systems in India.
 
-**Contents:**
-
-- 1 Where can I find out more about UPI?
-- 2 What countries are available for UPI?
-- 3 What currencies are available for UPI?
-- 4 What is the maximum trading duration for UPI?
-- 5 What is the maximum XMR limit for an UPI trade?
-- 6 Is UPI a payment method that can be signed?
-- 7 How do I set up a UPI account?
-- 8 How do I add UPI as a payment method in Haveno?
-- 9 How do I buy XMR with my UPI account?
-- 10 How do I sell XMR with my UPI account?
-- 11 Are there any limits for me to be aware of when using my UPI account?
-- 12 Are there any fees for me to be aware of when using my UPI account?
-- 13 How does dispute resolution when trading with UPI ?
-
 #### Where can I find out more about UPI?
 
 Here is a list of UPI resources:
+
 - Unified Payments Interface Wiki
 - UPI video explainer
 - UPI limits
@@ -64,7 +49,9 @@ It is easy to add your UPI account to Haveno.
 If you have more than one UPI account you wish to add to Haveno you can create different accounts for each.
 
 Make sure all the details are correct when you add.
-**Warning**, please make sure to include your Virtual Payment Address (VPA) also called your UPI ID. The format for this is like an email ID: with the sign “@” in the middle. For example, your UPI ID could be “receiver’s_name@bank_name” or “phone_number@bank_name.” For UPI there is a maximum limit of Rs. 100,000 that can be sent per transaction. If you intend to trade amount of over Rs. 100,000 per trade it is likely trades will have to take place over multiple transfers. Please note some banks have different limits for their customers.
+
+!!! warning
+    Please make sure to include your Virtual Payment Address (VPA) also called your UPI ID. The format for this is like an email ID: with the sign “@” in the middle. For example, your UPI ID could be “receiver’s_name@bank_name” or “phone_number@bank_name.” For UPI there is a maximum limit of Rs. 100,000 that can be sent per transaction. If you intend to trade amount of over Rs. 100,000 per trade it is likely trades will have to take place over multiple transfers. Please note some banks have different limits for their customers.
 
 #### How do I buy XMR with my UPI account?
 
@@ -82,7 +69,9 @@ To send money to someone with a UPI ID, you only need to have your receivers UPI
 If you have the option to include a payment reference please leave it blank. If your bank requires one, please just use your name that matches your bank account.
 
 Once the XMR Seller receives your payment they will confirm in Haveno and your security deposit and your purchased trade amount will be available in your wallet.
-**Warning**, please send payment only to the VPA / UPI ID provided in Haveno. The maximum trade size is Rs. 100,000 per transaction. If your trade is over Rs. 100,000 you will have to make multiple transfers. Please note some banks have different limits for their customers.
+
+!!! warning
+    Please send payment only to the VPA / UPI ID provided in Haveno. The maximum trade size is Rs. 100,000 per transaction. If your trade is over Rs. 100,000 you will have to make multiple transfers. Please note some banks have different limits for their customers.
 
 #### How do I sell XMR with my UPI account?
 
@@ -94,7 +83,9 @@ You can sell XMR with UPI on Haveno in 2 waysː
 When the offer is confirmed Haveno will provide with the XMR Buyer with your UPI details for you to complete the payment. They should send payment at their first opportunity and confirm they have done so in Haveno by clicking 'payment started'.
 
 Once you receive payment from the XMR Buyer you should confirm payment has been received in Haveno. One you have done this the XMR Buyer will receive their funds and you will receive your security deposit back.
-**Warning**, if you intend to receive over Rs. 100,000 per trade you should expect the buyer to have to make multiple transfers. Please note some banks have different limits for their customers.
+
+!!! warning
+    If you intend to receive over Rs. 100,000 per trade you should expect the buyer to have to make multiple transfers. Please note some banks have different limits for their customers.
 
 #### Are there any limits for me to be aware of when using my UPI account?
 
@@ -108,7 +99,7 @@ Some banks have different limits for their customers. The above limits are set b
 
 UPI fees are low. They are either free or no more then about 5 INR per transaction.
 
-#### How does dispute resolution when trading with UPI ?
+#### How does dispute resolution when trading with UPI?
 
 For UPI payments are made on a bank smart phone app. Screenshots / videos can be used if there are any disputes.
 
@@ -117,3 +108,5 @@ SMS messages are also sent to payer and payee to confirm payment. These can also
 If a dispute occurs the arbitrator may ask the buyer to send them information showing that they made the payment of the correct amount to the XMR Seller within the correct time frame.
 
 The arbitrator may ask the seller to send them information to prove their account details are correct, or in the case of the XMR Buyer making a payment late, or of the wrong amount.
+
+For more information see [Conflict Resolution](../conflict-resolution.md).

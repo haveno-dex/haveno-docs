@@ -44,7 +44,10 @@ Amazon eGift Cards are available in the following regions:
 #### 3. Adding as Payment Account in Haveno
 
 To add Amazon eGift Cards as a payment method in Haveno, go to Account > National Currency Accounts > Add New Account, and then select 'Amazon eGift Card' in the drop-down.
-**Note:** You can trade across currencies by creating Amazon eGift Card payment accounts in Haveno for each currency you wish to trade in, and then purchasing gift cards from the website corresponding to the region for that currency to settle trades.
+
+
+!!! note
+    You can trade across currencies by creating Amazon eGift Card payment accounts in Haveno for each currency you wish to trade in, and then purchasing gift cards from the website corresponding to the region for that currency to settle trades.
 
 Amazon eGift Cards can only be redeemed on the website they were purchased from. For example, to redeem a gift card on Amazon.jp, it must have been purchased on Amazon.jp. See more details on Amazon's product page.
 
@@ -75,7 +78,8 @@ Customize your gift card.
 
 After your card is ready go, you just have to pay for it! Amazon accepts debit and credit cards, but you cannot pay for an eGift card with another eGift card (or any other Amazon credit balance).
 
-**Note:** your payment details will NOT be shared with the Seller. The only information they will see is the information you entered to customize the gift card in step 2.
+!!! note
+    Your payment details will NOT be shared with the Seller. The only information they will see is the information you entered to customize the gift card in step 2.
 
 After paying, you'll receive an email receipt from Amazon—make sure you keep this email in case of any issues!
 
@@ -84,7 +88,9 @@ Then make sure you mark your payment as sent in Haveno.
 #### 4.4 Step 4. Seller Gets Notification
 
 Once the buyer sends the gift card, the seller will receive an email or SMS message letting them know about their gift card.
-**Note:** If the seller didn't receive a notification, you can have Amazon send another notification (email or SMS) from the Recent Orders section on Amazon.
+
+!!! note
+    If the seller didn't receive a notification, you can have Amazon send another notification (email or SMS) from the Recent Orders section on Amazon.
 
 Upon checking the payment (making sure it's the right amount etc), the seller must confirm the payment in Haveno to complete the trade.
 

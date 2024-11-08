@@ -4,22 +4,6 @@ Monese is a popular neo bank app for users of GBP, EUR and RON. As well as the u
 
 Monese has a good use case in that it is instant, free, multi currency and has some better use cases than SEPA (current most popular EUR payment method). Also provides a Revolut alternative to users in UK and Europe.
 
-**Contents:**
-
-- 1 Where can I find out more about Monese ?
-- 2 What countries are available for Monese?
-- 3 What currencies are available for Monese?
-- 4 What is the maximum trading duration for Monese?
-- 5 What is the maximum XMR limit for an Monese trade?
-- 6 Is Monese a payment method that can be signed?
-- 7 How do I set up a Monese account?
-- 8 How do I add Monese as a payment method in Haveno?
-- 9 How do I buy XMR with my Monese account?
-- 10 How do I sell XMR with my Monese account?
-- 11 Are there any limits for me to be aware of when using my Monese account?
-- 12 Are there any fees for me to be aware of when using my Monese account?
-- 13 How does dispute resolution when trading with Monese?
-
 #### Where can I find out more about Monese ?
 
 Here is a list of Monese resources:
@@ -30,7 +14,7 @@ Here is a list of Monese resources:
 
 #### What countries are available for Monese?
 
-Monese is available in the following countries; Austria, Belgium, Bulgaria, Croatia, Republic of Cyprus, Czech Republic, Denmark, Estonia, Finland, France, Germany, Greece, Hungary, Iceland, Ireland, Italy, Latvia, Liechtenstein, Lithuania, Luxembourg, Malta, Norway, Portugal, Romania, Slovakia, Slovenia, Spain, Sweden and the United Kingdom.
+Monese is available in the following countries: Austria, Belgium, Bulgaria, Croatia, Republic of Cyprus, Czech Republic, Denmark, Estonia, Finland, France, Germany, Greece, Hungary, Iceland, Ireland, Italy, Latvia, Liechtenstein, Lithuania, Luxembourg, Malta, Norway, Portugal, Romania, Slovakia, Slovenia, Spain, Sweden and the United Kingdom.
 
 Monese is available anyone who's at least 18 years old and is a resident of the above countries, regardless of their citizenship or financial history.
 What currencies are available for Monese?
@@ -55,7 +39,7 @@ No, Monese accounts do not require signing.
 
 #### How do I set up a Monese account?
 
-To set up a Monese account you will need to be a resident of any of the following countries; Austria, Belgium, Bulgaria, Croatia, Republic of Cyprus, Czech Republic, Denmark, Estonia, Finland, France, Germany, Greece, Hungary, Iceland, Ireland, Italy, Latvia, Liechtenstein, Lithuania, Luxembourg, Malta, Norway, Portugal, Romania, Slovakia, Slovenia, Spain, Sweden and the United Kingdom.
+To set up a Monese account you will need to be a resident of any of the following countries: Austria, Belgium, Bulgaria, Croatia, Republic of Cyprus, Czech Republic, Denmark, Estonia, Finland, France, Germany, Greece, Hungary, Iceland, Ireland, Italy, Latvia, Liechtenstein, Lithuania, Luxembourg, Malta, Norway, Portugal, Romania, Slovakia, Slovenia, Spain, Sweden and the United Kingdom.
 
 To get a Monese account set up vist the Monese website to set up an account.
 
@@ -82,9 +66,10 @@ Monese payments are done by linking accounts to phone numbers. If you add the pe
 - Full name of user
 - Phone Number including international code
 
-**Warning**, Monese is a bank app for users of GBP, EUR and RON*. Monese allows users to send money to other Monese accounts instantly and for free in any supported currency.
+!!! warning
+    Monese is a bank app for users of GBP, EUR and RON*. Monese allows users to send money to other Monese accounts instantly and for free in any supported currency.
 
-- To open a RON account in Monese, you need to either live in Romania or have Romanian citizenship.
+* To open a RON account in Monese, you need to either live in Romania or have Romanian citizenship.
 
 When setting up your Monese account in Haveno please make sure to include your name and phone number that matches your Monese account. This will ensure that when you send funds they show from the correct account and when you receive funds they will be credited to your account.
 
@@ -100,7 +85,9 @@ When the offer is confirmed Haveno will provide you with the XMR Sellers Monese 
 If you have the option to include a payment reference please leave it blank. If your bank requires one, please just use your name that matches your bank account.
 
 Once the XMR Seller receives your payment they will confirm in Haveno and your security deposit and your purchased trade amount will be available in your wallet.
-**Warning**, please send payment only to the phone number provided by the XMR Seller in their Haveno account. Please leave the payment description blank.
+
+!!! warning
+    Please send payment only to the phone number provided by the XMR Seller in their Haveno account. Please leave the payment description blank.
 
 #### How do I sell XMR with my Monese account?
 
@@ -112,7 +99,9 @@ You can sell XMR with Monese on Haveno in 2 waysː
 When the offer is confirmed Haveno will provide with the XMR Buyer with your Monese details for you to complete the payment. They should send payment at their first opportunity and confirm they have done so in Haveno by clicking 'payment started'.
 
 Once you receive payment from the XMR Buyer you should confirm payment has been received in Haveno. One you have done this the XMR Buyer will receive their funds and you will receive your security deposit back.
-****Warning**, XMR Sellers should expect to receive payment from the phone number / name shown in the XMR Buyer's Haveno account.
+
+!!! warning
+    XMR Sellers should expect to receive payment from the phone number / name shown in the XMR Buyer's Haveno account.
 
 #### Are there any limits for me to be aware of when using my Monese account?
 
@@ -127,3 +116,5 @@ It is free to send and receive payments.
 If a dispute occurs the arbitrator may ask the buyer to send them information showing that they made the payment of the correct amount to the XMR Seller within the correct time frame.
 
 The arbitrator may ask the seller to send them information to prove their account details are correct, or in the case of the XMR Buyer making a payment late, or of the wrong amount.
+
+For more information see [Conflict Resolution](../conflict-resolution.md).

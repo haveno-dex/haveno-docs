@@ -6,13 +6,6 @@ TransferWise can be used in SEPA trades as well, where one peer uses SEPA and an
 
 TransferWise is a web- and app-based money transfer service that supports multiple currencies. TransferWise to TransferWise payments allow users to send payment from any supported currency to any other supported currency. Payments utilize the TransferWise multi-currency account. This is available for users in most countries.
 
-**Contents:**
-
-- 1 Setting up a TransferWise Account
-- 2 Setting up a TransferWise Account in Haveno
-- 3 Getting your TransferWise account ready for trading
-- 4 Making payments with TransferWise
-
 #### 1. Setting up a TransferWise Account
 
 Set up an account. Go to TransferWise and register for an account. KYC will be required.
@@ -56,6 +49,7 @@ This section is primarily for XMR buyers using TransferWise. Because of the way 
 TransferWise has a useful guide about this in their [help section](https://transferwise.com/help/articles/2932105/can-i-send-money-to-someone-with-only-their-email-address).
 
 To set up a transfer to an email address, follow these steps:
+
 - Start a transfer by clicking the Send money button
 - At the recipient step, choose Someone else or Business or charity
 - Untick the box next to I know their bank details
@@ -64,4 +58,4 @@ To set up a transfer to an email address, follow these steps:
 
 You can then choose how you would like to pay. You can even pay by credit or debit card!
 
-On the case that the payment was made with a name different from the email address (which is allowed) and could create some confusion, the receiver could verify that the name of the XMR buyer is correct by writing his email on a new payment and see if the name matches the one he received it from. *Of course do not go through resending them any funds, there is no need in order to verify the name.
+On the case that the payment was made with a name different from the email address (which is allowed) and could create some confusion, the receiver could verify that the name of the XMR buyer is correct by writing his email on a new payment and see if the name matches the one he received it from. **Of course do not go through resending them any funds, there is no need in order to verify the name.**

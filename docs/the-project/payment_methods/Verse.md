@@ -5,6 +5,7 @@ Verse is a mobile payment app based in Europe owned by Square. Users can pay and
 Verse is designed for small payments between friends and family members. Fiat money you receive is stored in your Verse balance. From there you can send it to your friends’ digital wallets. When you want that money to be in your real world wallet, all you have to do is transfer it to your bank account. Withdrawals from Verse (sending to own account) take anywhere from a few seconds to two business days.
 
 Verse allows users to:
+
 - Send money to their contacts listed in the contacts list on their mobile device.
 - Request money from their contacts listed in the contacts list on their mobile device.
 - Receive and withdraw payments made by other Users that have your mobile phone number saved in their contacts list.
@@ -14,22 +15,6 @@ Verse allows users to:
 Money can be added by debit / credit card. Verse accepts VISA and MasterCard. Withdrawals are made to your linked debit / credit card.
 
 Why Verse is like the European Cash App. It is multi currency, easy to use and payments are instant and free.
-
-**Contents:**
-
-- 1 Where can I find out more about Verse?
-- 2 What countries are available for Verse?
-- 3 What currencies are available for Verse?
-- 4 What is the maximum trading duration for Verse?
-- 5 What is the maximum XMR limit for an Verse trade?
-- 6 Is Verse a payment method that can be signed?
-- 7 How do I set up a Verse account?
-- 8 How do I add Verse as a payment method in Haveno?
-- 9 How do I buy XMR with my Verse account?
-- 10 How do I sell XMR with my Verse account?
-- 11 Are there any limits for me to be aware of when using my Verse account?
-- 12 Are there any fees for me to be aware of when using my Verse account?
-- 13 How does dispute resolution when trading with Verse?
 
 #### Where can I find out more about Verse?
 
@@ -46,7 +31,7 @@ Verse operates in the following countries: Austria, Belgium, Denmark, Finland, F
 
 #### What currencies are available for Verse?
 
-Verse supports the following currencies; EUR, SEK, HUF, DKK, PLN
+Verse supports the following currencies: EUR, SEK, HUF, DKK, PLN
 
 You can change between currencies in the your Verse account. Your default currency is decided by your phone number's country code. You can switch currencies every time you make a payment (the currency menu is right above the amount you are paying) and the change will be made immediately.
 
@@ -87,7 +72,9 @@ To send payment to someone you need there verse user name (similar to Revolut, i
 If you have more than one Verse account you wish to add to Haveno you can create different accounts for each.
 
 Make sure all the details are correct when you add.
-**Warning**, Verse is a multiple currency payment method that can send and receive payment in EUR, SEK, HUF, DKK, PLN.
+
+!!! warning
+    Verse is a multiple currency payment method that can send and receive payment in EUR, SEK, HUF, DKK, PLN.
 
 When setting up your Verse account in Haveno please make sure to include the username that matches your username in your Verse account. This will ensure that when you send funds they show from the correct account and when you receive funds they will be credited to your account.
 
@@ -106,8 +93,8 @@ If you have the option to include a payment reference please leave it blank. If 
 
 Once the XMR Seller receives your payment they will confirm in Haveno and your security deposit and your purchased trade amount will be available in your wallet.
 
-
-**Warning**: Please send payment only to the username provided by the XMR Seller in their Haveno account. Please leave the payment description blank.
+!!! warning
+    Please send payment only to the username provided by the XMR Seller in their Haveno account. Please leave the payment description blank.
 
 Verse users are limited to sending or receiving €10,000 per year (or equivalent foreign currency amount) for accumulated payments made from or received into their payment account. This can be increased by Verse on request.
 
@@ -116,12 +103,14 @@ Verse users are limited to sending or receiving €10,000 per year (or equivalen
 You can sell XMR with Verse on Haveno in 2 waysː
 
 - Make an offer to sell XMR on the EUR, SEK, HUF, DKK, or PLN market.
-- l XMR on the EUR, SEK, HUF, DKK, or PLN market.
+- Take an offer to sell XMR on the EUR, SEK, HUF, DKK, or PLN market.
 
 When the offer is confirmed Haveno will provide with the XMR Buyer with your Verse details for you to complete the payment. They should send payment at their first opportunity and confirm they have done so in Haveno by clicking 'payment started'.
 
 Once you receive payment from the XMR Buyer you should confirm payment has been received in Haveno. One you have done this the XMR Buyer will receive their funds and you will receive your security deposit back.
-**Warning**, XMR Sellers should expect to receive payment from the username shown in the XMR Buyer's Haveno account.
+
+!!! warning
+    XMR Sellers should expect to receive payment from the username shown in the XMR Buyer's Haveno account.
 
 Verse users are limited to sending or receiving €10,000 per year (or equivalent foreign currency amount) for accumulated payments made from or received into their payment account. This can be increased by Verse on request.
 
@@ -131,10 +120,12 @@ Verse users are limited to sending or receiving €10,000 per year (or equivalen
 
 #### Are there any fees for me to be aware of when using my Verse account?
 
-Free. For payment operations that involve currency conversion and currency exchange services, the exchange rate will be calculated based on the currency sale or purchase rates, as applicable, by Visa International
+Free. For payment operations that involve currency conversion and currency exchange services, the exchange rate will be calculated based on the currency sale or purchase rates, as applicable, by Visa International.
 
 #### How does dispute resolution when trading with Verse?
 
 If a dispute occurs the arbitrator may ask the buyer to send them information showing that they made the payment of the correct amount to the XMR Seller within the correct time frame.
 
 The arbitrator may ask the seller to send them information to prove their account details are correct, or in the case of the XMR Buyer making a payment late, or of the wrong amount.
+
+For more information see [Conflict Resolution](../conflict-resolution.md).

@@ -16,7 +16,7 @@ A practical example of a conflict resolved by an arbitrator on Haveno:
 4. Bob claims he sent the payment, but Alice still hasn't received it. She has no other choice than to summon an arbitrator
 5. The arbitrators will be called in and will chat with both traders, asking for details and an overview of the situation
 6. The arbitrator, using tools that assure the authenticity of the resources provided, sees that Bob has never sent the payment.
-7. Since Bib is misbehaving (claims to have sent the payment but he didn't), he will be punished by the arbitrator, which will send her deposit back to Alice and will take the security deposit from Bob as punishment.
+7. Since Bob is misbehaving (claims to have sent the payment but he didn't), he will be punished by the arbitrator, which will send her deposit back to Alice and will take the security deposit from Bob as punishment.
 8. Alice got her locked deposit and XMR back, while Bob lost his deposit. Conflict resolved.
 
 !!! note

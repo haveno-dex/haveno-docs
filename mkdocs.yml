@@ -97,10 +97,11 @@ nav:
       - RTGS: 'the-project/payment_methods/RTGS.md'
       - Satispay: 'the-project/payment_methods/Satispay.md'
       - SEPA: 'the-project/payment_methods/SEPA.md'
+      - SEPA Instant: 'the-project/payment_methods/SEPA_Instant.md'
       - Strike: 'the-project/payment_methods/Strike.md'
       - SWIFT: 'the-project/payment_methods/SWIFT.md'
       - TransferWise: 'the-project/payment_methods/TransferWise.md'
-      - UBI: 'the-project/payment_methods/UPI.md'
+      - UPI: 'the-project/payment_methods/UPI.md'
       - US Postal Money Order: 'the-project/payment_methods/US_Postal_Money_Order.md'
       - Verse: 'the-project/payment_methods/Verse.md'
   - Development:

@@ -4,26 +4,10 @@ Paxum is a Global Payment Service for Businesses and Individuals. Paxum provides
 
 Paxum to Paxum transfers are instant.
 
-- Currencies accepted; USD, CAD, EUR, DKK, CZK, AUD, ZAR, THB, CHF, SEK, RON, PLN, NZD, NOK, INR, IDR, HUF, GBP
+- Currencies accepted: USD, CAD, EUR, DKK, CZK, AUD, ZAR, THB, CHF, SEK, RON, PLN, NZD, NOK, INR, IDR, HUF, GBP
 - Trade window: 24 hours
 - Signing required: No
 - Haveno buy/sell Limits: 12 XMR
-
-**Contents:**
-
-- 1 Where can I find out more about Paxum?
-- 2 What countries are available for Paxum?
-- 3 What currencies are available for Paxum?
-- 4 What is the maximum trading duration for Paxum?
-- 5 What is the maximum XMR limit for an Paxum trade?
-- 6 Is Paxum a payment method that can be signed?
-- 7 How do I set up a Paxum account?
-- 8 How do I add Paxum as a payment method in Haveno?
-- 9 How do I buy XMR with my Paxum account?
-- 10 How do I sell XMR with my Paxum account?
-- 11 Are there any limits for me to be aware of when using my Paxum account?
-- 12 Are there any fees for me to be aware of when using my Paxum account?
-- 13 How does dispute resolution when trading with Paxum?
 
 #### Where can I find out more about Paxum?
 
@@ -41,7 +25,7 @@ Paxum is available for users in 50+ Countries.
 
 #### What currencies are available for Paxum?
 
-Paxum can be used for the following currencies; USD, CAD, EUR, DKK, CZK, AUD, ZAR, THB, CHF, SEK, RON, PLN, NZD, NOK, INR, IDR, HUF, GBP
+Paxum can be used for the following currencies: USD, CAD, EUR, DKK, CZK, AUD, ZAR, THB, CHF, SEK, RON, PLN, NZD, NOK, INR, IDR, HUF, GBP
 
 #### What is the maximum trading duration for Paxum?
 
@@ -62,6 +46,7 @@ Vist the Paxum website to set up an account.
 #### How do I add Paxum as a payment method in Haveno?
 
 It is easy to add your Paxum account to Haveno:
+
 - Go to the top menu in Haveno and select Account.
 - Then select National Currency Accounts.
 - Click add new account
@@ -75,6 +60,7 @@ Make sure all the details are correct when you add.
 #### How do I buy XMR with my Paxum account?
 
 You can buy XMR with Paxum on Haveno in 2 waysː
+
 - Make an offer to buy XMR on the EUR market.
 - Take an offer to buy XMR on the EUR market.
 
@@ -89,6 +75,7 @@ Once the XMR Seller receives your payment they will confirm in Haveno and your s
 #### How do I sell XMR with my Paxum account?
 
 You can sell XMR with Paxum on Haveno in 2 waysː
+
 - Make an offer to sell XMR on the XXXXXX market.
 - Take an offer to sell XMR on the XXXXXX market.
 
@@ -111,3 +98,6 @@ It costs about $5 to deposit and withdraw funds from to Paxum.
 If a dispute occurs the arbitrator may ask the buyer to send them information showing that they made the payment of the correct amount to the XMR Seller within the correct time frame.
 
 The arbitrator may ask the seller to send them information to prove their account details are correct, or in the case of the XMR Buyer making a payment late, or of the wrong amount.
+
+For more information see [Conflict Resolution](../conflict-resolution.md).
+

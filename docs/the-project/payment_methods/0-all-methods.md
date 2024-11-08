@@ -55,7 +55,7 @@ Below is a list of fiat payment methods Haveno currently supports.
 | [RTGS](RTGS.md)* | INDIA | 1 day | 12.00 XMR |
 | [Satispay](Satispay.md)* | ITALY | 1 day | 12.00 XMR |
 | [SEPA](SEPA.md) | Europe | 6 days | buy: 3.00 XMR / sell: 12.00 XMR |
-| [SEPA Instant](SEPA.md) | Europe | 1 day | buy: 3.00 XMR / sell: 12.00 XMR |
+| [SEPA Instant](SEPA_Instant.md) | Europe | 1 day | buy: 3.00 XMR / sell: 12.00 XMR |
 | Skrill* | Global | Varies | 12.00 XMR |
 | [Strike](Strike.md)* | USA | 1 day | 12.00 XMR |
 | [SWIFT](SWIFT.md)* | Global | 7 days | 24.00 XMR |

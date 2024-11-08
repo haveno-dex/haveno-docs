@@ -1,28 +1,13 @@
 # Paysera
 
 Paysera is a multi-currency mobile payment provider and web app based in Lithuania. It providing standard banking services but it is not a registered bank.
+
 - Currencies accepted: AUD, BGN, BYN, CAD, CHF, CNY, CZK, DKK, EUR, GBP, GEL, HKD, HRK, HUF, ILS, INR, JPY, KZT, MXN, NOK, NZD, PHP, PLN, RON, RSD, RUB, SEK, SGD, THB, TRY, USD, ZAR
 - Trade window: 24 hours
 - Signing required: No
 - Haveno Limits: eg 12 XMR
 
 Paysera is an established multi-currency payment service that provides users with the option to trade in multiple currencies instantly for low fees with the functionality of a mobile and banking app.
-
-**Contents:**
-
-- 1 Where can I find out more about Paysera?
-- 2 What countries are available for Paysera?
-- 3 What currencies are available for Paysera?
-- 4 What is the maximum trading duration for Paysera?
-- 5 What is the maximum XMR limit for an Paysera trade?
-- 6 Is Paysera a payment method that can be signed?
-- 7 How do I set up a Paysera account?
-- 8 How do I add Paysera as a payment method in Haveno?
-- 9 How do I buy XMR with my Paysera account?
-- 10 How do I sell XMR with my Paysera account?
-- 11 Are there any limits for me to be aware of when using my Paysera account?
-- 12 Are there any fees for me to be aware of when using my Paysera account?
-- 13 How does dispute resolution when trading with Paysera?
 
 #### Where can I find out more about Paysera?
 
@@ -101,18 +86,15 @@ Once you receive payment from the XMR Buyer you should confirm payment has been 
 #### Are there any limits for me to be aware of when using my Paysera account?
 
 Paysera offers four levels of identification. The levels determine how much you can transfer daily, monthly and annually. You can move up in levels at any time for free, but you might need to provide additional information.
-|-------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Level | Description                                                                                                                                                                                                                                                   |
-|-------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|  1    | Exchange currency, conduct internal Paysera transfers and make online purchases with your account up to a currency equivalent of 30 euros daily, 740 euros monthly and 2,500 euros annually.                                                                  |
-|-------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|  2    | In addition to Level 1 services, transfer to banks up to a currency equivalent of 370 euros daily, 1,110 euros monthly and 2,500 euros annually.                                                                                                              |
-|-------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|  3    | In addition to Level 2 services:                                                                                                                                                                                                                              |
-|       | Add the option of opening a Paysera Visa card or business account, transfer to international accounts and take care of e-commerce up to a currency equivalent of 1,480 euros daily, 1,480 euros monthly and 17,760 euros annually                             |
-|-------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|  4    | Take advantage of services offered at all levels with no limits on how much you can send or receive.                                                                                                                                                          |
-|-------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+
+|       |                                                                                                                                                                                                                                   |
+|-------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Level | Description                                                                                                                                                                                                                       |
+|  1    | Exchange currency, conduct internal Paysera transfers and make online purchases with your account up to a currency equivalent of 30 euros daily, 740 euros monthly and 2,500 euros annually.                                      |
+|  2    | In addition to Level 1 services, transfer to banks up to a currency equivalent of 370 euros daily, 1,110 euros monthly and 2,500 euros annually.                                                                                  |
+|  3    | In addition to Level 2 services:                                                                                                                                                                                                  |
+|       | Add the option of opening a Paysera Visa card or business account, transfer to international accounts and take care of e-commerce up to a currency equivalent of 1,480 euros daily, 1,480 euros monthly and 17,760 euros annually |
+|  4    | Take advantage of services offered at all levels with no limits on how much you can send or receive.                                                                                                                              |
 
 #### Are there any fees for me to be aware of when using my Paysera account?
 
@@ -127,3 +109,5 @@ Paysera is also useful to send / receive SWIFT payments the fees are about 7 Eur
 If a dispute occurs the arbitrator may ask the buyer to send them information showing that they made the payment of the correct amount to the XMR Seller within the correct time frame.
 
 The arbitrator may ask the seller to send them information to prove their account details are correct, or in the case of the XMR Buyer making a payment late, or of the wrong amount.
+
+For more information see [Conflict Resolution](../conflict-resolution.md).

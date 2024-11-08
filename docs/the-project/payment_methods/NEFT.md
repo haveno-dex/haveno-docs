@@ -2,22 +2,6 @@
 
 National Electronic Funds Transfer (NEFT) is an electronic funds transfer system maintained by the Reserve Bank of India. NEFT enables bank customers in India to transfer funds for free between any two NEFT-enabled bank accounts.
 
-**Contents:**
-
-- 1 Where can I find out more about NEFT?
-- 2 What countries are available for NEFT?
-- 3 What currencies are available for NEFT?
-- 4 What is the maximum trading duration for NEFT?
-- 5 What is the maximum XMR limit for an NEFT trade?
-- 6 Is NEFT a payment method that can be signed?
-- 7 How do I set up a NEFT account?
-- 8 How do I add NEFT as a payment method in Haveno?
-- 9 How do I buy XMR with my NEFT account?
-- 10 How do I sell XMR with my NEFT account?
-- 11 Are there any limits for me to be aware of when using my NEFT account?
-- 12 Are there any fees for me to be aware of when using my NEFT account?
-- 13 How does dispute resolution when trading with NEFT?
-
 #### Where can I find out more about NEFT?
 
 Here is a list of NEFT resources:
@@ -61,7 +45,9 @@ It is easy to add your NEFT account to Haveno.
 - Click save new account
 
 If you have more than one NEFT account you wish to add to Haveno you can create different accounts for each.
-**Warning**, make sure all the details are correct when you add.
+
+!!! warning
+    Make sure all the details are correct when you add.
 
 Please make sure to include your:
 
@@ -86,7 +72,9 @@ When the offer is confirmed Haveno will provide you with the XMR Sellers NEFT de
 If you have the option to include a payment reference please leave it blank. If your bank requires one, please just use your name that matches your bank account.
 
 Once the XMR Seller receives your payment they will confirm in Haveno and your security deposit and your purchased trade amount will be available in your wallet.
-**Warning**, please send payment only to the account details provided in Haveno.
+
+!!! warning
+    Please send payment only to the account details provided in Haveno.
 
 The maximum trade size is Rs. 50,000 per transaction.
 
@@ -104,13 +92,15 @@ You can sell XMR with NEFT on Haveno in 2 waysː
 When the offer is confirmed Haveno will provide with the XMR Buyer with your XXXXXXX details for you to complete the payment. They should send payment at their first opportunity and confirm they have done so in Haveno by clicking 'payment started'.
 
 Once you receive payment from the XMR Buyer you should confirm payment has been received in Haveno. One you have done this the XMR Buyer will receive their funds and you will receive your security deposit back.
-**Warning**, if you intend to receive over Rs. 50,000 per trade you should expect the buyer to have to make multiple transfers.
+
+!!! warning
+    If you intend to receive over Rs. 50,000 per trade you should expect the buyer to have to make multiple transfers.
 
 Please note some banks have different limits for their customers.
 
 #### Are there any limits for me to be aware of when using my NEFT account?
 
-Maximum amount limited to per transaction is Rs.50000 within India
+Maximum amount limited to per transaction is Rs. 50000 within India
 
 Maximum of 50,000 INR can be sent per transaction.
 
@@ -125,3 +115,5 @@ It is free to send and receive.
 If a dispute occurs the arbitrator may ask the buyer to send them information showing that they made the payment of the correct amount to the XMR Seller within the correct time frame.
 
 The arbitrator may ask the seller to send them information to prove their account details are correct, or in the case of the XMR Buyer making a payment late, or of the wrong amount.
+
+For more information see [Conflict Resolution](../conflict-resolution.md).
