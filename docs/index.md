@@ -6,4 +6,4 @@ Take a look at the menu on the left and start exploring. Make sure you also take
 
 [:material-web: Haveno Website](https://haveno.exchange){ .md-button .md-button--primary }
 [:material-github: Github Project](https://github.com/haveno-dex/){ .md-button .md-button--primary }
-[:simple-matrix: Matrix Space](https://matrix.to/#/!cSwJDzxRuWndmFUZTd:haveno.network?via=haveno.network&via=matrix.org&via=monero.social){ .md-button .md-button--primary }
+[:simple-matrix: Matrix Space](https://matrix.to/#/#haveno:monero.social){ .md-button .md-button--primary }

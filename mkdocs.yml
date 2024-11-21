@@ -59,7 +59,7 @@ extra:
     - icon: fontawesome/brands/twitter
       link: https://twitter.com/HavenoDEX
     - icon: simple/matrix
-      link: https://matrix.to/#/#haveno:haveno.network
+      link: https://matrix.to/#/#haveno:monero.social
     - icon: material/chat
       link: irc://irc.libera.chat/#haveno
 
