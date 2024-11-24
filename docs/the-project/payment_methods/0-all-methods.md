@@ -76,13 +76,13 @@ Below is a list of fiat payment methods Haveno currently supports.
 !!! note
     * These payment methods do not need to be signed to attain buying limits higher than 3 XMR.
 
-## 2. Altcoin payment methods
+## 2. Cryptocurrency payment methods
 
-Haveno also supports a variety of cryptocurrencies for buying and selling Monero, like BTC, ETH, LTC, BCH. Because altcoin transfers are irreversible and relatively quick, altcoin trades can be up to 96 XMR in size right away (no need to wait for account aging or account signing).
+Haveno also supports a variety of cryptocurrencies for buying and selling Monero, like BTC, ETH, LTC, BCH. Because cryptocurrency transfers are irreversible and relatively quick, cryptocurrency trades can be up to 96 XMR in size right away (no need to wait for account aging or account signing).
 
 | Payment Method | Trading Period | Trade limit |
 |-------------------------------|------------------|-------------|
-| Altcoins | 1 Day | 96.00 XMR |
-| Altcoins Instant | 1 Hour | 96.00 XMR |
+| Cryptocurrencies | 1 Day | 96.00 XMR |
+| Cryptocurrencies Instant | 1 Hour | 96.00 XMR |
 
-- Altcoins Instant trades go by fast! Please remember to disable Instant offers in **Portfolio > My Open Offers** if you might not be around to settle an Instant trade.
+- Cryptocurrencies Instant trades go by fast! Please remember to disable Instant offers in **Portfolio > My Open Offers** if you might not be around to settle an Instant trade.
