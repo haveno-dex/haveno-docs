@@ -65,7 +65,7 @@ Some banks have different limits for their customers.
 You can buy XMR with IMPS on Haveno in 2 waysː
 
 - Make an offer to buy XMR on the INR market.
-- An offer to buy XMR on the INR market.
+- Take an offer to buy XMR on the INR market.
 
 When the offer is confirmed Haveno will provide you with the XMR Sellers IMPS details for you to complete the payment. You should send payment immediately and confirm you have done so in Haveno by clicking 'payment started'.
 
@@ -88,7 +88,7 @@ If your trade is over Rs. 200,000 you will have to make multiple transfers. Howe
 You can sell XMR with IMPS on Haveno in 2 waysː
 
 - Make an offer to sell XMR on the INR market.
-- ke an offer to sell XMR on the INR market.
+- Take an offer to sell XMR on the INR market.
 
 When the offer is confirmed Haveno will provide with the XMR Buyer with your IMPS details for you to complete the payment. They should send payment at their first opportunity and confirm they have done so in Haveno by clicking 'payment started'.
 
