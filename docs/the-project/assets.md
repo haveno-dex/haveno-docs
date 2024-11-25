@@ -23,6 +23,8 @@ These are the cryptocurrencies currently listed on Haveno:
 
 ![Ether](../resources/img/crypto/ether.svg){ .crypto-logos } [Ether](https://ethereum.org)
 
+![TetherUSDT](../resources/img/crypto/tether-usdt.svg){ .crypto-logos } [Tether USDT](https://tether.to)
+
 
 ## Payment Methods and fiat currencies
 
