@@ -67,7 +67,7 @@ But if that SEPA account isn't signed until Day 30, it won't see its limits lift
 | ---------------------------------------- | ------------------------ | ------------------------- |
 | Day 0 | 3 XMR | 12 XMR |
 | Day 30 - Account Signed | 3 XMR | 12 XMR |
-| Day 60 | 6 XMR | 12 XMR |
+| Day 60 | 12 XMR | 12 XMR |
 | > 60 | 12 XMR | 12 XMR |
 
 ## How to get an account signed
