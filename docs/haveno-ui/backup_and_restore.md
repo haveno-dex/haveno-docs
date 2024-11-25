@@ -1,6 +1,6 @@
 # Backing up application data
 
-Backing up your Haveno data is crucial to ensure you can retain control over trades, disputes, payment accounts, and funds in case of issues with your machine (e.g.: drive failure) or Haveno itself (e.g.: critical bugs).
+Backing up your Haveno data is crucial to ensure you can retain control over trades, disputes, payment accounts, and funds in case of issues with your machine (e.g. drive failure) or Haveno itself (e.g. critical bugs).
 All Haveno data is stored right on your computer—it's never stored (or even sent) to a central server, so backing it up is your job. We will see data restoration after the backup.
 
 ### 1. Back up the entire Haveno data directory
@@ -11,21 +11,21 @@ The safest, quickest, easiest, and most comprehensive thing you can do to safegu
 
 Go to `Account` -> `Backup` and put in a location for your backup to be exported to (note that this section is titled "Backup wallet" in the software but it actually exports the entire data directory).
 
-<!---
-![Export backup](../resources/img/haveno-ui/backup.png)
+![Export backup](../resources/img/haveno-ui/backup_dark.png#only-light)
+![Export backup](../resources/img/haveno-ui/backup_light.png#only-dark)
 /// caption
 Data directory backup screen.
 ///
--->
 
 #### 1.2 While Haveno is closed
 
 When Haveno is closed, you can simply copy the entire data directory and paste it somewhere safe. Find the location of your data directory by clicking on the `Open Directory` button (see screenshot above) or see data directory locations here:
 
-    Linux: ~/.local/share/Haveno/
-    macOS: ~/Library/Application Support/Haveno/
-    Windows: ~\AppData\Roaming\Haveno\
-
+```
+Linux: ~/.local/share/Haveno/
+macOS: ~/Library/Application Support/Haveno/
+Windows: ~\AppData\Roaming\Haveno\
+```
 
 #### 1.3 Encrypt your backup
 
@@ -76,7 +76,7 @@ A payment account export only contains metadata (name, bank information, etc). F
 
 If you have a payment accounts export file, import it in `Account` -> `Traditional Currency Accounts`
 
-If you don't have an export file, but you do have a full backup, you can salvage your payment account metadata from `xmr_mainnet/db/UserPayload` by running the *strings* utility on the UserPayload file (e.g.: run `strings /path/to/backup/xmr_mainnet/db/UserPayload` in a terminal window). The command will output a simplified version of the UserPayload file to your terminal. Scroll up a bit and you should see your payment account information.
+If you don't have an export file, but you do have a full backup, you can salvage your payment account metadata from `xmr_mainnet/db/UserPayload` by running the *strings* utility on the UserPayload file (e.g. run `strings /path/to/backup/xmr_mainnet/db/UserPayload` in a terminal window). The command will output a simplified version of the UserPayload file to your terminal. Scroll up a bit and you should see your payment account information.
 
 Use the output to copy and paste the details into new payment accounts in Haveno, paying special attention to make sure each field is copied over with 100% accuracy (including the salt): even a 1 character difference in any field will cause the hash of the payment account to be different, which means aging and signing status will not be restored in the following step.
 
@@ -104,14 +104,14 @@ Restore payment account aging and signing status
 
 Once you've restored your payment account metadata, you'll see the accounts in Haveno, but they'll have no aging or signing status. You can get aging and signing status back by replacing `xmr_mainnet/keys/sig.key` from your backup.
 
-- Make sure you have no active offers, trades or disputes; once you change sig.key, you will become unreachable.
+- Make sure you have no active offers, trades or disputes; once you change `sig.key`, you will become unreachable.
 - Close Haveno. Also make sure you've made a backup of your data directory (just in case).
-- Replace `/path/to/data/directory/xmr_mainnet/keys/sig.key` with the sig.key from your backup.
+- Replace `/path/to/data/directory/xmr_mainnet/keys/sig.key` with the `sig.key` from your backup.
 
 Upon opening Haveno, you should see account aging and signing status restored for your fiat payment accounts. If you don't, double-check:
 
 - You copied account metadata and salt correctly in the previous step.
-- The sig.key you copied is the correct one (i.e., the one you were using when your accounts accrued aging and/or got signed)
+- The `sig.key` you copied is the correct one (i.e. the one you were using when your accounts accrued aging and/or got signed)
 
 ### 4. Restore onion address
 
