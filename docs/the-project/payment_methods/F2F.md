@@ -67,6 +67,6 @@ The lack of verifiable actions makes handling face-to-face disputes much harder.
 
 This is why we highly recommend that both parties bring laptops and acknowledge their ends of the deal on the spot.
 
-Otherwise, the same dispute process is in place for F2F trades, but be advised that arbitrators and arbitrators often won’t have a way to settle disputes. In such cases, aggrieved traders can send deposit funds arbitration and make an appeal to the Haveno's team.
+Otherwise, the same dispute process is in place for F2F trades, but be advised that arbitrators often won’t have a way to settle disputes. In such cases, aggrieved traders can send deposit funds arbitration and make an appeal to the Haveno's team.
 
-Having said that, arbitrators and arbitrators may attempt different tactics to get a handle on the situation.
+Having said that, arbitrators may attempt different tactics to get a handle on the situation.

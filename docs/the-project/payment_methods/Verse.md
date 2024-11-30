@@ -53,7 +53,8 @@ No, Verse accounts do not require signing.
 
 #### How do I set up a Verse account?
 
-Get the app from https://verse.me
+!!! note
+    Verse has officially closed [Verse website](https://support.verse.me/hc/en-us/categories/12457609331986-Verse-Closure-FAQs-)
 
 #### How do I add Verse as a payment method in Haveno?
 

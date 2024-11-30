@@ -26,11 +26,11 @@ Again, please note that incorrect information in Haveno payment accounts is gene
 - XMR buyers must write the XMR Seller’s name in both the Payer and the Payee’s fields & take a high-resolution photo of the USPMO and envelope with proof of tracking before sending.
 - XMR buyers must send the USPMO to the XMR seller with Delivery Confirmation.
 
-In the event mediation is necessary, or if there is a trade dispute, you will be required to send the photos to the Haveno arbitrator or refund agent, together with the USPMO Serial Number, Post Office Number, and dollar amount, so they can verify the details on the US Post Office website.
+In the event mediation is necessary, or if there is a trade dispute, you will be required to send the photos to the Haveno Arbitrator or refund agent, together with the USPMO Serial Number, Post Office Number, and dollar amount, so they can verify the details on the US Post Office website.
 
-Failure to provide the required information to the arbitrator or Arbitrator will result in losing the dispute case.
+Failure to provide the required information to the Arbitrator will result in losing the dispute case.
 
-In all dispute cases, the USPMO sender bears 100% of the burden of responsibility in providing evidence/proof to the arbitrator or Arbitrator.
+In all dispute cases, the USPMO sender bears 100% of the burden of responsibility in providing evidence/proof to the Arbitrator.
 
 If you do not understand these requirements, do not trade using USPMO on Haveno.
 
