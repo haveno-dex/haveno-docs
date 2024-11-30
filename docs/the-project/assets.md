@@ -30,8 +30,8 @@ These are the cryptocurrencies currently listed on Haveno:
 ![USDC](../resources/img/crypto/usdc.svg){ .crypto-logos } [USDC](https://www.circle.com/usdc)
 
 ??? info "Version info"
-    Tether (USDT-ERC20 & USDT-TRC20) support has been available since haveno-1.0.13
-    USDC (USDC-ERC20) support has been available since haveno-1.0.15
+    - Tether (USDT-ERC20 & USDT-TRC20) support has been available since Haveno 1.0.13
+    - USDC (USDC-ERC20) support has been available since Haveno 1.0.15
 
 
 ## Payment Methods and fiat currencies
