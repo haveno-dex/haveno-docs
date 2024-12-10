@@ -9,24 +9,36 @@ theme:
   favicon: 'resources/img/favicon.ico'
   features:
     - navigation.instant
-    - navigation.tracking
     - navigation.sections
-    - toc.follow
+    # - navigation.tabs
+    # - navigation.tabs.sticky
     - navigation.top
-    - search.suggest
+    - navigation.tracking
     - search.highlight
+    - search.suggest
+    - toc.follow
   palette:
-    - scheme: youtube  # Palette toggle for light mode
+    # Palette toggle for automatic mode
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: youtube
       toggle:
         icon: material/weather-night
         name: Switch to dark mode
-    - scheme: slate  # Palette toggle for dark mode
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
       toggle:
         icon: material/weather-sunny
         name: Switch to light mode
 
 plugins:
     - macros
+    - privacy
     - search
 
 markdown_extensions:
@@ -51,18 +63,23 @@ extra_css:
 
 extra:
   version:
-    haveno: 1.0.12
+    haveno: 1.0.14
   social:
     - icon: material/web
       link: https://haveno.exchange
+      name: Website
     - icon: fontawesome/brands/github
       link: https://github.com/haveno-dex
+      name: GitHub
     - icon: fontawesome/brands/twitter
       link: https://twitter.com/HavenoDEX
+      name: Twitter
     - icon: simple/matrix
       link: https://matrix.to/#/#haveno:monero.social
-    - icon: material/chat
+      name: Matrix
+    - icon: simple/liberadotchat
       link: irc://irc.libera.chat/#haveno
+      name: IRC/Libera
 
 nav:
   - Home: 'index.md'

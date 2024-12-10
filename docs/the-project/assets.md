@@ -11,7 +11,7 @@ These are the assets currently supported on Haveno. The community is welcome to 
 These are the cryptocurrencies currently listed on Haveno:
 
 !!! info "Remember"
-    Monero is the base base currency of all the cryptocurrencies below (e.g. XMR/BTC, XMR/ETH).
+    Monero is the base currency of all the cryptocurrencies below (e.g. XMR/BTC, XMR/ETH).
 
 <!-- Crypto Logos Archive:  https://github.com/coinwink/crypto-logos-cc -->
 
