@@ -16,14 +16,13 @@ Below is a list of fiat payment methods Haveno currently supports.
 
 !!! note
     The maximum trade sizes listed below are not available for most newly-created payment accounts. Please refer to Account signing for details on how to enable larger trade sizes for your payment accounts.
-    **Haveno v1.0.15 will increase some trade limits: All cryptocurrency to 528 XMR, very low risk payments to 132 XMR & Pay by Mail to 48 XMR**
 
 #### 1.1 Fiat payment methods
 
 |      Payment method       |             Region               | Trading-period |       Limit per trade        |                                     Notes                                       |
 | ------------------------- | -------------------------------- | -------------- | ---------------------------- | ------------------------------------------------------------------------------- |
 | [ACH](ACH.md) | USA | 5 days | 12.00  XMR |
-| Advanced Cash | Global | 1 day | 96.00 XMR | Not available in the USA. |
+| Advanced Cash | Global | 1 day | 128.00 XMR | Not available in the USA. |
 | Alipay | China | 1 day | 48.00 XMR |
 | [Amazon eGift card](Amazon_eGift_card.md) | Global | 1 day | 12.00 XMR | Supported in USD, EUR, CAD, and a handful of other markets. |
 | Australian PayID | Australia | 1 day | 48.00 XMR |
@@ -31,7 +30,7 @@ Below is a list of fiat payment methods Haveno currently supports.
 | [Capitual](Capitual.md) | Global (BRL, EUR, GBP, USD) | 1 day | 12.00 XMR |
 | CashApp | Global (GBP, USD) | 1 day | buy: 3.00 XMR  sell: 12.00 XMR |
 | PayPal | Global | 1 day | buy: 3.00 XMR  sell: 12.00 XMR |
-| [Pay by Mail](Pay_By_Mail.md) (Cash by mail) | Global | 8 days | 12.00 XMR | Please check the article and follow the instructions to avoid disputes. |
+| [Pay by Mail](Pay_By_Mail.md) (Cash by mail) | Global | 8 days | 48.00 XMR | Please check the article and follow the instructions to avoid disputes. |
 | Cash deposit | N/A | 4 days | 12.00 XMR | Ensure to follow Cash by Mail trade rules. |
 | [Domestic wire transfer](Domestic_Wire_Transfer.md) | USA | 3 days | 12.00 XMR |
 | [Face to Face (F2F)](F2F.md) | Global | 4 days | 48.00 XMR | See article for special guidance on F2F transactions. |
@@ -79,14 +78,11 @@ Below is a list of fiat payment methods Haveno currently supports.
 
 ## 2. Cryptocurrency payment methods
 
-Haveno also supports a variety of cryptocurrencies for buying and selling Monero, like BTC, ETH, LTC, BCH, USDT, USDC. Because cryptocurrency transfers are irreversible and relatively quick, cryptocurrency trades can be up to 96 XMR in size right away (no need to wait for account aging or account signing).
-
-??? info "Version info"
-    Since Haveno 1.0.15, the trading limit for cryptocurrencies has been increased from 96 XMR to 528 XMR.
+Haveno also supports a variety of cryptocurrencies for buying and selling Monero, like BTC, ETH, LTC, BCH, USDT, USDC. Because cryptocurrency transfers are irreversible and relatively quick, cryptocurrency trades can be up to 528 XMR in size right away (no need to wait for account aging or account signing).
 
 |  Payment Method  | Trading Period | Trade limit |
 | ---------------- | :------------: | :---------: |
-| Cryptocurrencies | 1 Day | 96.00 XMR |
-| Cryptocurrencies Instant | 1 Hour | 96.00 XMR |
+| Cryptocurrencies | 1 Day | 528.00 XMR |
+| Cryptocurrencies Instant | 1 Hour | 528.00 XMR |
 
 - Cryptocurrencies Instant trades go by fast! Please remember to disable Instant offers in `Portfolio` > `My Open Offers` if you might not be around to settle an Instant trade.
