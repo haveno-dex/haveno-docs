@@ -2,7 +2,7 @@
 
 Elevated account limits apply to fiat payment accounts in order to limit damage a malicious user can do while allowing honest users to start trading immediately with no KYC and utmost privacy.
 
-Cryptocurrency accounts can trade 96 XMR right away (528 XMR since Haveno v1.0.15), but all fiat payment account types have limits lower than 96 XMR to match their particular risk profiles (see [this table](payment_methods/0-all-methods.md/#1-fiat-payment-methods) for details). Some payment methods with chargeback risk implement a mechanism called **account signing** that restricts trading activity until a trader proves their integrity to further secure against foul play.
+Cryptocurrency accounts can trade 528 XMR right away, but all fiat payment account types have lower limits to match their particular risk profiles (see [this table](payment_methods/0-all-methods.md/#1-fiat-payment-methods) for details). Some payment methods with chargeback risk implement a mechanism called **account signing** that restricts trading activity until a trader proves their integrity to further secure against foul play.
 
 ## Which payment accounts are affected
 
