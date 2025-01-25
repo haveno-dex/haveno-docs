@@ -1,0 +1,38 @@
+# https://codeberg.org/Codeberg-CI/examples/src/branch/main/Python/.woodpecker/mkdocs.yaml
+#
+# build and deploy mkdocs to codeberg pages
+# This assumes you have code & a branch named `pages` in one repo,
+# `pages` branch will be used to host the built pages.
+#
+# https://username.codeberg.page/reponame/: repo page, points to the pages branch of the repository
+# CNAME [[branch.]repo.]user.codeberg.page
+# https://docs.codeberg.org/codeberg-pages/using-custom-domain/
+
+steps:
+  build-docs:
+    when:
+      event: [push, pull_request]
+    # build the docs with mkdocs
+    image: squidfunk/mkdocs-material
+    commands:
+      - pip install mkdocs-macros-plugin
+      - mkdocs build
+      # add the .domains file for codeberg pages
+      # - echo -e '<repo.yourtld.com>\n<repo>.<codeberg_username>.codeberg.page\npages.<repo>.<codeberg_username>.codeberg.page' > site/.domains
+      # - echo -e '<repo.yourtld.com>\nhaveno-docs.boldsuck.codeberg.page\npages.haveno-docs.boldsuck.codeberg.page' > site/.domains
+
+  deploy-docs:
+    when:
+      event: [push, pull_request]
+    image: codeberg.org/xfix/plugin-codeberg-pages-deploy:latest
+    settings:
+      folder: site
+      # Repository name to deploy to, if not specified it will deploy to the repository the workflow is running from.
+      #repository_name: <codeberg_org>/pages
+      # Branch to deploy to. Defaults to pages.
+      #branch: pages
+      ssh_key:
+        # created using woodpecker cli with:
+        # woodpecker secret add -repository <org>/<repo> \
+        # -name codeberg_push_from_ci_priv_key -value @<path_to_privkey_file>
+        from_secret: codeberg_push_from_ci_priv_key
