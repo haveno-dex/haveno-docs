@@ -28,10 +28,10 @@ Below is a list of fiat payment methods Haveno currently supports.
 | Australian PayID | Australia | 1 day | 48.00 XMR |
 | [Bizum](Bizum.md) | Spain | 1 day | 1000 € |
 | [Capitual](Capitual.md) | Global (BRL, EUR, GBP, USD) | 1 day | 12.00 XMR |
+| Cardless Cash (Cash at ATM)* | Global | 4 days | 12.00 XMR |
 | CashApp | Global (GBP, USD) | 1 day | buy: 3.00 XMR  sell: 12.00 XMR |
-| PayPal | Global | 1 day | buy: 3.00 XMR  sell: 12.00 XMR |
-| [Pay by Mail](Pay_By_Mail.md) (Cash by mail) | Global | 8 days | 48.00 XMR | Please check the article and follow the instructions to avoid disputes. |
 | Cash deposit | N/A | 4 days | 12.00 XMR | Ensure to follow Cash by Mail trade rules. |
+| Cell Pay* | Global | 1 day | $2,500 / 24h | Supports multiple stablecoins |
 | [Domestic wire transfer](Domestic_Wire_Transfer.md) | USA | 3 days | 12.00 XMR |
 | [Face to Face (F2F)](F2F.md) | Global | 4 days | 48.00 XMR | See article for special guidance on F2F transactions. |
 | [Faster Payments](Faster_Payments.md) | UK | 1 day | 12.00 XMR | See article for recent changes to avoid issues. |
@@ -45,6 +45,8 @@ Below is a list of fiat payment methods Haveno currently supports.
 | [Nequi](Nequi.md)* | Colombia | 1 day | 7,000,000 COP |
 | [NEFT](NEFT.md)* | India | 1 day | 12.00 XMR |
 | [Paxum](Paxum.md)* | Global | 1 day | 12.00 XMR |
+| [Pay by Mail](Pay_By_Mail.md) (Cash by mail) | Global | 8 days | 48.00 XMR | Please check the article and follow the instructions to avoid disputes. |
+| PayPal | Global | 1 day | buy: 3.00 XMR  sell: 12.00 XMR |
 | [Paysera](Paysera.md)* | Global | 1 day | 12.00 XMR |
 | [PayTM](PayTM.md)* | India | 1 day | Rs. 5,000 |
 | Perfect Money* | Global | 1 day | 48.00 XMR |
@@ -63,14 +65,15 @@ Below is a list of fiat payment methods Haveno currently supports.
 | Tikkie* | Netherlands | 1 day | 750 € |
 | Transfer with Same Bank | N/A | 2 days | buy: 3.00 XMR  sell: 12.00 XMR |
 | Transfer from Specific Banks | N/A | 4 days | buy: 3.00 XMR  sell: 12.00 XMR |
-| [TransferWise](TransferWise.md)* | Global except USD trades | 4 days | 12.00 XMR |
-| [TransferWise-USD](TransferWise-USD.md)* | Global for USD trades | 4 days | 12.00 XMR |
 | [US Postal Money Order](US_Postal_Money_Order.md)* | USA | 8 days | 12.00 XMR | Within USA, $1000 limit per transaction, up to $3000 per day without ID. |
 | Uphold | Global | 1 day | buy: 3.00 XMR  sell: 12.00 XMR |
 | [UPI](UPI.md)* | India | 1 day | Rs. 100,000 |
+| Venmo | USA | 1 day | buy: 3.00 XMR  sell: 12.00 XMR |
 | [Verse](Verse.md)* | Europe (EUR, SEK, HUF, DKK, PLN) | 1 day | 12.00 XMR |
 | WeChat Pay* | China | 1 day | 48.00 XMR |
 | Western Union | Global | 4 days | 24.00 XMR |
+| [Wise](TransferWise.md)* | Global except USD trades | 4 days | 12.00 XMR | formally TransferWise |
+| [Wise-USD](TransferWise-USD.md)* | Global for USD trades | 4 days | 12.00 XMR | formally TransferWise |
 | Zelle | USA | 4 days | buy: 3.00 XMR  sell: 12.00 XMR | See this page to see if/how your bank works with Zelle (including sending limits). |
 
 !!! note

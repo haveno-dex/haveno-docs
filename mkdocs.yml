@@ -55,7 +55,7 @@ markdown_extensions:
   - attr_list
   - md_in_html
   - tables
-  # # Python Markdown Extensions - https://squidfunk.github.io/mkdocs-material/setup/extensions/python-markdown-extensions/
+  # Python Markdown Extensions - https://squidfunk.github.io/mkdocs-material/setup/extensions/python-markdown-extensions/
   - pymdownx.blocks.caption
   - pymdownx.details
   - pymdownx.emoji:
