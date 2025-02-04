@@ -8,7 +8,7 @@ Real-Time Gross Settlement (RTGS) is an electronic funds transfer system maintai
 
 Here is a list of RTGS resources:
 
-- Real-Time Gross Settlement Wiki
+- [Real-Time Gross Settlement Wiki](https://en.wikipedia.org/wiki/Payment_and_settlement_systems_in_India#Real-time_gross_settlement)
 
 #### What countries are available for RTGS?
 
@@ -39,7 +39,7 @@ Pretty much all bank accounts in India can make RTGS payments.
 It is easy to add your RTGS account to Haveno.
 
 - Go to the top menu in Haveno and select Account.
-- Then select National Currency Accounts.
+- Then select Traditional Currency Accounts.
 - Click add new account
 - Select RTGS
 - Complete the details
@@ -69,7 +69,7 @@ You can buy XMR with RTGS on Haveno in 2 waysː
 - Make an offer to buy XMR on the INR market.
 - Take an offer to buy XMR on the INR market.
 
-When the offer is confirmed Haveno will provide you with the XMR Sellers RTGS details for you to complete the payment. You should send payment immediately and confirm you have done so in Haveno by clicking 'payment started'.
+When the offer is confirmed Haveno will provide you with the XMR Sellers RTGS details for you to complete the payment. You should send payment immediately and confirm you have done so in Haveno by clicking `Payment Send`.
 
 If you have the option to include a payment reference please leave it blank. If your bank requires one, please just use your name that matches your bank account.
 
@@ -87,7 +87,7 @@ You can sell XMR with RTGS on Haveno in 2 waysː
 - Make an offer to sell XMR on the INR market.
 - Take an offer to sell XMR on the INR market.
 
-When the offer is confirmed Haveno will provide with the XMR Buyer with your RTGS details for you to complete the payment. They should send payment at their first opportunity and confirm they have done so in Haveno by clicking 'payment started'.
+When the offer is confirmed Haveno will provide with the XMR Buyer with your RTGS details for you to complete the payment. They should send payment at their first opportunity and confirm they have done so in Haveno by clicking `Payment Send`.
 
 Once you receive payment from the XMR Buyer you should confirm payment has been received in Haveno. One you have done this the XMR Buyer will receive their funds and you will receive your security deposit back.
 

@@ -58,7 +58,7 @@ No, Capitual accounts do not require signing.
 It is easy to add your Capitual account to Haveno.
 
 - Go to the top menu in Haveno and select Account.
-- Then select National Currency Accounts.
+- Then select Traditional Currency Accounts.
 - Click add new account
 - Select Capitual
 - Complete the details
@@ -86,7 +86,7 @@ You can buy XMR with Capitual on Haveno in 2 waysː
 - Make an offer to buy XMR on the BRL, EUR, GBP, or USD market.
 - Take an offer to buy XMR on the BRL, EUR, GBP, or USD market.
 
-When the offer is confirmed Haveno will provide you with the XMR Sellers Capitual details for you to complete the payment. You should send payment immediately and confirm you have done so in Haveno by clicking 'payment started'.
+When the offer is confirmed Haveno will provide you with the XMR Sellers Capitual details for you to complete the payment. You should send payment immediately and confirm you have done so in Haveno by clicking `Payment Send`.
 
 If you have the option to include a payment reference please leave it blank. If your bank requires one, please just use your name that matches your bank account.
 
@@ -99,7 +99,7 @@ You can sell XMR with Capitual on Haveno in 2 waysː
 - Make an offer to sell XMR on the BRL, EUR, GBP, or USD market.
 - Take an offer to sell XMR on the BRL, EUR, GBP, or USD market.
 
-When the offer is confirmed Haveno will provide with the XMR Buyer with your Capitual details for you to complete the payment. They should send payment at their first opportunity and confirm they have done so in Haveno by clicking 'payment started'.
+When the offer is confirmed Haveno will provide with the XMR Buyer with your Capitual details for you to complete the payment. They should send payment at their first opportunity and confirm they have done so in Haveno by clicking `Payment Send`.
 
 Once you receive payment from the XMR Buyer you should confirm payment has been received in Haveno. One you have done this the XMR Buyer will receive their funds and you will receive your security deposit back.
 

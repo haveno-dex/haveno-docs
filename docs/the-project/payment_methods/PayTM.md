@@ -40,7 +40,7 @@ Vist the PayTM website to set up an account. You will need an Indian bank accoun
 It is easy to add your PayTM account to Haveno.
 
 - Go to the top menu in Haveno and select Account.
-- Then select National Currency Accounts.
+- Then select Traditional Currency Accounts.
 - Click add new account
 - Select PayTM
 - Complete the details
@@ -73,7 +73,7 @@ You can buy XMR with PayTM on Haveno in 2 waysː
 
 In order to make a payment or transfer funds through PayTM, you just need your recipients PayTM registered email or phone number. No other information is needed.
 
-When the offer is confirmed Haveno will provide you with the XMR Sellers PayTM details for you to complete the payment. You should send payment immediately and confirm you have done so in Haveno by clicking 'payment started'.
+When the offer is confirmed Haveno will provide you with the XMR Sellers PayTM details for you to complete the payment. You should send payment immediately and confirm you have done so in Haveno by clicking `Payment Send`.
 
 If you have the option to include a payment reference please leave it blank. If your bank requires one, please just use your name that matches your bank account.
 
@@ -95,7 +95,7 @@ You can sell XMR with PayTM on Haveno in 2 waysː
 - Make an offer to sell XMR on the INR market.
 - Take an offer to sell XMR on the INR market.
 
-When the offer is confirmed Haveno will provide with the XMR Buyer with your PayTM details for you to complete the payment. They should send payment at their first opportunity and confirm they have done so in Haveno by clicking 'payment started'.
+When the offer is confirmed Haveno will provide with the XMR Buyer with your PayTM details for you to complete the payment. They should send payment at their first opportunity and confirm they have done so in Haveno by clicking `Payment Send`.
 
 Once you receive payment from the XMR Buyer you should confirm payment has been received in Haveno. One you have done this the XMR Buyer will receive their funds and you will receive your security deposit back.
 

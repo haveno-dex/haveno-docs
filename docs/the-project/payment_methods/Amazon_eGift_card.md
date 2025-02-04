@@ -15,7 +15,7 @@ Amazon eGift Cards are one of the more private payment methods on Haveno. They t
 
 #### 1. Disambiguation
 
-Amazon eGift cards are bought on the Amazon website using your account, and sent electronically to the recipient, not the paper vouchers that contain a visible code, and that you can buy at shops for cash. We understand the latter are more private because there is no name attached to the payment, but they also come with risks, namely:
+Amazon eGift cards are bought on the Amazon website using your account and sent electronically to the recipient. **Not** the paper vouchers that contain a visible code and that you can buy at shops for cash. We understand the latter are more private because there is no name attached to the payment, but they also come with risks, namely:
 
 - no payment proof: the seller can claim the code was already spent on receipt, and neither the buyer nor the arbitrator have any means to ascertain either way
 - illicit origin: code vouchers could be obtained through scams, and the recipient account could get the balance erased as a result, and his Amazon account banned
@@ -26,44 +26,41 @@ For these reasons, Haveno only allows for eGift cards.
 
 Amazon eGift Cards are available in the following regions:
 
-|Country   |   Currency  |  Website                         |
-|----------|-------------|----------------------------------|
-|Australia | AUS | https://www.amazon.com.au |
-|Canada | CAD | https://www.amazon.ca |
-|Europe | EUR | Multiple websites (.fr, .de, etc)|
-|United Kingdom | GBP | https://www.amazon.co.uk |
-|India | INR | https://www.amazon.in |
-|Japan | JPY | https://www.amazon.co.jp |
-|Saudi Arabia | SAR | https://www.amazon.sa |
-|Sweden | SEK | https://www.amazon.se |
-|Singapore | SGD | https://www.amazon.sg |
-|Turkey | TRY | https://www.amazon.com.tr |
-|United States | USD | https://www.amazon.com |
+| Country  | Currency    | Website                          |
+| -------- | :---------: | -------------------------------- |
+| Australia | AUS | [amazon.com.au](https://www.amazon.com.au) |
+| Canada | CAD | [amazon.ca](https://www.amazon.ca) |
+| Europe | EUR | Multiple websites (.fr, .de, etc)|
+| United Kingdom | GBP | [amazon.co.uk](https://www.amazon.co.uk) |
+| India | INR | [amazon.in](https://www.amazon.in) |
+| Japan | JPY | [amazon.co.jp](https://www.amazon.co.jp) |
+| Saudi Arabia | SAR | [amazon.sa](https://www.amazon.sa) |
+| Sweden | SEK | [amazon.se](https://www.amazon.se) |
+| Singapore | SGD | [amazon.sg](https://www.amazon.sg) |
+| Turkey | TRY | [amazon.com.tr](https://www.amazon.com.tr) |
+| United States | USD | [amazon.com](https://www.amazon.com) |
 
 
 #### 3. Adding as Payment Account in Haveno
 
-To add Amazon eGift Cards as a payment method in Haveno, go to Account > National Currency Accounts > Add New Account, and then select 'Amazon eGift Card' in the drop-down.
-
+To add Amazon eGift Cards as a payment method in Haveno, go to `Account` > `Traditional Currency Accounts` > `Add New Account` and then select 'Amazon eGift Card' in the drop-down.
 
 !!! note
-    You can trade across currencies by creating Amazon eGift Card payment accounts in Haveno for each currency you wish to trade in, and then purchasing gift cards from the website corresponding to the region for that currency to settle trades.
-
-Amazon eGift Cards can only be redeemed on the website they were purchased from. For example, to redeem a gift card on Amazon.jp, it must have been purchased on Amazon.jp. See more details on Amazon's product page.
+    You can trade across currencies by creating Amazon eGift Card payment accounts in Haveno for each currency you wish to trade in, and then purchasing gift cards from the website corresponding to the region for that currency to settle trades.<br>
+    **Amazon eGift Cards can only be redeemed on the website they were purchased from.** For example, to redeem a gift card on Amazon.jp, it must have been purchased on Amazon.jp. See more details on [Amazon's product page](https://www.amazon.com/Amazon-1_US_Email-eGift-Card/dp/B004LLIKVU).
 
 You can fill in an email address or a phone number:
 
-- Which one you pick (email address or phone number) only affects how the Monero seller will receive the eGift Card (i.e., via email or text message)
+- Which one you pick (email address or phone number) only affects how the Monero seller will receive the eGift Card (i.e. via email or text message)
 - The phone number or email address provided here does not need to be linked to your Amazon account. Once the Monero seller has received the eGift Card, they can add it to any Amazon account.
 
+### 4. Buying Monero with an Amazon eGift Card
 
-#### 4. Buying Monero with an Amazon eGift Card
-
-#### 4.1 Step 1. Log in to Amazon
+#### Step 1. Log in to Amazon
 
 First, log in to the Amazon website you'll be buying the eGift card on. If trading a currency used on multiple Amazon sites (e.g. EUR currency has amazon.de, amazon.it, amazon.es, etc), please confirm with your peer (through trader chat) which site should be used to purchase the gift card. You should be able to use your existing Amazon account to log in to any Amazon site (e.g. you can sign in to amazon.de using an account created on amazon.com).
 
-#### 4.2 Step 2. Customize eGift card
+#### Step 2. Customize eGift card
 
 It's recommended to customize the eGift Card to reduce the chances the gift card is seen as suspicious. Feel free to customize the card design, message, etc. Just remember not to include anything about Haveno or Monero anywhere.
 
@@ -74,7 +71,7 @@ It's recommended to customize the eGift Card to reduce the chances the gift card
 
 Customize your gift card.
 
-#### 4.3 Step 3. Make Payment
+#### Step 3. Make Payment
 
 After your card is ready go, you just have to pay for it! Amazon accepts debit and credit cards, but you cannot pay for an eGift card with another eGift card (or any other Amazon credit balance).
 
@@ -85,7 +82,7 @@ After paying, you'll receive an email receipt from Amazon—make sure you keep t
 
 Then make sure you mark your payment as sent in Haveno.
 
-#### 4.4 Step 4. Seller Gets Notification
+#### Step 4. Seller Gets Notification
 
 Once the buyer sends the gift card, the seller will receive an email or SMS message letting them know about their gift card.
 
@@ -95,7 +92,3 @@ Once the buyer sends the gift card, the seller will receive an email or SMS mess
 Upon checking the payment (making sure it's the right amount etc), the seller must confirm the payment in Haveno to complete the trade.
 
 Optionally, the seller can also acknowledge the gift card through Amazon, which would send the buyer an email letting them know the seller has received their gift card.
-
-#### 5. See also
-
-TODO

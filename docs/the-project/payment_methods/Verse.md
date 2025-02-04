@@ -61,7 +61,7 @@ No, Verse accounts do not require signing.
 It is easy to add your Verse account to Haveno.
 
 - Go to the top menu in Haveno and select Account.
-- Then select National Currency Accounts.
+- Then select Traditional Currency Accounts.
 - Click add new account
 - Select Verse
 - Complete the details
