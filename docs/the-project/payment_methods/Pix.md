@@ -31,7 +31,7 @@ Can be used with most Brazilian bank accounts.
 It is easy to add your Pix acount to Haveno:
 
 - Go to the top menu in Haveno and select Account.
-- Then select National Currency Accounts.
+- Then select Traditional Currency Accounts.
 - Click add new account
 - Select Pix
 - Complete the details.
@@ -54,7 +54,7 @@ You can buy XMR with Pix on Haveno in 2 waysː
 - Make an offer to buy XMR on the BRL market.
 - Take an offer to buy XMR on the BRL market.
 
-When the offer is confirmed Haveno will provide you with the XMR Sellers Pix details for you to complete the payment. You should send payment immediately and confirm you have done so in Haveno by clicking 'payment started'.
+When the offer is confirmed Haveno will provide you with the XMR Sellers Pix details for you to complete the payment. You should send payment immediately and confirm you have done so in Haveno by clicking `Payment Send`.
 
 If you have the option to include a payment reference please use your Pix Key. Otherwise just leave it blank and share your Pix Key in trader chat.
 
@@ -72,7 +72,7 @@ You can sell XMR with Pix on Haveno in 2 waysː
 - Make an offer to sell XMR on the BRL market.
 - Take an offer to sell XMR on the BRL market.
 
-When the offer is confirmed Haveno will provide with the XMR Buyer with your Pix details for you to complete the payment. They should send payment at their first opportunity and confirm they have done so in Haveno by clicking 'payment started'.
+When the offer is confirmed Haveno will provide with the XMR Buyer with your Pix details for you to complete the payment. They should send payment at their first opportunity and confirm they have done so in Haveno by clicking `Payment Send`.
 
 Once you receive payment from the XMR Buyer you should confirm payment has been received in Haveno. One you have done this the XMR Buyer will receive their funds and you will receive your security deposit back.
 

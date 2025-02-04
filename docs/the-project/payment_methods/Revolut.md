@@ -4,12 +4,13 @@ Revolut offers banking services in [various countries](https://www.revolut.com/h
 
 #### 1. Creating the account in Haveno
 
-Setting up a Revolut account in Haveno. To create a Revolut payment account in Haveno, you need to input the country for your Revolut account, your revolut username, and the currencies that you wish to trade with the account.
-Remember that none of this information can be modified once an account is created, and account signing data can be lost if not properly backed up. If you edit your username, a new Haveno account should have to be created, unsigned and with 3 XMR trading limits.
+To create a Revolut payment account in Haveno, you need to input the country for your Revolut account, your revolut username, and the currencies that you wish to trade with the account.
+
+Remember that none of this information can be modified once an account is created, and [account signing](../account_limits.md/#account-signing) data can be lost if not [properly backed up](../haveno-ui/backup_and_restore/#2-back-up-payment-accounts). If you edit your username, a new Haveno account should have to be created, unsigned and with 3 XMR trading limits.
 
 #### 2. Revolut username
 
-On the bottom of your Revolut app, tap the two arrows symbol in the middle. Then, under your real name, there's a @username. This is what should go into your account details, and what you should use to make a Revolut payment. **Usernames are case-sensitive.**
+On the bottom of your Revolut app, tap the two arrows symbol in the middle. Then, under your real name, there's a `@username`. This is what should go into your account details, and what you should use to make a Revolut payment. **Usernames are case-sensitive.**
 
 #### 3. Pay to username
 

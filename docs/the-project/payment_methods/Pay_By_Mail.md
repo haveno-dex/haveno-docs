@@ -24,12 +24,13 @@ Define any special terms, conditions, or details you would like to be displayed 
 
 - Make sure to state any special terms or conditions in the 'Additional Information' field of the payment account before making an offer. The person taking the offer will be accepting these terms and conditions by taking the offer.
 
-Please note it is against Haveno rules to use the 'Additional Information' field to include advertising offers with a way to contact you prior to the trade (e.g. website, phone, email, or Matrix/Keybase/Telegram user name). Doing this can result in a penalty, should someone take your offer and request for you to be penalized.
+Please note it is against Haveno rules to use the 'Additional Information' field to include advertising offers with a way to contact you prior to the trade (e.g. website, phone, email, or Matrix/Keybase/Telegram user name). Doing this can result in a penalty, should someone take your offer and request for you to be penalized. This does not apply to `0-deposit Offers`, where contact is required before trading begins. To take a `No-deposit-Offer`, the buyer needs a passphrase that can only be transmitted outside the Haveno app.
 
 ### Taking a CBM offer
 
-Make sure to check the offer maker's terms and conditions before taking a CBM offer. If you cannot fulfill the terms, do not take the the offer. If you have specific terms you would prefer, consider making your own offer instead.
-Sending cash in the mail
+**Make sure to check the offer maker's terms and conditions before taking a CBM offer.** If you cannot fulfill the terms, do not take the the offer. If you have specific terms you would prefer, consider making your own offer instead.
+
+#### Sending cash in the mail
 
 Please see the Haveno trade protocol for general trading rules.
 

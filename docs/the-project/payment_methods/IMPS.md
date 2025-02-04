@@ -1,6 +1,6 @@
 # IMPS
 
-IMPS is a payment method added in Haveno, Immediate Payment Service (IMPS) is an instant payment inter-bank electronic funds transfer system in India. IMPS offers an inter-bank electronic fund transfer service through mobile phones. IMPS is managed by the National Payments Corporation of India. This is an umbrella organization for operating retail payments and settlement systems in India.
+IMPS is a payment method added in Haveno, Immediate Payment Service (IMPS) is an instant payment inter-bank electronic funds transfer system in India. IMPS offers an inter-bank electronic fund transfer service through mobile phones. IMPS is managed by the Traditional Payments Corporation of India. This is an umbrella organization for operating retail payments and settlement systems in India.
 
 #### Where can I find out more about IMPS?
 
@@ -38,7 +38,7 @@ Pretty much all bank accounts in India can make IMPS payments.
 It is easy to add your IMPS account to Haveno:
 
 - Go to the top menu in Haveno and select Account.
-- Then select National Currency Accounts.
+- Then select Traditional Currency Accounts.
 - Click add new account
 - Select IMPS
 - Complete the details
@@ -67,7 +67,7 @@ You can buy XMR with IMPS on Haveno in 2 waysː
 - Make an offer to buy XMR on the INR market.
 - Take an offer to buy XMR on the INR market.
 
-When the offer is confirmed Haveno will provide you with the XMR Sellers IMPS details for you to complete the payment. You should send payment immediately and confirm you have done so in Haveno by clicking 'payment started'.
+When the offer is confirmed Haveno will provide you with the XMR Sellers IMPS details for you to complete the payment. You should send payment immediately and confirm you have done so in Haveno by clicking `Payment Send`.
 
 If you have the option to include a payment reference please leave it blank. If your bank requires one, please just use your name that matches your bank account.
 
@@ -90,7 +90,7 @@ You can sell XMR with IMPS on Haveno in 2 waysː
 - Make an offer to sell XMR on the INR market.
 - Take an offer to sell XMR on the INR market.
 
-When the offer is confirmed Haveno will provide with the XMR Buyer with your IMPS details for you to complete the payment. They should send payment at their first opportunity and confirm they have done so in Haveno by clicking 'payment started'.
+When the offer is confirmed Haveno will provide with the XMR Buyer with your IMPS details for you to complete the payment. They should send payment at their first opportunity and confirm they have done so in Haveno by clicking `Payment Send`.
 
 Once you receive payment from the XMR Buyer you should confirm payment has been received in Haveno. One you have done this the XMR Buyer will receive their funds and you will receive your security deposit back.
 

@@ -52,7 +52,7 @@ Depending which country you live in, you may also be able to open an account in 
 It is easy to add your Monese account to Haveno.
 
 - Go to the top menu in Haveno and select Account.
-- Then select National Currency Accounts.
+- Then select Traditional Currency Accounts.
 - Click add new account
 - Select Monese
 - Complete the details
@@ -61,7 +61,7 @@ It is easy to add your Monese account to Haveno.
 
 Make sure all the details are correct when you add.
 
-Monese payments are done by linking accounts to phone numbers. If you add the person to your phone contacts you will be able to send payment to them if they have registered the number with their Monese account
+Monese payments are done by linking accounts to phone numbers. If you add the person to your phone contacts you will be able to send payment to them if they have registered the number with their Monese account:
 
 - Full name of user
 - Phone Number including international code
@@ -80,7 +80,7 @@ You can buy XMR with Monese on Haveno in 2 waysː
 - Make an offer to buy XMR on the EUR, GBP or RON market.
 - Take an offer to buy XMR on the EUR, GBP or RON market.
 
-When the offer is confirmed Haveno will provide you with the XMR Sellers Monese details for you to complete the payment. You should send payment immediately and confirm you have done so in Haveno by clicking 'payment started'.
+When the offer is confirmed Haveno will provide you with the XMR Sellers Monese details for you to complete the payment. You should send payment immediately and confirm you have done so in Haveno by clicking `Payment Send`.
 
 If you have the option to include a payment reference please leave it blank. If your bank requires one, please just use your name that matches your bank account.
 
@@ -96,7 +96,7 @@ You can sell XMR with Monese on Haveno in 2 waysː
 - Make an offer to sell XMR on the EUR, GBP or RON market.
 - Take an offer to sell XMR on the EUR, GBP or RON market.
 
-When the offer is confirmed Haveno will provide with the XMR Buyer with your Monese details for you to complete the payment. They should send payment at their first opportunity and confirm they have done so in Haveno by clicking 'payment started'.
+When the offer is confirmed Haveno will provide with the XMR Buyer with your Monese details for you to complete the payment. They should send payment at their first opportunity and confirm they have done so in Haveno by clicking `Payment Send`.
 
 Once you receive payment from the XMR Buyer you should confirm payment has been received in Haveno. One you have done this the XMR Buyer will receive their funds and you will receive your security deposit back.
 

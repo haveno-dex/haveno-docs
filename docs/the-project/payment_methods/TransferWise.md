@@ -1,30 +1,30 @@
-# TransferWise
+# Wise
 
-TransferWise (now Wise), is a supported payment method
+Wise (formally TransferWise) is a supported payment method.
 
-TransferWise can be used in SEPA trades as well, where one peer uses SEPA and another uses TransferWise. This article discusses TransferWise-to-TransferWise trades, where both peers use TransferWise.
+Wise can be used in SEPA trades as well, where one peer uses SEPA and another uses Wise. This article discusses Wise-to-Wise trades, where both peers use Wise.
 
-TransferWise is a web- and app-based money transfer service that supports multiple currencies. TransferWise to TransferWise payments allow users to send payment from any supported currency to any other supported currency. Payments utilize the TransferWise multi-currency account. This is available for users in most countries.
+Wise is a web- and app-based money transfer service that supports multiple currencies. Wise to Wise payments allow users to send payment from any supported currency to any other supported currency. Payments utilize the Wise multi-currency account. This is available for users in most countries.
 
-#### 1. Setting up a TransferWise Account
+#### 1. Setting up a Wise Account
 
-Set up an account. Go to TransferWise and register for an account. KYC will be required.
+Set up an account. Go to Wise and register for an account. KYC will be required.
 
-#### 2. Setting up a TransferWise Account in Haveno
+#### 2. Setting up a Wise Account in Haveno
 
-Go to Account > National Currency Accounts in Haveno and select Add New Account.
+Go to Account > Traditional Currency Accounts in Haveno and select Add New Account.
 
-Enter the email address you have registered with TransferWise and the currencies you would like to make and take offers with.
+Enter the email address you have registered with Wise and the currencies you would like to make and take offers with.
 
-#### 3.Getting your TransferWise account ready for trading
+#### 3.Getting your Wise account ready for trading
 
-This section is primarily for XMR sellers using TransferWise.
+This section is primarily for XMR sellers using Wise.
 
 You can set up your account on the mobile app or on the web site. Screenshots are from the website.
 
 On the left click 'open a balance'. Choose the currency you would like to trade in and select Confirm. You can add as many currencies as you wish.
 
-The following currencies all come with local bank details as part of your TransferWise account (may differ depending on locations):
+The following currencies all come with local bank details as part of your Wise account (may differ depending on locations):
 
 - AUD
 - EUR
@@ -37,16 +37,16 @@ If you are selling Monero on Haveno these accounts are useful as they allow you 
 
 Click on recipients. This is where you set up where you want the money paid to.
 
-Click 'Add your bank account' and enter your bank account details (these can be your own bank details, or they can be the TransferWise local bank account details you have created).
+Click 'Add your bank account' and enter your bank account details (these can be your own bank details, or they can be the Wise local bank account details you have created).
 
-Once added click the down arrow next to the account and select 'make primary'. This means when someone pays you via TransferWise to TransferWise it will go into your primary bank account.
+Once added click the down arrow next to the account and select 'make primary'. This means when someone pays you via Wise to Wise it will go into your primary bank account.
 
-NB: You need to have a primary bank account set up for each currency you wish to receive funds to on TransferWise. If you do not have a payment account set up the trader might not be able to send payment to you. If they are able payment will appear in your TransferWise balance for this currency.
+NB: You need to have a primary bank account set up for each currency you wish to receive funds to on Wise. If you do not have a payment account set up the trader might not be able to send payment to you. If they are able payment will appear in your Wise balance for this currency.
 
-#### 4. Making payments with TransferWise
+#### 4. Making payments with Wise
 
-This section is primarily for XMR buyers using TransferWise. Because of the way TransferWise payments are implemented in the Haveno trade protocol, the only information sellers have about buyers is their email address.
-TransferWise has a useful guide about this in their [help section](https://transferwise.com/help/articles/2932105/can-i-send-money-to-someone-with-only-their-email-address).
+This section is primarily for XMR buyers using Wise. Because of the way Wise payments are implemented in the Haveno trade protocol, the only information sellers have about buyers is their email address.
+Wise has a useful guide about this in their [help section](https://wise.com/help/articles/2932105/can-i-send-money-to-someone-with-only-their-email-address).
 
 To set up a transfer to an email address, follow these steps:
 

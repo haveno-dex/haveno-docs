@@ -45,7 +45,7 @@ Faster Payments are supported by all UK banks and some payment providers eg Tran
 It is easy to add your Faster Payments account to Haveno:
 
 - Go to the top menu in Haveno and select Account.
-- Then select National Currency Accounts.
+- Then select Traditional Currency Accounts.
 - Click add new account
 - Select Faster Payments
 - Complete the details
@@ -54,7 +54,7 @@ It is easy to add your Faster Payments account to Haveno:
 
 Make sure all the details are correct when you add.
 
-Make sure to include both your Name as shown by the bank when you send payment (eg John Smith, or J Smith), your sort code and account number.
+Make sure to include both your Name as shown by the bank when you send payment (e.g: John Smith, or J Smith), your sort code and account number.
 
 !!! warning
     Faster Payments on Haveno does not require your bank to match the Faster Payment 'name check' service. Most UK banks are opted in to the name check service but not all are. It is fine to send payment to the account shown in the Haveno contract even if their name does not show on the name check. However this does not mean XMR sellers can make up any name. XMR seller MUST ensure the details they enter match the name of their account shown in their bank.
@@ -66,7 +66,7 @@ You can buy XMR with Faster Payments on Haveno in 2 waysː
 - Make an offer to buy XMR on the GBP market.
 - Take an offer to buy XMR on the GBP market.
 
-When the offer is confirmed Haveno will provide you with the XMR Sellers Faster Payments details for you to complete the payment. You should send payment immediately and confirm you have done so in Haveno by clicking 'payment started'.
+When the offer is confirmed Haveno will provide you with the XMR Sellers Faster Payments details for you to complete the payment. You should send payment immediately and confirm you have done so in Haveno by clicking `Payment Send`.
 
 If you have the option to include a payment reference please leave it blank. If your bank requires one, please just use your name that matches your bank account.
 
@@ -82,7 +82,7 @@ You can sell XMR with Faster Payments on Haveno in 2 waysː
 - Make an offer to sell XMR on the GBP market.
 - Take an offer to sell XMR on the GBP market.
 
-When the offer is confirmed Haveno will provide with the XMR Buyer with your Faster Payments details for you to complete the payment. They should send payment at their first opportunity and confirm they have done so in Haveno by clicking 'payment started'.
+When the offer is confirmed Haveno will provide with the XMR Buyer with your Faster Payments details for you to complete the payment. They should send payment at their first opportunity and confirm they have done so in Haveno by clicking `Payment Send`.
 
 Once you receive payment from the XMR Buyer you should confirm payment has been received in Haveno. One you have done this the XMR Buyer will receive their funds and you will receive your security deposit back.
 

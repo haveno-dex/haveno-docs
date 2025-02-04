@@ -33,7 +33,7 @@ The maximum trade time is 1 day. Generally Interac e-Transfer will be completed 
 
 #### Is Interac e-Transfer a payment method that can be signed?
 
-Yes, Interac e-Transfer accounts require [Account signing](../account_limits.md/#account-signing) to lift limits to above 3 XMR.
+Yes, Interac e-Transfer accounts require [signing](../account_limits.md/#account-signing) to lift limits to above 3 XMR.
 
 #### How do I set up a Interac e-Transfer account?
 
@@ -44,7 +44,7 @@ To set up a Interac e-Transfer account you will need to be a resident of Canada 
 It is easy to add your Interac e-Transfer account to Haveno.
 
 - Go to the top menu in Haveno and select Account.
-- Then select National Currency Accounts.
+- Then select Traditional Currency Accounts.
 - Click add new account
 - Select Interac e-Transfer
 - Complete the details
@@ -58,7 +58,7 @@ Make sure to include both your 'Secret question' and 'Secret answer' when settin
 !!! warning
     Interac e-Transfer on Haveno does not support Autodeposit as a payment method. Buyers and sellers need to include their Interac e-Transfer 'Secret question' and 'Secret answer'.
 
-If you are doing an Interac e-Transfer trade with a user that has not provided a 'Secret question' and 'Secret answer' please open up a arbitration ticket by pressing 'Ctrl' and 'O' while the trade is selected and a arbitrator will assist you.
+If you are doing an Interac e-Transfer trade with a user that has not provided a 'Secret question' and 'Secret answer' please open up a arbitration ticket by pressing 'Ctrl' + 'O' while the trade is selected and a arbitrator will assist you.
 
 #### How do I buy XMR with my Interac e-Transfer account?
 
@@ -67,7 +67,7 @@ You can buy XMR with Interac e-Transfer on Haveno in 2 waysː
 - Make an offer to buy XMR on the CAD market.
 - Take an offer to buy XMR on the CAD market.
 
-When the offer is confirmed Haveno will provide you with the XMR Sellers Interac e-Transfer details for you to complete the payment. You should send payment immediately and confirm you have done so in Haveno by clicking 'payment started'.
+When the offer is confirmed Haveno will provide you with the XMR Sellers Interac e-Transfer details for you to complete the payment. You should send payment immediately and confirm you have done so in Haveno by clicking `Payment Send`.
 
 If you have the option to include a payment reference please leave it blank. If your bank requires one, please just use your name that matches your bank account.
 
@@ -87,7 +87,7 @@ You can sell XMR with Interac e-Transfer on Haveno in 2 waysː
 - Make an offer to sell XMR on the CAD market.
 - Take an offer to sell XMR on the CAD market.
 
-When the offer is confirmed Haveno will provide with the XMR Buyer with your Interac e-Transfer details for you to complete the payment. They should send payment at their first opportunity and confirm they have done so in Haveno by clicking 'payment started'.
+When the offer is confirmed Haveno will provide with the XMR Buyer with your Interac e-Transfer details for you to complete the payment. They should send payment at their first opportunity and confirm they have done so in Haveno by clicking `Payment Send`.
 
 Once you receive payment from the XMR Buyer you should confirm payment has been received in Haveno. One you have done this the XMR Buyer will receive their funds and you will receive your security deposit back.
 
