@@ -130,8 +130,8 @@ nav:
       - UPI: 'the-project/payment_methods/UPI.md'
       - US Postal Money Order: 'the-project/payment_methods/US_Postal_Money_Order.md'
       - Verse: 'the-project/payment_methods/Verse.md'
-      - Wise: 'the-project/payment_methods/TransferWise.md'
-      - Wise USD: 'the-project/payment_methods/TransferWise-USD.md'
+      - Wise: 'the-project/payment_methods/Wise.md'
+      - Wise USD: 'the-project/payment_methods/Wise-USD.md'
       - Zelle: 'the-project/payment_methods/Zelle.md'
     - Account limits: 'the-project/account_limits.md'
   - Development:
