@@ -81,7 +81,7 @@ Below is a list of fiat payment methods Haveno currently supports.
 | Zelle | USA | 4 days | buy: 3.00 XMR  sell: 12.00 XMR | See [this page](https://www.zellepay.com/get-started) to see if/how your bank works with Zelle (including sending limits). |
 
 !!! note
-    * These payment methods **do not** need to be signed to lift the 3 XMR buying limit. (See [account signing](../account_limits.md/#account-signing) for more details).
+    `*` These payment methods **do not** need to be signed to lift the 3 XMR buying limit. (See [account signing](../account_limits.md/#account-signing) for more details).
 
 ## 2. Cryptocurrency payment methods
 
