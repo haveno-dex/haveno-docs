@@ -11,7 +11,7 @@ Unlike cryptocurrency transfers, many fiat payment transfers are riddled with fl
 The payment methods vary in chargeback risk, regional availability, transaction size, fees, privacy, verifiability, and other characteristics. The top consideration for maintaining payment methods is chargeback risk.
 
 !!! warning
-    Chargebacks for payments made with PayPal, Venmo, and Cash App are relatively easy. These payment methods were introduced solely due to user demand. Using these payment methods is **not** recommended.
+    Chargebacks for payments made with PayPal, Venmo and Cash App are relatively easy. Using these payment methods involves additional risk, which should be considered when selling Monero. (e.g. you may limit the amount per trade or adjusting the premium)
 
 We welcome suggestions for new payment methods on Haveno, especially for those that enable new markets. Documentation on the criteria and process for adding new payment methods is found [here](https://github.com/haveno-dex/listing). Please also feel free to make suggestions by reaching out on Matrix room **Haveno Development** [#haveno-development:monero.social](https://matrix.to/#/#haveno-development:monero.social) relayed on IRC/Libera (`#haveno-development`)
 
@@ -51,6 +51,7 @@ Below is a list of fiat payment methods Haveno currently supports.
 | [Paxum](Paxum.md)* | Global | 1 day | 12.00 XMR |
 | [Pay by Mail](Pay_By_Mail.md) (Cash by Mail) | Global | 8 days | 48.00 XMR | Please check [the article](Pay_By_Mail.md) and follow the instructions to avoid disputes. |
 | PayPal | Global | 1 day | buy: 3.00 XMR  sell: 12.00 XMR | High risk of chargeback! |
+| Paysafe | Global | 1 day | buy: 3.00 XMR  sell: 12.00 XMR | Paysafe has different limits per Tx & per year depending on the country. |
 | [Paysera](Paysera.md)* | Global | 1 day | 12.00 XMR |
 | [PayTM](PayTM.md)* | India | 1 day |12.00 XMR | PayTM limits to Rs. 100,000 per transaction. |
 | Perfect Money* | Europe and USA | 1 day | 48.00 XMR |
