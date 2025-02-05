@@ -62,7 +62,7 @@ Zelle is normally an option from within your mobile banking app. First time user
 Once a trade is started and the deposit transaction is confirmed on the blockchain, you will see the seller's full name and either their email address or phone number. Next, login to your bank's mobile banking app and follow the instructions to send the Zelle payment.
 
 !!! warning
-    Per Haveno trade rules you can only use the information provided on the Haveno trade screen. Once payment has been sent and confirmed click the `Payment Send` button on the trade screen.
+    Per Haveno trade rules you can only use the information provided on the Haveno trade screen. Once payment has been sent and confirmed click the `Payment Sent` button on the trade screen.
 
 #### How do I sell XMR with my Zelle account?
 

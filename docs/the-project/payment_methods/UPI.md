@@ -64,7 +64,7 @@ In order to make a payment or transfer funds through UPI, you must have at least
 
 Virtual Payment Address (VPA) also called UPI ID - The format is like an email ID: with the sign “@” in the middle. For example, your UPI ID could be “receiver’s_name@bank_name” or “phone_number@bank_name.”
 
-To send money to someone with a UPI ID, you only need to have your receivers UPI ID. You do not need their account number, account type, bank name, or IFSC code etc. When the offer is confirmed Haveno will provide you with the XMR Sellers UPI details for you to complete the payment. You should send payment immediately and confirm you have done so in Haveno by clicking `Payment Send`.
+To send money to someone with a UPI ID, you only need to have your receivers UPI ID. You do not need their account number, account type, bank name, or IFSC code etc. When the offer is confirmed Haveno will provide you with the XMR Sellers UPI details for you to complete the payment. You should send payment immediately and confirm you have done so in Haveno by clicking `Payment Sent`.
 
 If you have the option to include a payment reference please leave it blank. If your bank requires one, please just use your name that matches your bank account.
 
@@ -80,7 +80,7 @@ You can sell XMR with UPI on Haveno in 2 waysː
 - Make an offer to sell XMR on the UPI market.
 - Take an offer to sell XMR on the UPI market.
 
-When the offer is confirmed Haveno will provide with the XMR Buyer with your UPI details for you to complete the payment. They should send payment at their first opportunity and confirm they have done so in Haveno by clicking `Payment Send`.
+When the offer is confirmed Haveno will provide with the XMR Buyer with your UPI details for you to complete the payment. They should send payment at their first opportunity and confirm they have done so in Haveno by clicking `Payment Sent`.
 
 Once you receive payment from the XMR Buyer you should confirm payment has been received in Haveno. One you have done this the XMR Buyer will receive their funds and you will receive your security deposit back.
 
