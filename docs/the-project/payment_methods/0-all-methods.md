@@ -1,24 +1,22 @@
 # Payment methods
 
-Haveno offers several payment methods to buy and sell Monero for fiat currencies or other cryptocurrencies.
+Haveno offers many **payment methods** to buy and sell Monero in exchange for fiat currencies or other cryptocurrencies.
 
-Every offer on Haveno designates a payment method for traders to settle payments. The Haveno software does not actually integrate with any payment methods—**all non-monero fund transfers are made outside of Haveno software.**
+Each offer on Haveno specifies a payment method for traders to settle payments. Haveno does not integrate directly with any payment method—**all non-monero fund transfers are made outside of Haveno software.**
 
-Unlike cryptocurrency transfers, many fiat payment transfers are riddled with flaws and limitations that require Haveno to employ special measures to encourage fair and honest trades. One of these measures is lower per-trade limits, which are covered below. Another key measure is [account signing](../account_limits.md/#account-signing).
+We welcome suggestions for new payment methods on Haveno, especially those that enable new markets. Documentation on the criteria and process for adding new payment methods is found [here](https://github.com/haveno-dex/listing). You can also make suggestions by reaching out to the **Haveno Development** Matrix room [#haveno-development:monero.social](https://matrix.to/#/#haveno-development:monero.social), relayed on IRC/Libera (`#haveno-development`).
 
 ## 1. Fiat payment methods
 
-The payment methods vary in chargeback risk, regional availability, transaction size, fees, privacy, verifiability, and other characteristics. The top consideration for maintaining payment methods is chargeback risk.
 
-!!! warning
-    Chargebacks for payments made with PayPal, Venmo and Cash App are relatively easy. Using these payment methods involves additional risk, which should be considered when selling Monero. (e.g. you may limit the amount per trade or adjusting the premium)
+Fiat payment methods differ in chargeback risk, regional availability, transaction size limits, fees, privacy, and verifiability.
 
-We welcome suggestions for new payment methods on Haveno, especially for those that enable new markets. Documentation on the criteria and process for adding new payment methods is found [here](https://github.com/haveno-dex/listing). Please also feel free to make suggestions by reaching out on Matrix room **Haveno Development** [#haveno-development:monero.social](https://matrix.to/#/#haveno-development:monero.social) relayed on IRC/Libera (`#haveno-development`)
+The top consideration for fiat payment methods is **chargeback risk**. Unlike cryptocurrency transfers, fiat payment methods may be reversible, requiring Haveno to implement safeguards to promote fair and honest trades. These safeguards include lower per-trade limits, which are covered below. Another key measure is [account signing](../account_limits.md/#account-signing).
 
-Below is a list of fiat payment methods Haveno currently supports.
+Below is a list of fiat payment methods currently supported by Haveno.
 
 !!! note
-    The maximum trade sizes listed below are not available for most newly-created payment accounts. Please refer to Account signing for details on how to enable larger trade sizes for your payment accounts.
+    The maximum trade sizes listed below are not available for most newly created payment accounts. Please refer to [account signing](../account_limits.md/#account-signing) for details on unlocking higher limits for your payment accounts.
 
 #### 1.1 Fiat payment methods
 
@@ -84,9 +82,12 @@ Below is a list of fiat payment methods Haveno currently supports.
 !!! note
     `*` These payment methods **do not** need to be signed to lift the 3 XMR buying limit. (See [account signing](../account_limits.md/#account-signing) for more details).
 
+!!! warning
+Chargebacks are relatively easy with payment methods like PayPal, Venmo, and Cash App. Selling Monero using these methods carries additional risk, so traders should take precautions. For example, you may limit trade amounts or adjust the premium accordingly.
+
 ## 2. Cryptocurrency payment methods
 
-Haveno also supports a variety of cryptocurrencies for buying and selling Monero, like BTC, ETH, LTC, BCH, USDT, USDC. Because cryptocurrency transfers are irreversible and relatively quick, cryptocurrency trades can be up to 528 XMR in size right away (no need to wait for account aging or account signing).
+Haveno also supports a variety of cryptocurrencies for buying and selling Monero, like BTC, ETH, LTC, BCH, USDT, and USDC. Because cryptocurrency transfers are irreversible and relatively quick, cryptocurrency trades can be up to 528 XMR in size right away (no need to wait for account aging or signing).
 
 |  Payment Method  | Trading Period | Trade limit |
 | ---------------- | :------------: | :---------: |
