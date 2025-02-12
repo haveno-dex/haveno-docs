@@ -99,7 +99,7 @@ If a dispute occurs the arbitrator may ask the buyer to send them information sh
 
 The arbitrator may ask the seller to send them information to prove their account details are correct, or in the case of the XMR Buyer making a payment late, or of the wrong amount.
 
-For more information see [Conflict Resolution](../conflict-resolution.md).
+For more information see [Dispute Resolution](../dispute-resolution.md).
 
 !!! note
     For SEPA payments from banks outside the European Economic Area (e.g: GB, CH), it is often necessary to provide the address of the payee in payment transactions. It usually works if the address is only approximately correct (e.g: City of your bank and a valid street address in that city) Trading partners can discuss this in Haveno's integrated chat.

@@ -80,7 +80,7 @@ Zelle is free of charge.
 
 #### How does dispute resolution when trading with Zelle?
 
-If a dispute arises, the arbitrator may request the buyer to provide evidence that they have made the payment of the correct amount to the XMR Seller within the specified timeframe. The arbitrator may also request the seller to provide information to verify their account details, or in the case of the XMR Buyer making a payment late or of the wrong amount. For more information see [Conflict Resolution](../conflict-resolution.md).
+If a dispute arises, the arbitrator may request the buyer to provide evidence that they have made the payment of the correct amount to the XMR Seller within the specified timeframe. The arbitrator may also request the seller to provide information to verify their account details, or in the case of the XMR Buyer making a payment late or of the wrong amount. For more information see [Dispute Resolution](../dispute-resolution.md).
 
 #### What happens if my bank doesn't allow me to send a Zelle Payment
 

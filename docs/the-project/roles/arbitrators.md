@@ -1,6 +1,6 @@
 # Arbitrators
 
-Arbitrators are the key of [conflict resolution](../conflict-resolution.md) in Haveno. They are the entity that holds the third key of each trade so that they can intervene and unlock a trade when summoned.
+Arbitrators are the key of [dispute resolution](../dispute-resolution.md) in Haveno. They are the entity that holds the third key of each trade so that they can intervene and unlock a trade when summoned.
 
 ## The work of the arbitrator
 
