@@ -83,7 +83,7 @@ Below is a list of fiat payment methods currently supported by Haveno.
     `*` These payment methods **do not** need to be signed to lift the 3 XMR buying limit. (See [account signing](../account_limits.md/#account-signing) for more details).
 
 !!! warning
-Chargebacks are relatively easy with payment methods like PayPal, Venmo, and Cash App. Selling Monero using these methods carries additional risk, so traders should take precautions. For example, you may limit trade amounts or adjust the premium accordingly.
+    Chargebacks are relatively easy with payment methods like PayPal, Venmo, and Cash App. Selling Monero using these methods carries additional risk, so traders should take precautions. For example, you may limit trade amounts or adjust the premium accordingly.
 
 ## 2. Cryptocurrency payment methods
 
