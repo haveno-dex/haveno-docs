@@ -16,6 +16,8 @@ theme:
   features:
     - content.action.edit
     - content.action.view
+    - content.code.copy
+    # - content.code.select
     - navigation.instant
     - navigation.sections
     # - navigation.tabs
@@ -61,6 +63,7 @@ markdown_extensions:
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  # TODO: test 'use_pygments: true' Controls whether highlighting carried out during build time using Pygments or in the browser with a JavaScript syntax highlighter.
   - pymdownx.highlight: # Code blocks
       anchor_linenums: true
   - pymdownx.inlinehilite
