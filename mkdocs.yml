@@ -17,7 +17,8 @@ theme:
     - content.action.edit
     - content.action.view
     - content.code.copy
-    # - content.code.select
+    # - content.code.select # Currently only for sponsors :-(
+    - content.code.annotate
     - navigation.instant
     - navigation.sections
     # - navigation.tabs
