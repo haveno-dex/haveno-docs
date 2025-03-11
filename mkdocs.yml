@@ -76,7 +76,7 @@ extra_css:
 
 extra:
   version:
-    haveno: 1.0.18
+    haveno: 1.0.19
   social:
     - icon: material/web
       link: https://haveno.exchange
