@@ -13,7 +13,7 @@ These are the cryptocurrencies currently listed on Haveno:
 !!! info "Remember"
     Monero is the base currency of all the cryptocurrencies below (e.g. XMR/BTC, XMR/ETH).
 
-<!-- Crypto Logos Archive:  https://github.com/coinwink/crypto-logos-cc -->
+<!-- Crypto Logos Archive: https://cryptologos.cc/ -->
 
 ![Monero](../resources/img/crypto/monero.svg){ .crypto-logos } [Monero](https://getmonero.org)
 
@@ -29,9 +29,12 @@ These are the cryptocurrencies currently listed on Haveno:
 
 ![USDC](../resources/img/crypto/usdc.svg){ .crypto-logos } [USDC](https://www.circle.com/usdc)
 
+![DAI](../resources/img/crypto/dai.svg){ .crypto-logos } [DAI](https://makerdao.com/en/)
+
 ??? info "Version info"
     - Tether (USDT-ERC20 & USDT-TRC20) support has been available since Haveno 1.0.13
     - USDC (USDC-ERC20) support has been available since Haveno 1.0.15
+    - Dai Stablecoin (DAI-ERC20) support has been available since Haveno 1.0.19
 
 
 ## Payment Methods and fiat currencies
