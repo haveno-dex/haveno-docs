@@ -148,3 +148,5 @@ nav:
   - Haveno UI:
     - No-deposit trading: 'haveno-ui/no_deposit.md'
     - Backup & Restore: 'haveno-ui/backup_and_restore.md'
+  - Tor configuration: 
+    - DirectBindTor: 'tor-config/DirectBindTor.md'
