@@ -150,3 +150,5 @@ nav:
     - Backup & Restore: 'haveno-ui/backup_and_restore.md'
   - Tor configuration: 
     - DirectBindTor: 'tor-config/DirectBindTor.md'
+    - ExternalTor: 'tor-config/external-tor-usage.md'
+    
