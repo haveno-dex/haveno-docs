@@ -138,14 +138,12 @@ or to use in `~/.local/share/Haveno[-.*]/haveno.properties`
 
 ## Qubes OS
 
-For Qubes there are two pull requests for install scripts that uses Haveno with DirectBindTor:
+For Qubes/Whonix there are installation scripts for using Haveno in 2 ways:<br>
+with DirectBindTor (static HiddenService) or [ExternalTor](external-tor-usage.md) (dynamic HiddenService) with the help of Netlayer/jtorctl.
 
-[Script to create appvm to run Haveno on qubes](https://github.com/haveno-dex/haveno/pull/1583)
-
-Can do both: Haveno with DirectBindTor (static HiddenService) or create a dynamic one with the help of Netlayer/jtorctl.
-
-- [PR install_qubes](https://github.com/haveno-dex/haveno/pull/1628)
-- [Repo install_qubes](https://github.com/PromptPunksFauxCough/haveno/tree/install_whonix_qubes/scripts/install_whonix_qubes)
+- [Haveno on Qubes/Whonix](https://github.com/haveno-dex/haveno/tree/master/scripts/install_whonix_qubes)
+- [Install Haveno on Qubes/Whonix](https://github.com/haveno-dex/haveno/blob/master/scripts/install_whonix_qubes/README.md)
+- [Documentation Haveno on Qubes/Whonix](https://github.com/haveno-dex/haveno/blob/master/scripts/install_whonix_qubes/INSTALL.md)
 
 ## Every OS
 
