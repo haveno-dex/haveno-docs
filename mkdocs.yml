@@ -21,8 +21,8 @@ theme:
     - content.code.annotate
     - navigation.instant
     - navigation.sections
-    # - navigation.tabs
-    # - navigation.tabs.sticky
+    - navigation.tabs
+    - navigation.tabs.sticky
     - navigation.top
     - navigation.tracking
     - search.highlight
@@ -95,8 +95,9 @@ extra:
       name: IRC/Libera
 
 nav:
-  - Home: 'index.md'
-  - The Project:
+- Home: 'index.md'
+- The Project:
+  - The Basics:
     - Overview of Haveno: 'the-project/overview.md'
     - Trade Protocol: 'the-project/trade-protocol.md'
     - Dispute Resolution: 'the-project/dispute-resolution.md'
@@ -104,7 +105,8 @@ nav:
       - Core Team: 'the-project/roles/core-team.md'
       - Arbitrators: 'the-project/roles/arbitrators.md'
       - Publishers: 'the-project/roles/publishers.md'
-    - Assets and Payment Methods: 'the-project/assets.md'
+  - Assets and Payment Methods:
+    - Assets: 'the-project/assets.md'
     - Payment Methods:
       - Overview - Currently supported: 'the-project/payment_methods/0-all-methods.md'
       - ACH: 'the-project/payment_methods/ACH.md'
@@ -138,17 +140,16 @@ nav:
       - Wise USD: 'the-project/payment_methods/Wise-USD.md'
       - Zelle: 'the-project/payment_methods/Zelle.md'
     - Account limits: 'the-project/account_limits.md'
-  - Development:
-    - Install and Run Haveno: 'development/installing.md'
-    - User Interface: 'development/haveno-ui.md'
-    - API: 'development/api.md'
-    - Bounties: 'development/bounties.md'
-    - Import Development Environment: 'development/importing.md'
-    - Contributor Guidelines: 'development/contributor-guidelines.md'
-  - Haveno UI:
-    - No-deposit trading: 'haveno-ui/no_deposit.md'
-    - Backup & Restore: 'haveno-ui/backup_and_restore.md'
-  - Tor configuration: 
-    - DirectBindTor: 'tor-config/DirectBindTor.md'
-    - ExternalTor: 'tor-config/external-tor-usage.md'
-    
+- Development:
+  - Install and Run Haveno: 'development/installing.md'
+  - User Interface: 'development/haveno-ui.md'
+  - API: 'development/api.md'
+  - Bounties: 'development/bounties.md'
+  - Import Development Environment: 'development/importing.md'
+  - Contributor Guidelines: 'development/contributor-guidelines.md'
+- Haveno UI:
+  - No-deposit trading: 'haveno-ui/no_deposit.md'
+  - Backup & Restore: 'haveno-ui/backup_and_restore.md'
+- Tor configuration: 
+  - DirectBindTor: 'tor-config/DirectBindTor.md'
+  - ExternalTor: 'tor-config/external-tor-usage.md'
