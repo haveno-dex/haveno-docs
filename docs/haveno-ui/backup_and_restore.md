@@ -41,7 +41,10 @@ Export fiat payment accounts here. You can export cryptocurrency accounts from t
 
 ### 3. Back up your wallet seed
 
-Please be sure to properly back up your wallet seed.
+Please be sure to properly back up your wallet seed, go in `Account` and click on `WALLET SEED` tab to backup your main wallet.
+
+![Save seed](../resources/img/haveno-ui/save-seed_dark.png#only-light)
+![Save seed](../resources/img/haveno-ui/save-seed_light.png#only-dark)
 
 ### 4. Export Tor state
 
@@ -72,7 +75,7 @@ Data directories work across operating systems, so you can copy a data directory
 
 A payment account export only contains metadata (name, bank information, etc). For fiat accounts, this means that restoring payment accounts is a 2-step process.
 
-### 3. Restore payment account metadata
+#### 2.1 Restore payment account metadata
 
 If you have a payment accounts export file, import it in `Account` -> `Traditional Currency Accounts`
 
@@ -100,7 +103,8 @@ From the output above:
 If you're on Windows, or cannot use the *strings* utility for some other reason, you can just open UserPayload directly in a text editor, but there will be more cruft to sift through since the file isn't meant to be human-readable.
 
 It may be tempting to just replace the entire UserPayload file from a backup, but this is **not recommended**, as it may contain other data that could result in data corruption in your new instance.
-Restore payment account aging and signing status
+
+#### 2.2 Restore payment account aging and signing status
 
 Once you've restored your payment account metadata, you'll see the accounts in Haveno, but they'll have no aging or signing status. You can get aging and signing status back by replacing `xmr_mainnet/keys/sig.key` from your backup.
 

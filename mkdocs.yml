@@ -16,6 +16,9 @@ theme:
   features:
     - content.action.edit
     - content.action.view
+    - content.code.copy
+    # - content.code.select # Currently only for sponsors :-(
+    - content.code.annotate
     - navigation.instant
     - navigation.sections
     # - navigation.tabs
@@ -61,6 +64,7 @@ markdown_extensions:
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  # NOTE: Default value 'use_pygments: true' controls whether highlighting carried out during build time using Pygments or in the browser with a JavaScript syntax highlighter.
   - pymdownx.highlight: # Code blocks
       anchor_linenums: true
   - pymdownx.inlinehilite
@@ -72,7 +76,7 @@ extra_css:
 
 extra:
   version:
-    haveno: 1.0.18
+    haveno: 1.0.19
   social:
     - icon: material/web
       link: https://haveno.exchange
@@ -142,4 +146,9 @@ nav:
     - Import Development Environment: 'development/importing.md'
     - Contributor Guidelines: 'development/contributor-guidelines.md'
   - Haveno UI:
+    - No-deposit trading: 'haveno-ui/no_deposit.md'
     - Backup & Restore: 'haveno-ui/backup_and_restore.md'
+  - Tor configuration: 
+    - DirectBindTor: 'tor-config/DirectBindTor.md'
+    - ExternalTor: 'tor-config/external-tor-usage.md'
+    
