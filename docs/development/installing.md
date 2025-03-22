@@ -2,7 +2,7 @@
 
 These are the steps needed to build and run Haveno. You can test it locally or on our test network using the official Haveno repository.
 
-!!! note
+!!! warning
     Trying to use Haveno on mainnet?
 
     The official Haveno repository does not operate or endorse any mainnet network.
