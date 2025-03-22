@@ -6,7 +6,7 @@ First [install and run a Haveno test network](installing.md), then use the follo
 
 ## Visual Studio Code (recommended)
 
-1. Download and open Visual Studio Code: https://code.visualstudio.com/.
+1. Download and open [Visual Studio Code](https://code.visualstudio.com/).
 2. File > Add folder to Workspace...
 3. Browse to the `haveno` git project.
 
