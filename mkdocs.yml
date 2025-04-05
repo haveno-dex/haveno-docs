@@ -109,7 +109,7 @@ nav:
     - Assets: 'the-project/assets.md'
     - Payment Methods:
       - Overview - Currently supported: 'the-project/payment_methods/0-all-methods.md'
-      - ACH: 'the-project/payment_methods/ACH.md'
+      - ACH Transfer: 'the-project/payment_methods/ACH.md'
       - Amazon eGift card: 'the-project/payment_methods/Amazon_eGift_card.md'
       - Bizum: 'the-project/payment_methods/Bizum.md'
       - Capitual: 'the-project/payment_methods/Capitual.md'
