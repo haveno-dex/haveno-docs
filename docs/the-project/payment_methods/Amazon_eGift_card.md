@@ -15,12 +15,16 @@ Amazon eGift Cards are one of the more private payment methods on Haveno. They t
 
 #### 1. Disambiguation
 
-Amazon eGift cards are bought on the Amazon website using your account and sent electronically to the recipient. **Not** the paper vouchers that contain a visible code and that you can buy at shops for cash. We understand the latter are more private because there is no name attached to the payment, but they also come with risks, namely:
+Amazon eGift cards are bought on the Amazon website using your account and sent electronically to the recipient.
 
-- no payment proof: the seller can claim the code was already spent on receipt, and neither the buyer nor the arbitrator have any means to ascertain either way
-- illicit origin: code vouchers could be obtained through scams, and the recipient account could get the balance erased as a result, and his Amazon account banned
+!!! tip
+    **Not the paper vouchers** that contain a visible code and that you can buy at shops for cash.<br>
+    We understand the latter are more private because there is no name attached to the payment, but they also come with risks, namely:
 
-For these reasons, Haveno only allows for eGift cards.
+      - no payment proof: the seller can claim the code was already spent on receipt, and neither the buyer nor the arbitrator have any means to ascertain either way
+      - illicit origin: code vouchers could be obtained through scams, and the recipient account could get the balance erased as a result, and his Amazon account banned
+
+    For these reasons, Haveno only allows for eGift cards.
 
 #### 2. Regional Availability
 
@@ -30,7 +34,7 @@ Amazon eGift Cards are available in the following regions:
 | -------- | :---------: | -------------------------------- |
 | Australia | AUS | [amazon.com.au](https://www.amazon.com.au) |
 | Canada | CAD | [amazon.ca](https://www.amazon.ca) |
-| Europe | EUR | Multiple websites (.fr, .de, etc)|
+| Europe | EUR | Multiple websites (.fr, .de, etc) |
 | United Kingdom | GBP | [amazon.co.uk](https://www.amazon.co.uk) |
 | India | INR | [amazon.in](https://www.amazon.in) |
 | Japan | JPY | [amazon.co.jp](https://www.amazon.co.jp) |
