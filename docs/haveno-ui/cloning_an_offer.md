@@ -6,13 +6,13 @@ Cloning an offer allows offer makers to use the same security deposit for multip
 
 ### What is this difference between duplicating and offer and cloning an offer?
 
-Duplicating an offer creates a new transaction. Therefore, each duplicated offer has a cost in terns of a new mining and trade fee for the on-chain transaction.
+Duplicating an offer creates a new transaction. Therefore, each duplicated offer has a cost in terms of a new mining and trade fee for the on-chain transaction.
 
 Cloning an offer uses the original deposit transaction of the cloned offer to create a new offer that shares the original deposit transaction, therefore, no additional on chain transaction or fees are needed.
 
 ### What are the advantages of cloning an offer?
 
-The advantages of cloning an offer are the ability to create more offers for different payment methods and/or different currencies increasing the likelihood that someone will take your offer.
+The advantages of cloning an offer are the ability to create more offers for different payment methods and/or different currencies, increasing the likelihood that someone will take your offer.
 
 For example if you are in the US and happy to accept payment by ACH, Strike, Wire, or Zelle, you could clone your offer to show all 4 of these payment methods without paying to create an additional offer. This will result in 4 offers been shown in the Haveno offer book and increase the chance that your offer is taken quickly.
 
@@ -24,7 +24,7 @@ The disadvantages of cloning an offer is that once your cloned offer is taken al
 
 Any maker offer can be cloned.
 
-Clones MUST be for a different payment method and/or currency.
+Clones *MUST* be for a different payment method and/or currency.
 
 For example you cannot create 5 Zelle clones (as these would all be for USD and Zelle)
 
@@ -47,13 +47,14 @@ Clone offer with shared funds
 
 ### How do I see which of my offers are cloned?
 
-Cloned offers share the same Group ID. You can see them in `MY OPEN OFFERS` under the `Group ID` column.
+Cloned offers share the same Group ID. You can see them in `MY OPEN OFFERS` under the `Group ID` column. (Visible in the picture above.)
 
 ### How do I edit a cloned offer?
 
 You can edit a cloned offer just like any other offer. Click the pencil icon next to the offer in `MY OPEN OFFERS`
 
-NB: Cloned offers share the same XMR amount and must have different payment methods and/or currencies used for them. You will see a warning message if you try and change anything that cannot be changed.
+!!! note
+    Cloned offers share the same XMR amount and must have different payment methods and/or currencies used for them. You will see a warning message if you try and change anything that cannot be changed.
 
 ### How many times can I clone an offer?
 

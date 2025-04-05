@@ -149,7 +149,7 @@ nav:
   - Contributor Guidelines: 'development/contributor-guidelines.md'
 - Haveno UI:
   - No-deposit trading: 'haveno-ui/no_deposit.md'
-  - Cloning an offer: 'haveno-ui/cloning_an_offer.md'
+  - Cloning an offer: 'haveno-ui/Cloning_an_offer.md'
   - Backup & Restore: 'haveno-ui/backup_and_restore.md'
 - Tor configuration:
   - DirectBindTor: 'tor-config/DirectBindTor.md'
