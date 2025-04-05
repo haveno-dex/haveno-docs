@@ -1,24 +1,22 @@
 # Cloning an offer
 
-`Cloning an offer` is a feature added in Haveno v1.0.19.
+Offer cloning was introduced in Haveno v1.0.19, allowing offer makers to reuse the same trade funds and security deposit across multiple offers.
 
-Cloning an offer allows offer makers to use the same security deposit for multiple offers.
+### What's the difference between duplicating and cloning an offer?
 
-### What is this difference between duplicating and offer and cloning an offer?
+**Duplicating an offer** creates a new offer with similar trade details, but it requires separate trade funds and a security deposit. Each duplicated offer must be funded independently.
 
-Duplicating an offer creates a new transaction. Therefore, each duplicated offer has a cost in terms of a new mining and trade fee for the on-chain transaction.
-
-Cloning an offer uses the original deposit transaction of the cloned offer to create a new offer that shares the original deposit transaction, therefore, no additional on chain transaction or fees are needed.
+**Cloning an offer** creates a copy of the original offer without reserving additional funds. This reduces locked capital, enabling you to list the same offer across multiple markets or payment methods. When one of the cloned offers is taken, the others are automatically closed, as they share the same reserved funds. Cloned offers must have the same trade amount and security deposit, but they must differ in payment method or currency.
 
 ### What are the advantages of cloning an offer?
 
-The advantages of cloning an offer are the ability to create more offers for different payment methods and/or different currencies, increasing the likelihood that someone will take your offer.
+Cloning an offer allows you to easily create multiple listings for different payment methods and currencies, increasing the chances of your offer being accepted.
 
-For example if you are in the US and happy to accept payment by ACH, Strike, Wire, or Zelle, you could clone your offer to show all 4 of these payment methods without paying to create an additional offer. This will result in 4 offers been shown in the Haveno offer book and increase the chance that your offer is taken quickly.
+For example, if you’re in the US and willing to accept payment via ACH, Strike, Wire, or Zelle, you can clone your offer to show all four payment methods without the need to create separately funded offers. This increases the visibility of your offer in the Haveno offer book, improving the likelihood that your offer is taken quickly.
 
 ### What are the disadvantages of cloning an offer?
 
-The disadvantages of cloning an offer is that once your cloned offer is taken all associated clones (those that share the same reserved funds & `Group ID`) will disappear from the Haveno offer book.
+The main disadvantage of cloning an offer is that once a cloned offer is taken, all associated clones (those sharing the same reserved funds) will disappear from the Haveno offer book.
 
 ### What offers can be cloned?
 
