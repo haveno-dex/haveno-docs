@@ -109,7 +109,7 @@ nav:
     - Assets: 'the-project/assets.md'
     - Payment Methods:
       - Overview - Currently supported: 'the-project/payment_methods/0-all-methods.md'
-      - ACH: 'the-project/payment_methods/ACH.md'
+      - ACH Transfer: 'the-project/payment_methods/ACH.md'
       - Amazon eGift card: 'the-project/payment_methods/Amazon_eGift_card.md'
       - Bizum: 'the-project/payment_methods/Bizum.md'
       - Capitual: 'the-project/payment_methods/Capitual.md'
@@ -149,7 +149,8 @@ nav:
   - Contributor Guidelines: 'development/contributor-guidelines.md'
 - Haveno UI:
   - No-deposit trading: 'haveno-ui/no_deposit.md'
+  - Cloning an offer: 'haveno-ui/Cloning_an_offer.md'
   - Backup & Restore: 'haveno-ui/backup_and_restore.md'
-- Tor configuration: 
+- Tor configuration:
   - DirectBindTor: 'tor-config/DirectBindTor.md'
   - ExternalTor: 'tor-config/external-tor-usage.md'
