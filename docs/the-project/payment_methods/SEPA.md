@@ -1,18 +1,19 @@
 # SEPA Payment method
 
-SEPA is a payment method added used in Haveno for buying and selling XMR for Euros (EUR).
-SEPA is the most common way people in the EU send and receive payment to each other via their banks. Those payments usually take a couple of working days to complete, but can take up to 6 days depending on weekends / public holidays.
+SEPA is a payment method used in Haveno for buying and selling XMR for Euros (EUR). SEPA is the most common way people in the EU send and receive payment to each other via their banks.
+
+SEPA payments usually take a couple of working days to complete, but can take up to 6 days depending on weekends and public holidays.
 
 #### Where can I find out more about SEPA?
 
-Here is a list of SEPA resources:
+Here's a list of SEPA resources:
 
 - [SEPA Wikipedia Page](https://en.wikipedia.org/wiki/Single_Euro_Payments_Area)
 - [SEPA regulator](https://www.europeanpaymentscouncil.eu/)
 
 #### What countries are available for SEPA?
 
-SEPA payments is available to most people in Europe. All EU users and some additional European countries.
+SEPA payments are available to most people in Europe. All EU users and some additional European countries can benefit from this service.
 
 #### What currencies are available for SEPA?
 
@@ -22,7 +23,7 @@ SEPA allows peer to peer payments of:
 
 #### What is the maximum trading duration for SEPA?
 
-The maximum trade time is 6 days. Generally SEPA payments will be completed within 2 working days. SEPA payments are usually not processed on Saturday, Sundays or bank holidays.
+The maximum trade time is 6 days. Generally, SEPA payments will be completed within 2 working days. SEPA payments are usually not processed on weekends or bank holidays.
 
 #### What is the maximum XMR limit for a SEPA trade?
 
@@ -34,7 +35,7 @@ Yes, SEPA payment accounts on Haveno require [signing](../account_limits.md/#acc
 
 #### How do I set up a SEPA account?
 
-SEPA are supported by all EU based banks, some EU based payment providers as well as some non-EU European banks and payment providers.
+SEPA is supported by all EU-based banks, some EU-based payment providers, as well as some non-EU European banks and payment providers.
 
 #### How do I add a SEPA account as a payment method in Haveno?
 
@@ -62,25 +63,25 @@ You can buy XMR with SEPA on Haveno in 2 waysː
 - Make an offer to buy XMR on the EUR market.
 - Take an offer to buy XMR on the EUR market.
 
-When the offer is confirmed Haveno will provide you with the XMR Sellers SEPA details for you to complete the payment. You should send payment immediately and confirm you have done so in Haveno by clicking `Payment Sent`.
+When the offer is confirmed, Haveno will provide you with the XMR seller's SEPA details for you to complete the payment. You should send the payment immediately and confirm you have done so in Haveno by clicking `Payment Sent`.
 
-If you have the option to include a payment reference please leave it blank. If your bank requires one, please just use your name that matches your bank account.
+If you have the option to include a payment reference, please leave it blank. If your bank requires one, please just use your name that matches your bank account.
 
-Once the XMR Seller receives your payment they will confirm in Haveno and your security deposit and your purchased trade amount will be available in your wallet.
+Once the XMR seller receives your payment, they will confirm in Haveno, and your security deposit and your purchased trade amount will be available in your wallet.
 
 !!! warning
     Please send payment only to the details provided by the XMR Seller in their Haveno account. Please leave the payment description blank.
 
 #### How do I sell XMR with my SEPA account?
 
-You can sell XMR with SEPA on Haveno in 2 waysː
+You can sell XMR using SEPA on Haveno in 2 waysː
 
 - Make an offer to sell XMR on the EUR market.
 - Take an offer to sell XMR on the EUR market.
 
-When the offer is confirmed Haveno will provide with the XMR Buyer with your SEPA details for you to complete the payment. They should send payment at their first opportunity and confirm they have done so in Haveno by clicking `Payment Sent`.
+Once your offer is confirmed, Haveno will provide the XMR buyer with your SEPA details for completing the payment. The buyer should send the payment promtly and confirm in Haveno by clicking `Payment Sent`.
 
-Once you receive payment from the XMR Buyer you should confirm payment has been received in Haveno. Once you have done this the XMR Buyer will receive their funds and you will receive your security deposit back.
+Upon receiving the payment, confirm it in Haveno. After you've done this, the XMR buyer will receive their funds, and you will get your security deposit back.
 
 !!! warning
     XMR Sellers should expect to receive payment from the name shown in the XMR Buyer's Haveno account. Not all banks will show the IBAN and BIC number the payment came from but the name must match.
@@ -95,9 +96,9 @@ It is free to send and receive SEPA payments (as in the SEPA network itself do n
 
 #### How does dispute resolution when trading with SEPA?
 
-If a dispute occurs the arbitrator may ask the buyer to send them information showing that they made the payment of the correct amount to the XMR Seller within the correct time frame.
+If a dispute arises, the arbitrator may request the buyer to submit information proving they made the payment of the correct amount to the XMR Seller within the specified time frame.
 
-The arbitrator may ask the seller to send them information to prove their account details are correct, or in the case of the XMR Buyer making a payment late, or of the wrong amount.
+The arbitrator may also ask the seller to provide information verifying their account details are accurate. In cases where the XMR Buyer makes a payment late or of the wrong amount, the seller should be prepared to provide this information as well.
 
 For more information see [Dispute Resolution](../dispute-resolution.md).
 
