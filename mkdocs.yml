@@ -112,7 +112,6 @@ nav:
       - ACH Transfer: 'the-project/payment_methods/ACH.md'
       - Amazon eGift card: 'the-project/payment_methods/Amazon_eGift_card.md'
       - Bizum: 'the-project/payment_methods/Bizum.md'
-      - Capitual: 'the-project/payment_methods/Capitual.md'
       - Domestic Wire Transfer: 'the-project/payment_methods/Domestic_Wire_Transfer.md'
       - F2F: 'the-project/payment_methods/F2F.md'
       - Faster Payments: 'the-project/payment_methods/Faster_Payments.md'
