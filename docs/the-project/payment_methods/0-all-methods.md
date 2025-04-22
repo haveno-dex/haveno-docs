@@ -28,7 +28,6 @@ Below is a list of fiat payment methods currently supported by Haveno.
 | [Amazon eGift card](Amazon_eGift_card.md)* | Global | 1 day | 12.00 XMR | Supported in USD, EUR, CAD and a [handful of other markets.](Amazon_eGift_card.md/#2-regional-availability) |
 | Australian PayID* | Australia | 1 day | 48.00 XMR |
 | [Bizum](Bizum.md)* | Spain | 1 day | 12.00 XMR | Bizum limits to €1000 per trade, €2000 per day. |
-| [Capitual](Capitual.md)* | Global (BRL, EUR, GBP, USD) | 1 day | 12.00 XMR |
 | Cardless Cash (Cash at ATM)* | Global | 4 days | 12.00 XMR |
 | Cash App | Global (GBP, USD) | 1 day | buy: 3.00 XMR  sell: 12.00 XMR | High risk of chargeback! |
 | Cash deposit* | N/A | 4 days | 12.00 XMR | Not all banks allow 3rd party cash deposits. |
