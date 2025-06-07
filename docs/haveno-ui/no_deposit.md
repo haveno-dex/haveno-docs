@@ -11,7 +11,7 @@ For newbies who want to buy their first XMR and do not yet have XMR for security
 ![Image](../resources/img/haveno-ui/no_deposit/make_offer.jpg)
 
 !!! info
-    [Since Haveno v1.0.19](https://github.com/haveno-dex/haveno/pull/1557), it supports additional info on **all** offers so that buyers can be given a contact option where they can request the passphrase. Optional additional information can also be changed in `MY OPEN OFFERS` using `Edit offer`
+    [Since Haveno v1.0.19](https://github.com/haveno-dex/haveno/pull/1557), additional info is supported on **all** offers, so that buyers can be given contact details to request the passphrase. Optional additional information can also be changed in `MY OPEN OFFERS` using `Edit offer`
 
 - Review and confirm offer publishing
 ![Image](../resources/img/haveno-ui/no_deposit/confirm_making_offer.jpg)
