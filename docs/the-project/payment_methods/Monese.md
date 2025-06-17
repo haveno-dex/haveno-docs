@@ -9,8 +9,8 @@ Monese has a good use case in that it is instant, free, multi currency and has s
 Here is a list of Monese resources:
 
 - [Monese website](https://monese.com/)
-- [Monese fees and limits](https://monese.com/gb/en/fees-and-limits/fee-and-limits-information)
-- [Monese T&Cs](https://monese.com/gb/en/terms)
+- [Monese fees and limits](https://www.monese.com/fees-and-limits)
+- [Monese T&Cs](https://www.monese.com/terms)
 
 #### What countries are available for Monese?
 
