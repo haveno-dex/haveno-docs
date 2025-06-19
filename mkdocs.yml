@@ -84,7 +84,7 @@ extra:
     - icon: fontawesome/brands/github
       link: https://github.com/haveno-dex
       name: GitHub
-    - icon: fontawesome/brands/twitter
+    - icon: fontawesome/brands/x-twitter
       link: https://twitter.com/HavenoDEX
       name: Twitter
     - icon: simple/matrix
