@@ -9,7 +9,7 @@ The safest, quickest, easiest, and most comprehensive thing you can do to safegu
 
 #### 1.1 While Haveno is running
 
-Go to `Account` -> `Backup` and put in a location for your backup to be exported to (note that this section is titled "Backup wallet" in the software but it actually exports the entire data directory).
+Go to `Account` -> `Backup` and put in a location for your backup to be exported to (note that this section is titled "Backup wallet" in the software, but it actually exports the entire data directory).
 
 ![Export backup](../resources/img/haveno-ui/backup_dark.png#only-light)
 ![Export backup](../resources/img/haveno-ui/backup_light.png#only-dark)
@@ -41,7 +41,7 @@ Export fiat payment accounts here. You can export cryptocurrency accounts from t
 
 ### 3. Back up your wallet seed
 
-Please be sure to properly back up your wallet seed, go in `Account` and click on `WALLET SEED` tab to backup your main wallet.
+Please be sure to properly back up your wallet seed, go in `Account` and click on `WALLET SEED` tab to back up your main wallet.
 
 ![Save seed](../resources/img/haveno-ui/save-seed_dark.png#only-light)
 ![Save seed](../resources/img/haveno-ui/save-seed_light.png#only-dark)
@@ -69,7 +69,7 @@ You can restore an entire data directory at once, or just the parts you want.
 
 First make sure Haveno is closed. Then copy the entire Haveno directory from your backup and paste it in your machine's default data directory location. If there already is a directory called Haveno there, remove it (or rename it) and replace it with your backup.
 
-Data directories work across operating systems, so you can copy a data directory created on a Mac to the appropriate location on Linux or Windows, and it will work. But, please do not run the same data directory on 2 machines at the same time, even if you don't run both instances at the same time, as data may get corrupted in strange ways.
+Data directories work across operating systems, so you can copy a data directory created on a Mac to the appropriate location on Linux or Windows, and it will work. But please do not run the same data directory on 2 machines at the same time, even if you don't run both instances at the same time, as data may get corrupted in strange ways.
 
 ### 2. Restore payment accounts
 
@@ -79,7 +79,7 @@ A payment account export only contains metadata (name, bank information, etc). F
 
 If you have a payment accounts export file, import it in `Account` -> `Traditional Currency Accounts`
 
-If you don't have an export file, but you do have a full backup, you can salvage your payment account metadata from `xmr_mainnet/db/UserPayload` by running the *strings* utility on the UserPayload file (e.g. run `strings /path/to/backup/xmr_mainnet/db/UserPayload` in a terminal window). The command will output a simplified version of the UserPayload file to your terminal. Scroll up a bit and you should see your payment account information.
+If you don't have an export file, but you do have a full backup, you can salvage your payment account metadata from `xmr_mainnet/db/UserPayload` by running the *strings* utility on the UserPayload file (e.g. run `strings /path/to/backup/xmr_mainnet/db/UserPayload` in a terminal window). The command will output a simplified version of the UserPayload file to your terminal. Scroll up a bit, and you should see your payment account information.
 
 Use the output to copy and paste the details into new payment accounts in Haveno, paying special attention to make sure each field is copied over with 100% accuracy (including the salt): even a 1 character difference in any field will cause the hash of the payment account to be different, which means aging and signing status will not be restored in the following step.
 
@@ -133,7 +133,7 @@ When you open Haveno, your onion address will be restored: this means that the p
 You may want to keep your trade history despite changing wallets. You can do so by:
 
 - Closing Haveno.
-- Replacing the `/path/to/data/directory/xmr_mainnet/db/ClosedTrades` file on your new directory with the file from backup with the same name.
+- Replacing the `/path/to/data/directory/xmr_mainnet/db/ClosedTrades` file in your new directory with the file from the backup with the same name.
 
 You will see bubbles with trade counts in the offer books for any any peers you traded with.
 
