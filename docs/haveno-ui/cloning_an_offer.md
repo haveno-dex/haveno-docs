@@ -58,7 +58,7 @@ You can edit a cloned offer just like any other offer. Click the pencil icon nex
 
 You can clone an offer 10 times. You will get an error message if you try to clone an offer more than 10 times.
 
-Furthermore, you can, however, have multiple offers and clone them each up to 10 times.
+Furthermore, you can have multiple offers and clone them each up to 10 times.
 
 ### What happens when my clone offer is taken?
 
