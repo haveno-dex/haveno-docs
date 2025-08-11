@@ -105,6 +105,8 @@ nav:
       - Core Team: 'the-project/roles/core-team.md'
       - Arbitrators: 'the-project/roles/arbitrators.md'
       - Publishers: 'the-project/roles/publishers.md'
+  - Installation:
+    - Tails: 'the-project/installation/Tails.md'
   - Assets and Payment Methods:
     - Assets: 'the-project/assets.md'
     - Payment Methods:
