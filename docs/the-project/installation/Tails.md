@@ -1,6 +1,6 @@
 # Install Haveno on Tails
 
-After you already have a [Tails USB](https://tails.net/install/linux/index.en.html#download):
+After you already have a [Tails USB](https://tails.net/install/index.en.html):
 
 1. Enable [persistent storage](https://tails.net/doc/persistent_storage/index.en.html).
 2. Set up [administration password](https://tails.net/doc/first_steps/welcome_screen/administration_password/).
