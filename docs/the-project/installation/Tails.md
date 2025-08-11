@@ -18,5 +18,5 @@ After you already have a [Tails USB](https://tails.net/install/index.en.html):
     ```
 5. Start Haveno by finding the icon in the launcher under **Applications > Other**.
 
-> [!note]
-> If you have already installed Haveno on Tails, we recommend moving your data directory (/home/amnesia/Persistent/Haveno-example) to the new default location (/home/amnesia/Persistent/haveno/Data/Haveno-example), to retain your history and for future support.
+!!! info
+    If you have already installed Haveno on Tails, we recommend moving your data directory (/home/amnesia/Persistent/Haveno-example) to the new default location (/home/amnesia/Persistent/haveno/Data/Haveno-example), to retain your history and for future support.
