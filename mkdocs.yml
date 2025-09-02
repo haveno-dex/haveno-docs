@@ -152,6 +152,7 @@ nav:
   - No-deposit trading: 'haveno-ui/no_deposit.md'
   - Cloning an offer: 'haveno-ui/cloning_an_offer.md'
   - Backup & Restore: 'haveno-ui/backup_and_restore.md'
+  - App Logs: 'haveno-ui/logs.md'
 - Tor configuration:
   - DirectBindTor: 'tor-config/DirectBindTor.md'
   - ExternalTor: 'tor-config/external-tor-usage.md'
