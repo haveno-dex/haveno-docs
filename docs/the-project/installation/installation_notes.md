@@ -1,9 +1,7 @@
-Download and install Haveno using an installer for Linux, macOS, or Windows.
-
-The installer is provided by a third party Haveno network.
+Download and install Haveno using an installer for Linux, macOS, or Windows. The installer is provided by the third party Haveno network you're using.
 
 !!! Warning "Attention"
-    The Haveno project does not provide installers, because we do not operate or endorse any mainnet network.
+    The Haveno project does not provide installers because we do not operate or endorse any mainnet network.
 
     First find a third party network and then use their installer, or build their repository by customizing [these instructions](https://docs.haveno.exchange/development/installing/).
 
