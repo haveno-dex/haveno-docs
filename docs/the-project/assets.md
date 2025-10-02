@@ -15,8 +15,6 @@ These are the cryptocurrencies currently listed on Haveno:
 
 <!-- Crypto Logos Archive: https://cryptologos.cc/ -->
 
-<div align="left">
-
 ![Monero](../resources/img/crypto/monero.svg){ .crypto-logos } [Monero](https://getmonero.org)
 
 ![Bitcoin](../resources/img/crypto/btc_logo.png){ .crypto-logos } [Bitcoin](https://bitcoin.org)
@@ -42,8 +40,6 @@ These are the cryptocurrencies currently listed on Haveno:
 ![Dogecoin](../resources/img/crypto/doge_logo.png){ .crypto-logos } [Dogecoin](https://dogecoin.com/)
 
 ![Cardano](../resources/img/crypto/ada_logo.png){ .crypto-logos } [Cardano](https://cardano.org/)
-
-</div>
 
 
 ## Payment Methods and fiat currencies
