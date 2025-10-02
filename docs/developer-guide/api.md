@@ -4,8 +4,6 @@ haveno-ts is a library users and programs can use to interact with Haveno withou
 
 [:material-github: haveno-ts](https://github.com/haveno-dex/haveno-ts){ .md-button .md-button--primary }
 
-The [new user interface](haveno-ui.md) will use haveno-ts to communicate with the Haveno core.
-
 If you are interested in integrating Haveno into your app, let us know and we'll be happy to help you out.
 
 ## Documented API calls

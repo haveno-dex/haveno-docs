@@ -519,7 +519,7 @@ $ /opt/haveno/bin/Haveno --torControlPort=9051 --torControlCookieFile=/var/run/t
 [ --useTorForXmr=on ]
 ```
 
-### [DirectBindTor](DirectBindTor.md) - Static Onion Assignment via `--hiddenServiceAddress`
+### [DirectBindTor](direct-bind-tor.md) - Static Onion Assignment via `--hiddenServiceAddress`
 
 ```shell
   

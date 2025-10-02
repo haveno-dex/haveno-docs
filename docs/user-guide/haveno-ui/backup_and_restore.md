@@ -11,8 +11,8 @@ The safest, quickest, easiest, and most comprehensive thing you can do to safegu
 
 Go to `Account` -> `Backup` and put in a location for your backup to be exported to (note that this section is titled "Backup wallet" in the software, but it actually exports the entire data directory).
 
-![Export backup](../resources/img/haveno-ui/backup_dark.png#only-light)
-![Export backup](../resources/img/haveno-ui/backup_light.png#only-dark)
+![Export backup](../../resources/img/haveno-ui/backup_dark.png#only-light)
+![Export backup](../../resources/img/haveno-ui/backup_light.png#only-dark)
 /// caption
 Data directory backup screen.
 ///
@@ -43,8 +43,8 @@ Export fiat payment accounts here. You can export cryptocurrency accounts from t
 
 Please be sure to properly back up your wallet seed, go in `Account` and click on `WALLET SEED` tab to back up your main wallet.
 
-![Save seed](../resources/img/haveno-ui/save-seed_dark.png#only-light)
-![Save seed](../resources/img/haveno-ui/save-seed_light.png#only-dark)
+![Save seed](../../resources/img/haveno-ui/save-seed_dark.png#only-light)
+![Save seed](../../resources/img/haveno-ui/save-seed_light.png#only-dark)
 
 ### 4. Export Tor state
 
