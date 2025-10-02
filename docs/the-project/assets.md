@@ -17,24 +17,29 @@ These are the cryptocurrencies currently listed on Haveno:
 
 ![Monero](../resources/img/crypto/monero.svg){ .crypto-logos } [Monero](https://getmonero.org)
 
-![Bitcoin](../resources/img/crypto/bitcoin.svg){ .crypto-logos } [Bitcoin](https://bitcoin.org)
+![Bitcoin](../resources/img/crypto/btc_logo.png){ .crypto-logos } [Bitcoin](https://bitcoin.org)
 
-![Litecoin](../resources/img/crypto/litecoin.svg){ .crypto-logos } [Litecoin](https://litecoin.org)
+![Litecoin](../resources/img/crypto/ltc_logo.png){ .crypto-logos } [Litecoin](https://litecoin.org)
 
-![BitcoinCash](../resources/img/crypto/bitcoincash.svg){ .crypto-logos } [Bitcoin Cash](https://bitcoincash.org)
+![BitcoinCash](../resources/img/crypto/bch_logo.png){ .crypto-logos } [Bitcoin Cash](https://bitcoincash.org)
 
-![Ether](../resources/img/crypto/ether.svg){ .crypto-logos } [Ether](https://ethereum.org)
+![Ether](../resources/img/crypto/eth_logo.png){ .crypto-logos } [Ether](https://ethereum.org)
 
-![TetherUSDT](../resources/img/crypto/tether-usdt.svg){ .crypto-logos } [Tether USDT](https://tether.to)
+![TetherUSDT](../resources/img/crypto/usdt_logo.png){ .crypto-logos } [Tether USDT](https://tether.to)
 
-![USDC](../resources/img/crypto/usdc.svg){ .crypto-logos } [USDC](https://www.circle.com/usdc)
+![USDC](../resources/img/crypto/usdc_logo.png){ .crypto-logos } [USD Coin](https://www.circle.com/usdc)
 
-![DAI](../resources/img/crypto/dai.svg){ .crypto-logos } [DAI](https://makerdao.com/en/)
+![DAI](../resources/img/crypto/dai_logo.png){ .crypto-logos } [DAI Stablecoin](https://makerdao.com/en/)
 
-??? info "Version info"
-    - Tether (USDT-ERC20 & USDT-TRC20) support has been available since Haveno 1.0.13
-    - USDC (USDC-ERC20) support has been available since Haveno 1.0.15
-    - Dai Stablecoin (DAI-ERC20) support has been available since Haveno 1.0.19
+![Tron](../resources/img/crypto/trx_logo.png){ .crypto-logos } [Tron](https://tron.network/)
+
+![Solana](../resources/img/crypto/sol_logo.png){ .crypto-logos } [Solana](https://solana.com/)
+
+![Ripple](../resources/img/crypto/xrp_logo.png){ .crypto-logos } [Ripple](https://ripple.com/)
+
+![Dogecoin](../resources/img/crypto/doge_logo.png){ .crypto-logos } [Dogecoin](https://dogecoin.com/)
+
+![Cardano](../resources/img/crypto/ada_logo.png){ .crypto-logos } [Cardano](https://cardano.org/)
 
 
 ## Payment Methods and fiat currencies
