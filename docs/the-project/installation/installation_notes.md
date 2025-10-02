@@ -3,7 +3,7 @@ Haveno can be installed on Linux, macOS, and Windows by using a third party inst
 !!! Warning
     The Haveno project does not provide installers, because we do no operate or endorse any mainnet network.
 
-    First find a third party network, and then use their installer or build their repository by customizing [these instructions](https://docs.haveno.exchange/development/installing/).
+    First find a third party network and then use their installer, or build their repository by customizing [these instructions](https://docs.haveno.exchange/development/installing/).
 
 # Install Haveno on Windows
 
@@ -11,8 +11,7 @@ First uninstall Haveno if it is already installed.
 
 Then run the .exe installer normally.
 
-!!! Default install directory
-    `~\AppData\Roaming\`
+**Default install directory:** `~\AppData\Roaming\`
 
 # Install Haveno on macOS
 
@@ -27,8 +26,7 @@ Then run the .exe installer normally.
 4. Enter your computer password.
 5. Right click /Applications/Haveno.app > Open. Repeat again if needed, even if reported as damaged.
 
-!!! Default install directory
-    `~/Library/Application\ Support/`
+**Default install directory:** `~/Library/Application Support/`
 
 # Install Haveno on Linux
 
@@ -36,8 +34,7 @@ First uninstall Haveno if it is already installed.
 
 Then install from .deb, .rpm, AppImage, or Flatpak for your system.
 
-!!! Default install directory
-    `~/.local/share/`
+**Default install directory:** `~/.local/share/`
 
 # Install Haveno on Tails
 
@@ -59,5 +56,5 @@ After you already have a [Tails USB](https://tails.net/install/index.en.html):
     ```
 5. Start Haveno by finding the icon in the launcher under **Applications > Other**.
 
-!!! info
-    If you have already installed Haveno on Tails, we recommend moving your data directory (/home/amnesia/Persistent/Haveno-example) to the new default location (/home/amnesia/Persistent/haveno/Data/Haveno-example), to retain your history and for future support.
+**Default install directory:** `/home/amnesia/Persistent/haveno/Data/`
+
