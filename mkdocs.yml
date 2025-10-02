@@ -106,7 +106,7 @@ nav:
       - Arbitrators: 'the-project/roles/arbitrators.md'
       - Publishers: 'the-project/roles/publishers.md'
   - Installation:
-    - Tails: 'the-project/installation/Tails.md'
+    - Installation Notes: 'the-project/installation/installation_notes.md'
   - Assets and Payment Methods:
     - Assets: 'the-project/assets.md'
     - Payment Methods:
