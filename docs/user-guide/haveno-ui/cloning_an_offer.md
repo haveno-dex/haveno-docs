@@ -37,8 +37,8 @@ There are two ways to clone an offer. Go to `PORTFOLIO` -> `MY OPEN OFFERS`:
 * Right-click the offer and click 'Clone offer with shared funds'.
 * Press the square clone icon on the right of the offer.
 
-![Clone Offer](../resources/img/haveno-ui/cloning-offer_dark.png#only-light)
-![Clone Offer](../resources/img/haveno-ui/cloning-offer_light.png#only-dark)
+![Clone Offer](../../resources/img/haveno-ui/cloning-offer_dark.png#only-light)
+![Clone Offer](../../resources/img/haveno-ui/cloning-offer_light.png#only-dark)
 /// caption
 Clone offer with shared funds
 ///
