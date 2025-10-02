@@ -19,11 +19,11 @@ These are the cryptocurrencies currently listed on Haveno:
 
 ![Bitcoin](../resources/img/crypto/btc_logo.png){ .crypto-logos } [Bitcoin](https://bitcoin.org)
 
-![Litecoin](../resources/img/crypto/ltc_logo.png){ .crypto-logos } [Litecoin](https://litecoin.org)
-
 ![BitcoinCash](../resources/img/crypto/bch_logo.png){ .crypto-logos } [Bitcoin Cash](https://bitcoincash.org)
 
 ![Ether](../resources/img/crypto/eth_logo.png){ .crypto-logos } [Ether](https://ethereum.org)
+
+![Litecoin](../resources/img/crypto/ltc_logo.png){ .crypto-logos } [Litecoin](https://litecoin.org)
 
 ![TetherUSDT](../resources/img/crypto/usdt_logo.png){ .crypto-logos } [Tether USDT](https://tether.to)
 
