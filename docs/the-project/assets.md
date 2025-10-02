@@ -1,8 +1,5 @@
 # Assets
 
-!!! Note
-    the assets and currencies currently listed on Haveno are inherited from Bisq (but not cryptocurrencies). The list will be cleaned up and trimmed when the new interface will be ready.
-
 These are the assets currently supported on Haveno. The community is welcome to suggest new assets by [opening a request](https://github.com/haveno-dex/listing).
 
 
