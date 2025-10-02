@@ -8,11 +8,11 @@ The installer is provided by a third party Haveno network.
     First find a third party network and then use their installer, or build their repository by customizing [these instructions](https://docs.haveno.exchange/development/installing/).
 
 
-# Run your own Monero node
+# Run your own Monero node (recommended)
 
 For the best experience, running your own local Monero node is highly recommended, because the Tor network can be slow and unreliable with Monero.
 
-You can run your own Monero node by downloading the CLI from https://www.getmonero.org/downloads/.
+You can run your own Monero node by downloading the CLI from [https://www.getmonero.org/downloads/](https://www.getmonero.org/downloads/).
 
 # Install Haveno on Windows
 
@@ -25,9 +25,7 @@ Then run the .exe installer normally.
 # Install Haveno on macOS
 
 !!! Note
-    macOS will prevent Haveno from running until permission is granted.
-
-    Follow these steps to allow the application to run.
+    macOS will prevent Haveno from running until permission is granted. Follow these steps to allow the application to run.
 
 1. Open the .dmg installer and drag Haveno.app to your Applications folder.
 2. Open a terminal window (cmd + space then type "terminal").
