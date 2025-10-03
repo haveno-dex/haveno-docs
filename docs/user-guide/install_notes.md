@@ -1,3 +1,5 @@
+# Install Notes
+
 Download and install Haveno using an installer for Linux, macOS, or Windows. The installer is provided by the third party Haveno network you're using.
 
 !!! Warning "Notice"
@@ -6,13 +8,13 @@ Download and install Haveno using an installer for Linux, macOS, or Windows. The
     First find a third party network and then use their installer, or build their repository by customizing [these instructions](https://docs.haveno.exchange/development/installing/).
 
 
-# Run your own Monero node (recommended)
+## Run your own Monero node (recommended)
 
 For the best experience, running your own local Monero node is highly recommended, because the Tor network can be slow and unreliable with Monero.
 
 You can run your own Monero node by downloading the CLI from [https://www.getmonero.org/downloads/](https://www.getmonero.org/downloads/).
 
-# Install Haveno on Windows
+## Install Haveno on Windows
 
 First uninstall Haveno if it is already installed.
 
@@ -20,7 +22,7 @@ Then run the .exe installer normally.
 
 **Default install directory:** `~\AppData\Roaming\`
 
-# Install Haveno on macOS
+## Install Haveno on macOS
 
 !!! Note
     macOS will prevent Haveno from running until permission is granted. Follow these steps to allow the application to run.
@@ -33,7 +35,7 @@ Then run the .exe installer normally.
 
 **Default install directory:** `~/Library/Application Support/`
 
-# Install Haveno on Linux
+## Install Haveno on Linux
 
 First uninstall Haveno if it is already installed.
 
@@ -41,7 +43,7 @@ Then install from .deb, .rpm, AppImage, or Flatpak for your system.
 
 **Default install directory:** `~/.local/share/`
 
-# Install Haveno on Tails
+## Install Haveno on Tails
 
 After you already have a [Tails USB](https://tails.net/install/index.en.html):
 
