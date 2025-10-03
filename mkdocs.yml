@@ -108,7 +108,7 @@ nav:
   - Assets and Payment Methods:
     - Assets: 'overview/assets.md'
     - Payment Methods:
-      - Overview - Currently supported: 'overview/payment_methods/0-all-methods.md'
+      - Overview: 'overview/payment_methods/overview.md'
       - ACH Transfer: 'overview/payment_methods/ACH.md'
       - Amazon eGift card: 'overview/payment_methods/Amazon_eGift_card.md'
       - Bizum: 'overview/payment_methods/Bizum.md'
@@ -151,7 +151,7 @@ nav:
     - External tor: 'user-guide/tor-config/external-tor-usage.md'
 - Developer Guide:
   - Install and Run Haveno: 'developer-guide/installing.md'
-  - API: 'developer-guide/api.md'
+  - Haveno API: 'developer-guide/api.md'
   - Bounties: 'developer-guide/bounties.md'
   - Development Environment: 'developer-guide/importing.md'
   - Contributor Guidelines: 'developer-guide/contributor-guidelines.md'
