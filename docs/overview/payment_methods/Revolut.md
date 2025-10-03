@@ -14,4 +14,4 @@ On the bottom of your Revolut app, tap the two arrows symbol in the middle. Then
 
 #### 3. Pay to username
 
-Revolut calls usernames "Revtags", and has a help center article called [How can I send money by Revtag?](https://help.revolut.com/help/transfers/internal-transfers/username-payments/how-can-i-send-money-by-username) which explains how to send money to one. If that doesn't work, see [Why can’t I pay someone by Revtag?](https://help.revolut.com/help/transfers/internal-transfers/username-payments/why-cant-i-pay-someone-by-username) and make sure that "Payments with friends" is enabled.
+Revolut calls usernames "Revtags", and has a [help center article](https://help.revolut.com/help/transfers/internal-transfers/username-payments/revtags/) about them.
