@@ -14,18 +14,18 @@ For the best experience, running your own local Monero node is highly recommende
 
 You can run your own Monero node by downloading the CLI from [https://www.getmonero.org/downloads/](https://www.getmonero.org/downloads/).
 
-## Install Haveno on Windows
+## Install Haveno on Linux
 
 First uninstall Haveno if it is already installed.
 
-Then run the .exe installer normally.
+Then install from .deb, .rpm, AppImage, or Flatpak for your system.
 
-**Default install directory:** `~\AppData\Roaming\`
+**Default install directory:** `~/.local/share/`
 
 ## Install Haveno on macOS
 
 !!! Note
-    macOS will prevent Haveno from running until permission is granted. Follow these steps to allow the application to run.
+    macOS will not allow Haveno to run until permission is granted. Follow these steps to allow the application to run.
 
 1. Open the .dmg installer and drag Haveno.app to your Applications folder.
 2. Open a terminal window (cmd + space then type "terminal").
@@ -35,13 +35,13 @@ Then run the .exe installer normally.
 
 **Default install directory:** `~/Library/Application Support/`
 
-## Install Haveno on Linux
+## Install Haveno on Windows
 
 First uninstall Haveno if it is already installed.
 
-Then install from .deb, .rpm, AppImage, or Flatpak for your system.
+Then run the .exe installer normally.
 
-**Default install directory:** `~/.local/share/`
+**Default install directory:** `~\AppData\Roaming\`
 
 ## Install Haveno on Tails
 
