@@ -140,7 +140,7 @@ nav:
       - Zelle: 'overview/payment_methods/Zelle.md'
     - Account limits: 'overview/account_limits.md'
 - User Guide:
-  - Install Notes: 'user-guide/install_notes.md'
+  - Install Instructions: 'user-guide/install_instructions.md'
   - Haveno UI:
     - No-deposit trading: 'user-guide/haveno-ui/no_deposit.md'
     - Cloning an offer: 'user-guide/haveno-ui/cloning_an_offer.md'
