@@ -139,19 +139,21 @@ nav:
       - Wise USD: 'overview/payment_methods/Wise-USD.md'
       - Zelle: 'overview/payment_methods/Zelle.md'
     - Account limits: 'overview/account_limits.md'
-- User Guide:
-  - Install Instructions: 'user-guide/install_instructions.md'
+- Users:
+  - Install Instructions: 'users/install_instructions.md'
   - Haveno UI:
-    - No-deposit trading: 'user-guide/haveno-ui/no_deposit.md'
-    - Cloning an offer: 'user-guide/haveno-ui/cloning_an_offer.md'
-    - Backup & Restore: 'user-guide/haveno-ui/backup_and_restore.md'
-    - App Logs: 'user-guide/haveno-ui/logs.md'
+    - No-deposit trading: 'users/haveno-ui/no_deposit.md'
+    - Cloning an offer: 'users/haveno-ui/cloning_an_offer.md'
+    - Backup & Restore: 'users/haveno-ui/backup_and_restore.md'
+    - App Logs: 'users/haveno-ui/logs.md'
   - Tor configuration:
-    - Direct bind: 'user-guide/tor-config/direct-bind-tor.md'
-    - External tor: 'user-guide/tor-config/external-tor-usage.md'
-- Developer Guide:
-  - Install and Run Haveno: 'developer-guide/installing.md'
-  - Haveno API: 'developer-guide/api.md'
-  - Bounties: 'developer-guide/bounties.md'
-  - Development Environment: 'developer-guide/importing.md'
-  - Contributor Guidelines: 'developer-guide/contributor-guidelines.md'
+    - Direct bind: 'users/tor-config/direct-bind-tor.md'
+    - External tor: 'users/tor-config/external-tor-usage.md'
+- Admins:
+  - Create Mainnet POC: 'admins/create-mainnet-poc.md'
+- Developers:
+  - Build and Run Haveno: 'developers/installing.md'
+  - Haveno API: 'developers/api.md'
+  - Bounties: 'developers/bounties.md'
+  - Development Environment: 'developers/importing.md'
+  - Contributor Guidelines: 'developers/contributor-guidelines.md'
