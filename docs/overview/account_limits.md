@@ -108,4 +108,4 @@ Self-signed accounts are immediately signed, but limits are not immediately lift
 
 ## Backing up and restoring payment accounts
 
-Once your payment accounts have accrued age and been signed, you won't want to give them up. With [proper backups](../user-guide/haveno-ui/backup_and_restore.md), you won't have to—payment accounts can be restored if you ever have to remove/reinstall Haveno, move to another machine, etc.
+Once your payment accounts have accrued age and been signed, you won't want to give them up. With [proper backups](../users/haveno-ui/backup_and_restore.md), you won't have to—payment accounts can be restored if you ever have to remove/reinstall Haveno, move to another machine, etc.
