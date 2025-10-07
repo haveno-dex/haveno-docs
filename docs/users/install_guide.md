@@ -1,4 +1,4 @@
-# Install Instructions
+# Install Guide
 
 Download and install Haveno using an installer for Linux, macOS, or Windows. The installer is provided by the third party Haveno network you're using.
 
