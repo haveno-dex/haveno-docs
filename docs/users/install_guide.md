@@ -1,12 +1,13 @@
 # Install Guide
 
+## Download an installer for your desktop system
+
 Download and install Haveno using an installer for Linux, macOS, or Windows. The installer is provided by the third party Haveno network you're using.
 
 !!! Warning "Note"
-    The Haveno project does not provide installers directly, because we do not operate or endorse any mainnet network.
+    The Haveno project does not provide installers, because we do not operate or endorse any mainnet network.
 
-    First find a third party network and then use their installer, or build their repository by customizing [these instructions](https://docs.haveno.exchange/developers/installing/).
-
+    First find a third party network, and then download their installer or build their repository by customizing [these instructions](https://docs.haveno.exchange/developers/installing/).
 
 ## Run your own Monero node (recommended)
 
