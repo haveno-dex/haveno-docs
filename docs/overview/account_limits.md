@@ -78,7 +78,7 @@ Payment accounts that require signing cannot buy more than 3 XMR until 30 days *
 
 To sign your account you have to buy XMR following these requirements:
 
-- trade amount is greater than or equal to 0.1 XMR and lesser than or equal to 3 XMR
+- trade amount is greater than or equal to 0.05 XMR and lesser than or equal to 3 XMR
 - seller's account must have been signed for over 30 days at the time of the signing trade
 
 Through taking an offer you can make sure that the offer fulfils the requirements to sign your account. Making an offer could not sign your account, because taker could be unable to sign your account (signed since less than 30 days, or unsigned).
@@ -90,7 +90,7 @@ The Haveno interface makes it easy to determine if an offer can help you get sig
 Top offers won't get you signed. Bottom offers will get you signed.
 ///
 
-In the image above, the offers on top do not have a check mark, but the offers on the bottom do. And it's a valid size (i.e. between 0.1 XMR and 3 XMR), so taking that offer and successfully completing the trade will result in a signed account.
+In the image above, the offers on top do not have a check mark, but the offers on the bottom do. And it's a valid size (i.e. between 0.05 XMR and 3 XMR), so taking that offer and successfully completing the trade will result in a signed account.
 
 You can see your payment account's limits and signing status at <br>
 `Accounts` > `Traditional Currency Accounts` Pick an account and look toward the bottom:
