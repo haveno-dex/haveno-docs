@@ -1,0 +1,4422 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://docs.haveno.exchange/users/tor-config/external-tor-usage/">
+      
+      
+        <link rel="prev" href="../direct-bind-tor/">
+      
+      
+        <link rel="next" href="../../../admins/create-mainnet-poc/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../resources/img/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.3">
+    
+    
+      
+        <title>External tor - Haveno Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        
+        <link rel="stylesheet" href="../../../assets/external/fonts.googleapis.com/css.49ea35f2.css">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#using-externaltor-with-haveno" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <div data-md-color-scheme="default" data-md-component="outdated" hidden>
+        
+      </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="Haveno Documentation" class="md-header__button md-logo" aria-label="Haveno Documentation" data-md-component="logo">
+      
+  <img src="../../../resources/img/haveno.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Haveno Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              External tor
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.3 16-.7-2h-3.2l-.7 2H7.8L11 7h2l3.2 9zM20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12zm-9.15 3.96h2.3L12 9z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="youtube" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/haveno-dex/haveno-docs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    haveno-dex/haveno-docs
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../overview/overview/" class="md-tabs__link">
+          
+  
+  
+  Overview
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../install_guide/" class="md-tabs__link">
+          
+  
+  
+  Users
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../admins/create-mainnet-poc/" class="md-tabs__link">
+          
+  
+  
+  Admins
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../developers/installing/" class="md-tabs__link">
+          
+  
+  
+  Developers
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Haveno Documentation" class="md-nav__button md-logo" aria-label="Haveno Documentation" data-md-component="logo">
+      
+  <img src="../../../resources/img/haveno.svg" alt="logo">
+
+    </a>
+    Haveno Documentation
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/haveno-dex/haveno-docs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    haveno-dex/haveno-docs
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Overview
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The Basics
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    The Basics
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../overview/overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview of Haveno
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../overview/trade-protocol/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Trade Protocol
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../overview/dispute-resolution/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Dispute Resolution
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_1_4" id="__nav_2_1_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Roles
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_1_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_1_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Roles
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../overview/roles/core-team/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Core Team
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../overview/roles/arbitrators/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Arbitrators
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../overview/roles/publishers/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Publishers
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Assets and Payment Methods
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Assets and Payment Methods
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../overview/assets/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Assets
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2_2" id="__nav_2_2_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Payment Methods
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Payment Methods
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../overview/payment_methods/overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../overview/payment_methods/ACH/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ACH Transfer
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../overview/payment_methods/Amazon_eGift_card/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Amazon eGift card
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../overview/payment_methods/Bizum/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bizum
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../overview/payment_methods/Domestic_Wire_Transfer/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Domestic Wire Transfer
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../overview/payment_methods/F2F/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    F2F
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../overview/payment_methods/Faster_Payments/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Faster Payments
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../overview/payment_methods/IMPS/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    IMPS
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../overview/payment_methods/interac_e-transfer/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Interac e-transfer
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../overview/payment_methods/Monese/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Monese
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../overview/payment_methods/NEFT/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    NEFT
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../overview/payment_methods/Nequi/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Nequi
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../overview/payment_methods/Paxum/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Paxum
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../overview/payment_methods/Pay_By_Mail/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pay By Mail
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../overview/payment_methods/Paysera/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Paysera
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../overview/payment_methods/PayTM/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    PayTM
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../overview/payment_methods/Pix/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pix
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../overview/payment_methods/Revolut/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Revolut
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../overview/payment_methods/RTGS/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    RTGS
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../overview/payment_methods/Satispay/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Satispay
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../overview/payment_methods/SEPA/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SEPA
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../overview/payment_methods/SEPA_Instant/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SEPA Instant
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../overview/payment_methods/Strike/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Strike
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../overview/payment_methods/SWIFT/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SWIFT
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../overview/payment_methods/UPI/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UPI
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../overview/payment_methods/US_Postal_Money_Order/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    US Postal Money Order
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../overview/payment_methods/Verse/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Verse
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../overview/payment_methods/Wise/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wise
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../overview/payment_methods/Wise-USD/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wise USD
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../overview/payment_methods/Zelle/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zelle
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../overview/account_limits/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Account limits
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Users
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Users
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../install_guide/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Install Guide
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../logs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    App Logs
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Haveno UI
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Haveno UI
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../haveno-ui/no_deposit/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    No-deposit trading
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../haveno-ui/cloning_an_offer/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cloning an offer
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../haveno-ui/backup_and_restore/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Backup & Restore
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3_4" id="__nav_3_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tor configuration
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Tor configuration
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../direct-bind-tor/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Direct bind
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    External tor
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    External tor
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#how-to-install-little-t-tor-for-your-platform" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How to Install little-t-tor for Your Platform
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="How to Install little-t-tor for Your Platform">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#macos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        macOS
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="macOS">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#install-a-package-manager" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Install a Package Manager
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#package-installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Package Installation
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Package Installation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#homebrew" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Homebrew
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#macports" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Macports
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#debian-ubuntu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Debian / Ubuntu
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Debian / Ubuntu">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#package-installation_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Package Installation
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fedora" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fedora
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Fedora">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#package-installation_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Package Installation
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#arch-linux" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Arch Linux
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Arch Linux">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#package-installation_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Package Installation
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#installing-tor-from-source" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Installing tor from source
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Installing tor from source">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#download-latest-release-dependencies" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Download Latest Release &amp; Dependencies
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#install-tor" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Install tor
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#windows" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Windows
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Windows">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#download" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Download
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#extract" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Extract
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#open-terminal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Open Terminal
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#change-to-location-of-extracted-archive" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Change to Location of Extracted Archive
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#package-installation_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Package Installation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#create-service" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Create Service
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#start-service" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Start Service
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configuring-tor-via-torrc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Configuring tor via torrc
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Configuring tor via torrc">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#im-supposed-to-edit-my-torrc-what-does-that-mean" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        I'm supposed to "edit my torrc". What does that mean?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sample-torrc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sample torrc
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#enable-torcontrolport-in-torrc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Enable torControlPort in torrc
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#authentication" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Authentication
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Authentication">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cookieauthentication" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CookieAuthentication
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hashedcontrolpassword" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        HashedControlPassword
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#restart-tor" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Restart tor
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#optional" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        * Optional *
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="* Optional *">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#set-up-your-onion-service" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Set Up Your Onion Service
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#havenos-tor-aware-options" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Haveno's tor Aware Options
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Haveno&#39;s tor Aware Options">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#options" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Options
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Options">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#-hiddenserviceaddress" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        --hiddenServiceAddress
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-nodeport" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        --nodePort
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-socks5proxyxmraddress" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        --socks5ProxyXmrAddress
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-torrcfile" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        --torrcFile
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-torrcoptions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        --torrcOptions
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-torcontrolhost" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        --torControlHost
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-torcontrolport" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        --torControlPort
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-torcontrolpassword" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        --torControlPassword
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-torcontrolcookiefile" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        --torControlCookieFile
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-torcontrolusesafecookieauth" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        --torControlUseSafeCookieAuth
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-torstreamisolation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        --torStreamIsolation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-usetorforxmr" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        --useTorForXmr
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-socks5discovermode" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        --socks5DiscoverMode
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#starting-haveno-using-externally-available-tor" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Starting Haveno Using Externally Available tor
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Starting Haveno Using Externally Available tor">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#externaltor-dynamic-onion-assignment-via-torcontrolport" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ExternalTor - Dynamic Onion Assignment via --torControlPort
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#directbindtor-static-onion-assignment-via-hiddenserviceaddress" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        DirectBindTor - Static Onion Assignment via --hiddenServiceAddress
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Admins
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Admins
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../admins/create-mainnet-poc/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Create Mainnet POC
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Developers
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Developers
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../developers/installing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Build and Run Haveno
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../developers/api/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Haveno API
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../developers/bounties/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bounties
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../developers/importing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Development Environment
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../developers/contributor-guidelines/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Contributor Guidelines
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#how-to-install-little-t-tor-for-your-platform" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How to Install little-t-tor for Your Platform
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="How to Install little-t-tor for Your Platform">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#macos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        macOS
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="macOS">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#install-a-package-manager" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Install a Package Manager
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#package-installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Package Installation
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Package Installation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#homebrew" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Homebrew
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#macports" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Macports
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#debian-ubuntu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Debian / Ubuntu
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Debian / Ubuntu">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#package-installation_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Package Installation
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fedora" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fedora
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Fedora">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#package-installation_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Package Installation
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#arch-linux" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Arch Linux
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Arch Linux">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#package-installation_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Package Installation
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#installing-tor-from-source" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Installing tor from source
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Installing tor from source">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#download-latest-release-dependencies" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Download Latest Release &amp; Dependencies
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#install-tor" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Install tor
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#windows" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Windows
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Windows">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#download" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Download
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#extract" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Extract
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#open-terminal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Open Terminal
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#change-to-location-of-extracted-archive" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Change to Location of Extracted Archive
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#package-installation_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Package Installation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#create-service" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Create Service
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#start-service" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Start Service
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configuring-tor-via-torrc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Configuring tor via torrc
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Configuring tor via torrc">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#im-supposed-to-edit-my-torrc-what-does-that-mean" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        I'm supposed to "edit my torrc". What does that mean?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sample-torrc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sample torrc
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#enable-torcontrolport-in-torrc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Enable torControlPort in torrc
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#authentication" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Authentication
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Authentication">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cookieauthentication" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CookieAuthentication
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hashedcontrolpassword" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        HashedControlPassword
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#restart-tor" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Restart tor
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#optional" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        * Optional *
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="* Optional *">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#set-up-your-onion-service" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Set Up Your Onion Service
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#havenos-tor-aware-options" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Haveno's tor Aware Options
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Haveno&#39;s tor Aware Options">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#options" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Options
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Options">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#-hiddenserviceaddress" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        --hiddenServiceAddress
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-nodeport" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        --nodePort
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-socks5proxyxmraddress" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        --socks5ProxyXmrAddress
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-torrcfile" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        --torrcFile
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-torrcoptions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        --torrcOptions
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-torcontrolhost" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        --torControlHost
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-torcontrolport" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        --torControlPort
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-torcontrolpassword" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        --torControlPassword
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-torcontrolcookiefile" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        --torControlCookieFile
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-torcontrolusesafecookieauth" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        --torControlUseSafeCookieAuth
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-torstreamisolation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        --torStreamIsolation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-usetorforxmr" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        --useTorForXmr
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-socks5discovermode" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        --socks5DiscoverMode
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#starting-haveno-using-externally-available-tor" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Starting Haveno Using Externally Available tor
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Starting Haveno Using Externally Available tor">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#externaltor-dynamic-onion-assignment-via-torcontrolport" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ExternalTor - Dynamic Onion Assignment via --torControlPort
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#directbindtor-static-onion-assignment-via-hiddenserviceaddress" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        DirectBindTor - Static Onion Assignment via --hiddenServiceAddress
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+    <a href="https://github.com/haveno-dex/haveno-docs/edit/master/docs/users/tor-config/external-tor-usage.md" title="Edit this page" class="md-content__button md-icon" rel="edit">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
+    </a>
+  
+  
+    
+      
+    
+    <a href="https://github.com/haveno-dex/haveno-docs/raw/master/docs/users/tor-config/external-tor-usage.md" title="View source of this page" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 18c.56 0 1 .44 1 1s-.44 1-1 1-1-.44-1-1 .44-1 1-1m0-3c-2.73 0-5.06 1.66-6 4 .94 2.34 3.27 4 6 4s5.06-1.66 6-4c-.94-2.34-3.27-4-6-4m0 6.5a2.5 2.5 0 0 1-2.5-2.5 2.5 2.5 0 0 1 2.5-2.5 2.5 2.5 0 0 1 2.5 2.5 2.5 2.5 0 0 1-2.5 2.5M9.27 20H6V4h7v5h5v4.07c.7.08 1.36.25 2 .49V8l-6-6H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h4.5a8.2 8.2 0 0 1-1.23-2"/></svg>
+    </a>
+  
+
+
+<h1 id="using-externaltor-with-haveno">Using ExternalTor with Haveno</h1>
+<p><a href="https://github.com/haveno-dex/netlayer/blob/master/tor.external/src/main/kotlin/org/berndpruenster/netlayer/tor/ExternalTor.kt">Netlayer ExternalTor</a></p>
+<h2 id="how-to-install-little-t-tor-for-your-platform"><a href="https://support.torproject.org/little-t-tor/#little-t-tor_install-little-t-tor">How to Install little-t-tor for Your Platform</a></h2>
+<p>The following <code>tor</code> installation instructions are presented here for convenience.</p>
+<ul>
+<li>
+<p><strong>For the most complete, up-to-date &amp; authoritative steps, readers are encouraged to refer to the <a href="https://support.torproject.org/little-t-tor/">Tor Project's Official Install instructions</a></strong></p>
+</li>
+<li>
+<p><strong>Notes:</strong></p>
+</li>
+</ul>
+<p>For optimum compatibility with Haveno, the running <code>tor</code> version should match the internal Haveno <code>tor</code> versions or be a newer <code>tor</code> version.</p>
+<p>For best results, use a version of <code>tor</code> which supports the <a href="https://onionservices.torproject.org/technology/security/pow">Onion Service Proof of Work</a> (<code>PoW</code>) mechanism.
+* (IE: <code>GNU</code> build of <code>tor</code>)</p>
+<ul>
+<li><strong>Note Regarding Admin Access:</strong></li>
+</ul>
+<p>To install <code>tor</code> you need root privileges. Below all commands that need to be run as <code>root</code> user like <code>apt</code> and <code>dpkg</code> are prepended with <code>#</code>, while commands to be run as user with <code>$</code> resembling the standard prompt in a terminal.</p>
+<h3 id="macos">macOS</h3>
+<h4 id="install-a-package-manager">Install a Package Manager</h4>
+<p>Two of the most popular package managers for <code>macOS</code> are:</p>
+<p><a href="https://brew.sh">Homebrew</a> and <a href="https://www.macports.org">Macports</a></p>
+<p>(You can use the package manager of your choice)</p>
+<ul>
+<li>Install <a href="https://brew.sh">Homebrew</a></li>
+</ul>
+<p>Follow the instructions on <a href="https://brew.sh">brew.sh</a></p>
+<ul>
+<li>Install <a href="https://www.macports.org">Macports</a></li>
+</ul>
+<p>Follow the instructions on <a href="https://www.macports.org">macports.org</a></p>
+<h4 id="package-installation">Package Installation</h4>
+<h5 id="homebrew"><a href="https://brew.sh"><code>Homebrew</code></a></h5>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c1"># brew update &amp;&amp; brew install tor</span>
+</code></pre></div>
+<h5 id="macports"><a href="https://www.macports.org"><code>Macports</code></a></h5>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="c1"># port sync &amp;&amp; port install tor</span>
+</code></pre></div>
+<h3 id="debian-ubuntu">Debian / Ubuntu</h3>
+<ul>
+<li>
+<p><em>Do </em><em>not</em><em> use the packages in Ubuntu's universe. In the past they have not reliably been updated. That means you could be missing stability and security fixes.</em></p>
+</li>
+<li>
+<p>Configure the <a href="https://deb.torproject.org/torproject.org">Official Tor Package Repository</a></p>
+</li>
+</ul>
+<p>Enable the <a href="https://deb.torproject.org/torproject.org">Official Tor Package Repository</a> following these <a href="https://support.torproject.org/apt/tor-deb-repo/">instructions</a></p>
+<h4 id="package-installation_1">Package Installation</h4>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="c1"># apt update &amp;&amp; apt install tor</span>
+</code></pre></div>
+<details class="info">
+<summary>Debian</summary>
+<p>Useing the official TorProject repository is recommended. Debian users who are overwhelmed by this can also use the tor packages from backports in Debian stable.
+Debian backport releases are usually only a few days later than <code>deb.torproject.org</code> and are built by the same maintainer, Peter Palfrader.</p>
+</details>
+<h3 id="fedora">Fedora</h3>
+<ul>
+<li>Configure the <a href="https://rpm.torproject.org/fedora">Official Tor Package Repository</a></li>
+</ul>
+<p>Enable the <a href="https://rpm.torproject.org/fedora">Official Tor Package Repository</a> by following these <a href="https://support.torproject.org/rpm/tor-rpm-install">instructions</a></p>
+<h4 id="package-installation_2">Package Installation</h4>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a># dnf update &amp;&amp; dnf install tor
+</code></pre></div>
+<h3 id="arch-linux">Arch Linux</h3>
+<h4 id="package-installation_3">Package Installation</h4>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="c1"># pacman -Fy &amp;&amp; pacman -Syu tor</span>
+</code></pre></div>
+<h3 id="installing-tor-from-source">Installing <code>tor</code> from source</h3>
+<h4 id="download-latest-release-dependencies">Download Latest Release &amp; Dependencies</h4>
+<p>The latest release of <code>tor</code> can be found on the <a href="https://www.torproject.org/download/tor">download</a> page.</p>
+<ul>
+<li>When building from source:</li>
+</ul>
+<p><em>First</em> install <code>libevent</code>,<code>openssl</code> &amp; <code>zlib</code></p>
+<p><em>(Including the -devel packages when applicable)</em></p>
+<h4 id="install-tor">Install <code>tor</code></h4>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>$<span class="w"> </span>tar<span class="w"> </span>-xzf<span class="w"> </span>tor-&lt;version&gt;.tar.gz<span class="p">;</span><span class="w"> </span><span class="nb">cd</span><span class="w"> </span>tor-&lt;version&gt;
+</code></pre></div>
+<ul>
+<li>Replace <code>&lt;version&gt;</code> with the latest version of <code>tor</code></li>
+</ul>
+<p>For example, <code>tor-0.4.8.14</code></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>$<span class="w"> </span>./configure<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>make
+</code></pre></div>
+<ul>
+<li>Now you can run <code>tor</code> (0.4.3.x and Later) locally like this:</li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>$<span class="w"> </span>./src/app/tor
+</code></pre></div>
+<p>Or, you can run <code>make install</code> (as <code>root</code> if necessary) to install it globally into <code>/usr/local/</code></p>
+<ul>
+<li>Now you can run <code>tor</code> directly without absolute path like this:</li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>$<span class="w"> </span>tor
+</code></pre></div>
+<h3 id="windows">Windows</h3>
+<h4 id="download">Download</h4>
+<ul>
+<li>Download the <code>Windows Expert Bundle</code> from the <a href="https://www.torproject.org/download/tor">Official Tor Project's Download page</a></li>
+</ul>
+<h4 id="extract">Extract</h4>
+<ul>
+<li>Extract Archive to Disk</li>
+</ul>
+<h4 id="open-terminal">Open Terminal</h4>
+<ul>
+<li>Open PowerShell with Admin Privileges</li>
+</ul>
+<h4 id="change-to-location-of-extracted-archive">Change to Location of Extracted Archive</h4>
+<ul>
+<li>Navigate to <code>Tor</code> Directory</li>
+</ul>
+<h4 id="package-installation_4">Package Installation</h4>
+<ul>
+<li>
+<p>v10
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="nb">PS </span><span class="n">C</span><span class="p">:\</span><span class="n">Tor</span><span class="p">\&gt;</span> <span class="n">tor</span><span class="p">.</span><span class="n">exe</span> <span class="err">–</span><span class="n">-service</span> <span class="n">install</span>
+</code></pre></div></p>
+</li>
+<li>
+<p>v11
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="nb">PS </span><span class="n">C</span><span class="p">:\</span><span class="n">Tor</span><span class="p">\&gt;</span> <span class="n">tor</span><span class="p">.</span><span class="n">exe</span> <span class="err">–</span><span class="n">-service</span> <span class="n">install</span>
+</code></pre></div></p>
+</li>
+</ul>
+<h4 id="create-service">Create Service</h4>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="nb">PS </span><span class="n">C</span><span class="p">:\</span><span class="n">Tor</span><span class="p">\&gt;</span> <span class="nb">sc </span><span class="n">create</span> <span class="n">tor</span> <span class="n">start</span><span class="p">=</span><span class="n">auto</span> <span class="n">binPath</span><span class="p">=</span><span class="s2">&quot;&lt;PATH TO&gt;\Tor\tor.exe -nt-service&quot;</span>
+</code></pre></div>
+<h4 id="start-service">Start Service</h4>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="nb">PS </span><span class="n">C</span><span class="p">:\</span><span class="n">Tor</span><span class="p">\&gt;</span> <span class="nb">sc start </span><span class="n">tor</span>
+</code></pre></div>
+<h2 id="configuring-tor-via-torrc">Configuring <code>tor</code> via <code>torrc</code></h2>
+<h4 id="im-supposed-to-edit-my-torrc-what-does-that-mean"><a href="https://support.torproject.org/tbb/tbb-editing-torrc/">I'm supposed to "edit my torrc". What does that mean?</a></h4>
+<ul>
+<li>Per the <a href="https://support.torproject.org/tbb/tbb-editing-torrc/">Official Tor Project's support page</a>:</li>
+<li>
+<p><strong>WARNING:</strong> Do <strong>NOT</strong> follow random advice instructing you to edit your torrc! Doing so can allow an attacker to compromise your security and anonymity through malicious configuration of your torrc.</p>
+<p><strong>Note:</strong></p>
+<p>The <code>torrc</code> location will <strong>not</strong> match those stated in the documentation linked above and will vary across each platform.</p>
+</li>
+</ul>
+<h4 id="sample-torrc"><a href="https://gitlab.torproject.org/tpo/core/tor/-/blob/HEAD/src/config/torrc.sample.in">Sample <code>torrc</code></a></h4>
+<p>Users are <strong>strongly</strong> encouraged to review both the <a href="https://support.torproject.org/tbb/tbb-editing-torrc/">Official Tor Project's support page</a> as well as the <a href="https://gitlab.torproject.org/tpo/core/tor/-/blob/HEAD/src/config/torrc.sample.in">sample <code>torrc</code></a> before proceeding. On unixoid systems you can use <code>man torrc</code> of your installed tor binary.</p>
+<h4 id="enable-torcontrolport-in-torrc">Enable <code>torControlPort</code> in <code>torrc</code></h4>
+<p>In order for Haveno to use the <code>--torControlPort</code> option, it must be enabled and accessible. The most common way to do so is to edit the <code>torrc</code> fiel with a text editor to ensure that an entry for <code>ControlPort</code> followed by port number to listen on is present in the <code>torrc</code> file.</p>
+<h4 id="authentication"><a href="https://spec.torproject.org/control-spec/implementation-notes.html#authentication">Authentication</a></h4>
+<p>Per the <a href="https://spec.torproject.org/control-spec/implementation-notes.html">Tor Control Protocol - Implementation Notes</a>:</p>
+<ul>
+<li><strong>"If the control port is open and no authentication operation is enabled, <code>tor</code> trusts any local user that connects to the control port. This is generally a poor idea."</strong></li>
+</ul>
+<h5 id="cookieauthentication"><code>CookieAuthentication</code></h5>
+<p>If the <code>CookieAuthentication</code> option is true, <code>tor</code> writes a <em>"magic cookie"</em> file named <code>control_auth_cookie</code> into its data directory (or to another file specified in the <code>CookieAuthFile</code> option).</p>
+<p>Example:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>ControlPort<span class="w"> </span><span class="m">9051</span>
+<a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a>CookieAuthentication<span class="w"> </span><span class="m">1</span>
+</code></pre></div>
+<h5 id="hashedcontrolpassword"><code>HashedControlPassword</code></h5>
+<p>If the <code>HashedControlPassword</code> option is set, it must contain the salted hash of a secret password. The salted hash is computed according to the S2K algorithm in <code>RFC 2440</code> of <code>OpenPGP</code>, and prefixed with the s2k specifier. This is then encoded in hexadecimal, prefixed by the indicator sequence "16:".</p>
+<ul>
+<li><code>HashedControlPassword</code> can be generated like so:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>$<span class="w"> </span>tor<span class="w"> </span>--hash-password<span class="w"> </span>&lt;password&gt;
+</code></pre></div></li>
+</ul>
+<p>Example:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a>ControlPort<span class="w"> </span><span class="m">9051</span>
+<a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a>HashedControlPassword<span class="w"> </span><span class="m">16</span>:C01147DC5F4DA2346056668DD23522558D0E0C8B5CC88FE72EEBC51967
+</code></pre></div>
+<h5 id="restart-tor">Restart <code>tor</code></h5>
+<p><code>tor</code> must be restarted for changes to <code>torrc</code> to be applied.</p>
+<h3 id="optional">* <strong>Optional</strong> *</h3>
+<h4 id="set-up-your-onion-service"><a href="https://community.torproject.org/onion-services/setup">Set Up Your Onion Service</a></h4>
+<p>While not a <em>strict</em> requirement for use with Haveno, some users may wish to configure an <a href="https://community.torproject.org/onion-services">Onion Service</a></p>
+<ul>
+<li><strong>Only Required When Using The Haveno <code>--hiddenServiceAddress</code> Option</strong></li>
+</ul>
+<p>Please see the <a href="https://community.torproject.org/onion-services/setup">Official Tor Project's Documentation</a> for more information about configuration and usage of these services.</p>
+<h2 id="havenos-tor-aware-options">Haveno's <code>tor</code> Aware Options</h2>
+<p>Haveno is a natively <code>tor</code> aware application and offers <strong>many</strong> flexible configuration options for use by privacy conscious users.</p>
+<p>While some are mutually exclusive, many are cross-applicable.</p>
+<p>Users are encouraged to experiment with options before use to determine which options best fit their personal threat profile.</p>
+<h3 id="options">Options</h3>
+<h4 id="-hiddenserviceaddress"><code>--hiddenServiceAddress</code></h4>
+<ul>
+<li>Function:</li>
+</ul>
+<p>This option configures a <em>static</em> Hidden Service Address to listen on</p>
+<ul>
+<li>Expected Input Format:</li>
+</ul>
+<p><code>&lt;String&gt;</code></p>
+<p>(<code>ed25519</code>)</p>
+<ul>
+<li>Acceptable Values</li>
+</ul>
+<p><code>&lt;v3 Onion Address Value&gt;</code></p>
+<ul>
+<li>Default value:</li>
+</ul>
+<p><code>null</code></p>
+<h4 id="-nodeport"><code>--nodePort</code></h4>
+<ul>
+<li>Function:</li>
+</ul>
+<p>This option configures Haveno P2P Port to listen on</p>
+<ul>
+<li>Expected Input Format:</li>
+</ul>
+<p><code>&lt;Integer</code></p>
+<ul>
+<li>Acceptable Values</li>
+</ul>
+<p><code>&lt;Port Value&gt;</code></p>
+<ul>
+<li>Default value:</li>
+</ul>
+<p><code>9999</code></p>
+<h4 id="-socks5proxyxmraddress"><code>--socks5ProxyXmrAddress</code></h4>
+<ul>
+<li>Function:</li>
+</ul>
+<p>A proxy address to be used for <code>monero</code> network</p>
+<ul>
+<li>Expected Input Format:</li>
+</ul>
+<p><code>&lt;String&gt;</code></p>
+<ul>
+<li>Acceptable Values</li>
+</ul>
+<p><code>&lt;Host:Port Value&gt;</code></p>
+<ul>
+<li>Default value:</li>
+</ul>
+<p><code>null</code></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Option <code>--socks5ProxyXmrAddress=127.0.0.1:9050</code> may prevent retrieving prices from Pricenodes on some systems.
+See: <a href="https://github.com/haveno-dex/haveno/issues/1649">Github Issue</a></p>
+</div>
+<h4 id="-torrcfile"><code>--torrcFile</code></h4>
+<ul>
+<li>Function:</li>
+</ul>
+<p>An existing <code>torrc</code>-file to be sourced for <code>tor</code></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><code>torrc</code>-entries which are critical to Haveno's flawless operation (<code>torrc</code> options line, <code>torrc</code> option, ...) can <strong>not</strong> be overwritten</p>
+</div>
+<ul>
+<li>Expected Input Format:</li>
+</ul>
+<p><code>&lt;String&gt;</code></p>
+<ul>
+<li>Acceptable Values</li>
+</ul>
+<p><code>&lt;Local File Location Value&gt;</code></p>
+<ul>
+<li>Default value:</li>
+</ul>
+<p><code>null</code></p>
+<h4 id="-torrcoptions"><code>--torrcOptions</code></h4>
+<ul>
+<li>Function:</li>
+</ul>
+<p>A list of <code>torrc</code>-entries to amend to Haveno's <code>torrc</code>
+Use a file of <code>torrc</code>-entries to amend to Haveno's <code>torrc</code> e.g:
+<code>torrcOptions=%include ~/.local/share/Haveno/torrc.local</code></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><code>torrc</code>-entries which are critical to Haveno's flawless operation (<code>torrc</code> options line, <code>torrc</code> option, ...) can <strong>not</strong> be overwritten</p>
+</div>
+<ul>
+<li>Expected Input Format:</li>
+</ul>
+<p><code>&lt;String&gt;</code></p>
+<ul>
+<li>Acceptable Values</li>
+</ul>
+<p><code>&lt;^([^\s,]+\s[^,]+,?\s*)+$&gt;</code></p>
+<ul>
+<li>Default value:</li>
+</ul>
+<p><code>null</code></p>
+<h4 id="-torcontrolhost"><code>--torControlHost</code></h4>
+<ul>
+<li>Function</li>
+</ul>
+<p>The control <code>hostname</code> or <code>IP</code> of an already running <code>tor</code> service to be used by Haveno</p>
+<ul>
+<li>Expected Input Format</li>
+</ul>
+<p><code>&lt;String&gt;</code></p>
+<p>(<code>hostname</code>, <code>IPv4</code> or <code>IPv6</code>)</p>
+<ul>
+<li>Acceptable Values</li>
+</ul>
+<p><code>&lt;TorControl Host Value&gt;</code></p>
+<ul>
+<li>Default Value</li>
+</ul>
+<p><code>null</code></p>
+<h4 id="-torcontrolport"><code>--torControlPort</code></h4>
+<ul>
+<li>Function</li>
+</ul>
+<p>The control port of an already running <code>tor</code> service to be used by Haveno</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Haveno User must be in tor user group</p>
+</div>
+<ul>
+<li>Expected Input Format</li>
+</ul>
+<p><code>&lt;Numeric String&gt;</code></p>
+<ul>
+<li>Acceptable Values</li>
+</ul>
+<p><code>&lt;TorControlPort Value&gt;</code></p>
+<ul>
+<li>Default Value</li>
+</ul>
+<p><code>-1</code></p>
+<h4 id="-torcontrolpassword"><code>--torControlPassword</code></h4>
+<ul>
+<li>Function</li>
+</ul>
+<p>The password for controlling the already running <code>tor</code> service</p>
+<ul>
+<li>Expected Input Format</li>
+</ul>
+<p><code>&lt;Alpha-Numeric-Special String&gt;</code></p>
+<ul>
+<li>Acceptable Values</li>
+</ul>
+<p><code>&lt;Passphrase Value&gt;</code></p>
+<ul>
+<li>Default Value</li>
+</ul>
+<p><code>null</code></p>
+<h4 id="-torcontrolcookiefile"><code>--torControlCookieFile</code></h4>
+<ul>
+<li>Function</li>
+</ul>
+<p>The cookie file for authenticating against the already running <code>tor</code> service</p>
+<ul>
+<li>
+<p>Used in conjunction with <code>--torControlUseSafeCookieAuth</code> option</p>
+</li>
+<li>
+<p>Expected Input Format</p>
+</li>
+</ul>
+<p><code>&lt;Alpha-Numeric-Special String&gt;</code></p>
+<ul>
+<li>Acceptable Values</li>
+</ul>
+<p><code>&lt;Local File Location&gt;</code></p>
+<ul>
+<li>Default Value</li>
+</ul>
+<p><code>null</code></p>
+<h4 id="-torcontrolusesafecookieauth"><code>--torControlUseSafeCookieAuth</code></h4>
+<ul>
+<li>Function</li>
+</ul>
+<p>Use the <code>SafeCookie</code> method when authenticating to the already running <code>tor</code> service</p>
+<ul>
+<li>Expected Input Format</li>
+</ul>
+<p><code>null</code></p>
+<ul>
+<li>Acceptable Values</li>
+</ul>
+<p><code>none</code></p>
+<ul>
+<li>Default Value</li>
+</ul>
+<p><code>off</code></p>
+<h4 id="-torstreamisolation"><code>--torStreamIsolation</code></h4>
+<ul>
+<li>Function</li>
+</ul>
+<p>Use stream isolation for Tor</p>
+<ul>
+<li>
+<p>This option is currently considered <strong>experimental</strong></p>
+</li>
+<li>
+<p>Expected Input Format</p>
+</li>
+</ul>
+<p><code>&lt;Alpha String&gt;</code></p>
+<ul>
+<li>Acceptable Values</li>
+</ul>
+<p><code>&lt;on|off&gt;</code></p>
+<ul>
+<li>Default Value</li>
+</ul>
+<p><code>off</code></p>
+<h4 id="-usetorforxmr"><code>--useTorForXmr</code></h4>
+<ul>
+<li>Function</li>
+</ul>
+<p>Configure <code>tor</code> for <code>monero</code> connections with <strong>either</strong>:</p>
+<ul>
+<li>
+<p>after_sync</p>
+<p><strong>or</strong></p>
+</li>
+<li>
+<p>off</p>
+<p><strong>or</strong></p>
+</li>
+<li>
+<p>on</p>
+</li>
+<li>
+<p>Expected Input Format</p>
+</li>
+</ul>
+<p><code>&lt;Alpha String&gt;</code></p>
+<ul>
+<li>Acceptable Values</li>
+</ul>
+<p><code>&lt;AFTER_SYNC|OFF|ON&gt;</code></p>
+<ul>
+<li>Default Value</li>
+</ul>
+<p><code>AFTER_SYNC</code></p>
+<h4 id="-socks5discovermode"><code>--socks5DiscoverMode</code></h4>
+<ul>
+<li>Function</li>
+</ul>
+<p>Specify discovery mode for <code>monero</code> nodes</p>
+<ul>
+<li>Expected Input Format</li>
+</ul>
+<p><code>&lt;mode[,...]&gt;</code></p>
+<ul>
+<li>Acceptable Values</li>
+</ul>
+<p><code>ADDR, DNS, ONION, ALL</code></p>
+<p>One or more comma separated.</p>
+<p><em>(Will be </em><em>OR</em><em>'d together)</em></p>
+<ul>
+<li>Default Value</li>
+</ul>
+<p><code>ALL</code></p>
+<h2 id="starting-haveno-using-externally-available-tor">Starting Haveno Using Externally Available <code>tor</code></h2>
+<h3 id="externaltor-dynamic-onion-assignment-via-torcontrolport">ExternalTor - Dynamic Onion Assignment via <code>--torControlPort</code></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>$<span class="w"> </span>/opt/haveno/bin/Haveno<span class="w"> </span>--torControlPort<span class="o">=</span><span class="m">9051</span><span class="w"> </span>--torControlCookieFile<span class="o">=</span>/var/run/tor/control.authcookie<span class="w"> </span>--torControlUseSafeCookieAuth<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a><span class="o">[</span><span class="w"> </span>--useTorForXmr<span class="o">=</span>on<span class="w"> </span><span class="o">]</span>
+</code></pre></div>
+<h3 id="directbindtor-static-onion-assignment-via-hiddenserviceaddress"><a href="../direct-bind-tor/">DirectBindTor</a> - Static Onion Assignment via <code>--hiddenServiceAddress</code></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a>$<span class="w"> </span>/opt/haveno/bin/Haveno<span class="w"> </span>--hiddenServiceAddress<span class="o">=</span>2gzyxa5ihm7nsggfxnu52rck2vv4rvmdlkiu3zzui5du4xyclen53wid.onion<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a><span class="o">[</span><span class="w"> </span>--nodePort<span class="o">=</span><span class="m">9999</span><span class="w"> </span>--useTorForXmr<span class="o">=</span>on<span class="w"> </span><span class="o">]</span>
+</code></pre></div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2025 Haveno
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+    <a href="https://haveno.exchange" target="_blank" rel="noopener" title="Website" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16.36 14c.08-.66.14-1.32.14-2s-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2s-.1 1.36-.26 2m-5.15 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95a8.03 8.03 0 0 1-4.33 3.56M14.34 14H9.66c-.1-.66-.16-1.32-.16-2s.06-1.35.16-2h4.68c.09.65.16 1.32.16 2s-.07 1.34-.16 2M12 19.96c-.83-1.2-1.5-2.53-1.91-3.96h3.82c-.41 1.43-1.08 2.76-1.91 3.96M8 8H5.08A7.92 7.92 0 0 1 9.4 4.44C8.8 5.55 8.35 6.75 8 8m-2.92 8H8c.35 1.25.8 2.45 1.4 3.56A8 8 0 0 1 5.08 16m-.82-2C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2s.06 1.34.14 2M12 4.03c.83 1.2 1.5 2.54 1.91 3.97h-3.82c.41-1.43 1.08-2.77 1.91-3.97M18.92 8h-2.95a15.7 15.7 0 0 0-1.38-3.56c1.84.63 3.37 1.9 4.33 3.56M12 2C6.47 2 2 6.5 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2"/></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="https://github.com/haveno-dex" target="_blank" rel="noopener" title="GitHub" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="https://twitter.com/HavenoDEX" target="_blank" rel="noopener" title="Twitter" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M357.2 48h70.6L273.6 224.2 455 464H313L201.7 318.6 74.5 464H3.8l164.9-188.5L-5.2 48h145.6l100.5 132.9zm-24.8 373.8h39.1L119.1 88h-42z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="https://matrix.to/#/#haveno:monero.social" target="_blank" rel="noopener" title="Matrix" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M.632.55v22.9H2.28V24H0V0h2.28v.55zm7.043 7.26v1.157h.033a3.3 3.3 0 0 1 1.117-1.024c.433-.245.936-.365 1.5-.365q.81.002 1.481.314c.448.208.785.582 1.02 1.108q.382-.562 1.034-.992.651-.43 1.546-.43.679 0 1.26.167c.388.11.716.286.993.53.276.245.489.559.646.951q.229.587.23 1.417v5.728h-2.349V11.52q0-.43-.032-.812a1.8 1.8 0 0 0-.18-.66 1.1 1.1 0 0 0-.438-.448q-.292-.165-.785-.166-.498 0-.803.189a1.4 1.4 0 0 0-.48.499 2 2 0 0 0-.231.696 5.6 5.6 0 0 0-.06.785v4.768h-2.35v-4.8q.002-.38-.018-.752a2.1 2.1 0 0 0-.143-.688 1.05 1.05 0 0 0-.415-.503c-.194-.125-.476-.19-.854-.19q-.168 0-.439.074c-.18.051-.36.143-.53.282a1.64 1.64 0 0 0-.439.595q-.18.39-.18 1.02v4.966H5.46V7.81zm15.693 15.64V.55H21.72V0H24v24h-2.28v-.55z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="irc://irc.libera.chat/#haveno" target="_blank" rel="noopener" title="IRC/Libera" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.264 2.761-1.23 9.432-1.648 1.882-1.71-11.301h-.002l-.2.042-.066.013-.132.03-.064.016a12 12 0 0 0-1.74.55l-.037.019 3.398 11.263-.158.18-1.598-.703-.105.134L3.445 6.1a11 11 0 0 0-.927 1.047 13 13 0 0 0-.552.76v.006l6.481 7.081-1.021 1.313-7.205-4.15a11.7 11.7 0 0 0-.22 2.31l6.853 2.575-1.576 2.025-4.31.02A12 12 0 0 0 2.18 21.24h.003l1.696-.373h.45l4.863-6.223 1.583.701 3.338-3.812c1.85 3.145 3.844 6.17 5.657 9.337h.453l-.008-.014 1.612.363.016-.018a11 11 0 0 0 .774-1.256 11 11 0 0 0 .353-.726l-3.788-.064-1.333-2.196 6.146-2.241v-.031l.004-.203v-.312l-.004-.064v-.067l-.003-.068-.003-.067-.003-.068-.003-.067-.005-.064-.003-.068-.007-.067-.003-.067-.006-.064-.006-.068-.006-.067-.007-.067-.006-.065a10 10 0 0 0-.113-.796v-.016l-6.506 3.72-1.047-1.725 5.737-6.493a11 11 0 0 0-.888-1.17 12 12 0 0 0-.692-.729l-4.725 7.455-1.372-2.258 2.153-7.754-.055-.021a11.6 11.6 0 0 0-2.006-.595l-.132-.027zm-.159 9.331-3.246 3.721-1.583-.659-4.483 5.708h.496l4.103-5.251 1.574.652 3.084-3.537 4.851 8.152.477-.01zm-.073 1.302-2.912 3.344-1.605-.653-3.746 4.774 12.636.007z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["content.action.edit", "content.action.view", "content.code.copy", "content.code.annotate", "navigation.instant", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky", "navigation.top", "navigation.tracking", "search.highlight", "search.suggest", "toc.follow"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"haveno": "1.0.19"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>
