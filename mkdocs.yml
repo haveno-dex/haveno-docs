@@ -53,9 +53,12 @@ plugins:
     - search
     - glightbox:
         touchNavigation: true
-        loop: false
         zoomable: true
         draggable: true
+        effect: fade
+        slide_effect: slide
+        width: 100vw
+        height: auto
 
 markdown_extensions:
   # Python Markdown - https://squidfunk.github.io/mkdocs-material/setup/extensions/python-markdown/
