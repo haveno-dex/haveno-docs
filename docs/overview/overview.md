@@ -4,7 +4,7 @@ Haveno is a platform where people meet to exchange Monero for other cryptocurren
 
 ## The Haveno Network
 
-When running an Haveno app, you'll be one of the nodes that composes the Haveno network. There is no central entity, trades happen directly between nodes (peers), that's why it's called a peer-to-peer network (P2P). This network runs on Tor, a technology that makes communication between peers private.
+When running an Haveno app, you'll be one of the nodes that comprise the Haveno network. There is no central entity, trades happen directly between nodes (peers), that's why it's called a peer-to-peer network (P2P). This network runs on Tor, a technology that makes communication between peers private.
 
 Haveno, unlike a centralized exchange, doesn't provide any liquidity to the network, but instead offers a place for people to meet and an escrow system to make sure both parties honour the terms of the trade until it's completed.
 
