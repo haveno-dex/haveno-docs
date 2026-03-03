@@ -1,6 +1,6 @@
 site_name: Haveno Documentation
 site_url: https://docs.haveno.exchange
-copyright: Copyright &copy; 2025 Haveno
+copyright: Copyright &copy; 2026 Haveno
 
 repo_url: 'https://github.com/haveno-dex/haveno-docs'
 repo_name: 'haveno-dex/haveno-docs'
@@ -51,6 +51,11 @@ plugins:
     - macros
     - privacy
     - search
+    - glightbox:
+        touchNavigation: true
+        loop: false
+        zoomable: true
+        draggable: true
 
 markdown_extensions:
   # Python Markdown - https://squidfunk.github.io/mkdocs-material/setup/extensions/python-markdown/
@@ -69,6 +74,9 @@ markdown_extensions:
       anchor_linenums: true
   - pymdownx.inlinehilite
   - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
   - pymdownx.superfences
 
 extra_css:
@@ -138,19 +146,19 @@ nav:
       - Wise: 'overview/payment_methods/Wise.md'
       - Wise USD: 'overview/payment_methods/Wise-USD.md'
       - Zelle: 'overview/payment_methods/Zelle.md'
-    - Account limits: 'overview/account_limits.md'
+    - Account Limits: 'overview/account_limits.md'
 - Users:
-  - Install Guide: 'users/install_guide.md'
-  - App Logs: 'users/logs.md'
+  - Getting Started: 'users/getting_started.md'
+  - Application Logs: 'users/logs.md'
   - Haveno UI:
-    - No-deposit trading: 'users/haveno-ui/no_deposit.md'
-    - Cloning an offer: 'users/haveno-ui/cloning_an_offer.md'
+    - No-deposit Trading: 'users/haveno-ui/no_deposit.md'
+    - Cloning Offers: 'users/haveno-ui/cloning_an_offer.md'
     - Backup & Restore: 'users/haveno-ui/backup_and_restore.md'
   - Tor configuration:
-    - Direct bind: 'users/tor-config/direct-bind-tor.md'
-    - External tor: 'users/tor-config/external-tor-usage.md'
+    - Direct Bind: 'users/tor-config/direct-bind-tor.md'
+    - External Tor: 'users/tor-config/external-tor-usage.md'
 - Admins:
-  - Create Mainnet POC: 'admins/create-mainnet-poc.md'
+  - Quick Start Guide: 'admins/create-mainnet-poc.md'
 - Developers:
   - Build and Run Haveno: 'developers/installing.md'
   - Haveno API: 'developers/api.md'
