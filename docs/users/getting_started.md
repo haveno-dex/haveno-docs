@@ -9,7 +9,7 @@ Haveno can be installed on Linux, macOS, Windows, or Android by downloading the 
 
     First find a third party network, and then download their installer.
     
-    Alternatively, build from source by customizing [these instructions](https://docs.haveno.exchange/developers/installing/) for your provider's repository.
+    Alternatively you can build from source by customizing [these instructions](https://docs.haveno.exchange/developers/installing/) with your provider's repository.
 
 === "Linux"
     
@@ -75,7 +75,7 @@ You can run your own Monero node by downloading the CLI from [https://www.getmon
 
 After installing Haveno, double click the application icon to start the application.
 
-Or if you built from source, start Haveno with `make haveno-desktop-mainnet`.
+If you built from Haveno from source, start Haveno with `make haveno-desktop-mainnet`.
 
 It can take a moment to connect to Tor and sync with the Monero network.
 
@@ -89,7 +89,7 @@ It can take a moment to connect to Tor and sync with the Monero network.
 
 Before you can buy or sell, you must create at least one payment account.
 
-Payment accounts define how you want to send or receive payment for XMR, whether by bank transfer, cryptocurrency, or other supported methods like precious metals.
+Payment accounts define how you want to send or receive payment for XMR, whether by bank transfer, cryptocurrency, or other supported method like precious metals.
 
 Go to the **Account** tab and click **Add new account**. Choose your preferred payment method and enter your details exactly as they appear with your bank or provider. Then click **Save**.
 
@@ -100,11 +100,14 @@ Go to the **Account** tab and click **Add new account**. Choose your preferred p
 
 !!! info "Tips"
     - Make sure your details are accurate. Incorrect information can delay or prevent a trade.
-    - You can add more than one payment account any time.
+    - You can add more than one payment account at any time.
 
 ## Fund your wallet (optional)
 
-To create or take offers, you may either fund your Haveno wallet in advance or fund an offer directly from an external wallet when needed.
+To create or take offers, you may either:
+
+- Fund your Haveno wallet in advance, or
+- Fund offers directly from an external wallet as needed.
 
 To fund your Haveno wallet:
 
@@ -113,7 +116,7 @@ To fund your Haveno wallet:
 3. Choose a subaddress.
 4. Copy the subaddress or scan the QR code to send XMR from an external wallet.
 
-Funds are stored in your main Haveno wallet, which is fully non-custodial.
+Funds are stored in your non-custodial Haveno wallet and can be withdrawn any time.
 
 ![Light mode](/resources/img/getting_started/deposit_light.png#only-light)
 ![Dark mode](/resources/img/getting_started/deposit_dark.png#only-dark)
@@ -133,19 +136,20 @@ You can either:
 
 ### Example: Buying XMR
 
-In this example we'll create an offer to buy XMR with USD using Zelle.
+In this example, we'll create an offer to buy XMR with USD using Zelle.
 
 Navigate to the **Buy XMR** tab. Under the **Fiat** tab, select **USD** and click **Create offer to BUY XMR**.
 
 ![Light mode](/resources/img/getting_started/offers_fiat_light.png#only-light)
 ![Dark mode](/resources/img/getting_started/offers_fiat_dark.png#only-dark)
 
-### Set the terms of your offer
+### Set your offer terms
 
 - Amount of XMR to buy
 - Price
 - Trigger price (optional)
 - Security deposit (default 15%)
+- Any additional terms you want to apply
 
 Click the **Next step** button to continue.
 
@@ -154,15 +158,15 @@ Click the **Next step** button to continue.
 
 ### Fund your offer
 
-To post your offer, you must deposit XMR, the sum of:
+To post your offer, you must deposit XMR in the sum of:
 
 - A security deposit
 - Trading fee
-- Trade amount if selling XMR
+- Trade amount (only if selling XMR)
 
-You can deposit XMR from an external wallet or apply existing funds in your wallet.
+You can deposit XMR from an external wallet or apply existing funds from your wallet.
 
-The security deposit is returned to your wallet when the trade completes successfully.
+When the trade completes successfully, the security deposit is returned to your main wallet.
 
 ![Light mode](/resources/img/getting_started/create_offer_fund_light.png#only-light)
 ![Dark mode](/resources/img/getting_started/create_offer_fund_dark.png#only-dark)
@@ -201,7 +205,7 @@ When the XMR seller confirms that the payment was received, the trade funds are 
 
 ## Withdraw funds
 
-You can withdraw funds from your Haveno wallet any time.
+You can withdraw funds from your Haveno wallet at any time.
 
 To withdraw funds:
 
@@ -214,15 +218,13 @@ To withdraw funds:
 
 ## Account signing
 
-Account signing increases your trading limits for payment methods with chargeback risk.
+Some fiat payment accounts can be signed in order to increase trading limits.
 
-You can get your payment account signed by:
+In order to sign a payment account, you must:
 
-- Buying at least 0.05 XMR
+- Buy at least 0.05 XMR
 - From a trader whose account is already signed
-- Using the payment account you want to have signed
-
-After the trade completes successfully, your account becomes signed automatically.
+- Using a supported fiat payment account (with chargeback risk)
 
 When your account is signed:
 
