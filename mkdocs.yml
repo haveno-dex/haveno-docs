@@ -57,7 +57,6 @@ plugins:
         draggable: true
         effect: fade
         slide_effect: slide
-        width: 100vw
         height: auto
 
 markdown_extensions:

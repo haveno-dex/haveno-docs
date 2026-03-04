@@ -212,6 +212,29 @@ To withdraw funds:
 5. Click the **Withdraw selected** button.
 6. Confirm the transaction details to complete the withdraw.
 
+## Account signing
+
+Account signing increases your trading limits for payment methods with chargeback risk.
+
+You can get your payment account signed by:
+
+- Buying at least 0.05 XMR
+- From a trader whose account is already signed
+- Using the payment account you want to have signed
+
+After the trade completes successfully, your account becomes signed automatically.
+
+When your account is signed:
+
+- Your account can sign other accounts.
+- Your trading limits increase after 30 days.
+- Limits increase again after 60 days.
+
+!!! note
+    - Not all payment methods support account signing.
+    - Signing is tied to a specific payment account.
+    - You only need to sign each payment account once.
+
 ## Backup your application
 
 Backing up ensures you can recover your wallet and trade history if your device is lost or damaged.
