@@ -91,7 +91,9 @@ Before you can buy or sell, you must create at least one payment account.
 
 Payment accounts define how you want to send or receive payment for XMR, whether by bank transfer, cryptocurrency, or other supported method like precious metals.
 
-Go to the **Account** tab and click **Add new account**. Choose your preferred payment method and enter your details exactly as they appear with your bank or provider. Then click **Save**.
+Go to the **Account** tab and click **Add new account**.
+
+Choose your preferred payment method and enter your details exactly as they appear with your bank or provider. Then click **Save**.
 
 ![Light mode](/resources/img/getting_started/add_new_account_light.png#only-light)
 ![Dark mode](/resources/img/getting_started/add_new_account_dark.png#only-dark)
@@ -162,7 +164,7 @@ To post your offer, you must deposit XMR in the sum of:
 
 - A security deposit
 - Trading fee
-- Trade amount (only if selling XMR)
+- Trade amount (if selling XMR)
 
 You can deposit XMR from an external wallet or apply existing funds from your wallet.
 
