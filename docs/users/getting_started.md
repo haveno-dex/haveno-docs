@@ -229,8 +229,8 @@ In order to sign a payment account, you must:
 When your account is signed:
 
 - Your account can sign other accounts.
-- Your trading limits increase after 30 days.
-- Limits increase again after 60 days.
+- Your buying limit increases after 30 days.
+- Your buying limit increases again after 60 days.
 
 !!! note
     - Not all payment methods support account signing.
