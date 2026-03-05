@@ -239,19 +239,19 @@ When your account is signed:
 
 ## Backup your application
 
-Backing up ensures you can recover your wallet and trade history if your device is lost or damaged.
+A backup allows you to restore your wallet or trade history if your device is lost or damaged.
 
 ### Backup your application folder
 
 To make a complete backup of your application data, create a copy of your application's data folder.
 
-Your data folder contains:
+The data folder contains:
 
 - Trade history
 - Payment accounts
 - Application settings
 
-You can create a backup of your application folder within the application by navigating to **Account** > **Backup**.
+You can create a backup of your application folder by navigating to **Account** > **Backup**.
 
 ![Light mode](/resources/img/getting_started/backup_light.png#only-light)
 ![Dark mode](/resources/img/getting_started/backup_dark.png#only-dark)
@@ -267,7 +267,7 @@ Alternatively, you can copy your entire application folder to another location.
 
 Your seed phrase can restore your main Haveno wallet.
 
-However, the seed phrase does NOT backup critical application data like trade history, payment accounts, etc. To create a complete backup, you must backup your entire application data folder.
+However, the seed phrase is NOT a complete backup of all critical application data, like trade history, payment accounts, etc. To create a complete backup, you must backup your entire application folder.
 
 To view your seed phrase, navigate to **Account** > **Wallet seed**.
 
