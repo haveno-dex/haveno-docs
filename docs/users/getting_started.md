@@ -281,4 +281,4 @@ To view your seed phrase, navigate to **Account** > **Wallet seed**.
 !!! Warning
     The seed phrase is NOT a complete backup of the application.
     
-    To create a full and complete backup, you must backup your *entire application directory*.
+    To create a full and complete backup, you must backup your *entire application folder*.
