@@ -75,7 +75,7 @@ You can run your own Monero node by downloading the CLI from [https://www.getmon
 
 After installing Haveno, double click the application icon to start the application.
 
-If you built from Haveno from source, start Haveno with `make haveno-desktop-mainnet`.
+If you built from source, start Haveno with `make haveno-desktop-mainnet`.
 
 It can take a moment to connect to Tor and sync with the Monero network.
 
