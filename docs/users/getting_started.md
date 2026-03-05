@@ -118,7 +118,7 @@ To fund your Haveno wallet:
 3. Choose a subaddress.
 4. Copy the subaddress or scan the QR code to send XMR from an external wallet.
 
-Funds are stored in your non-custodial Haveno wallet and can be withdrawn any time.
+Funds are stored in your non-custodial Haveno wallet and can be withdrawn at any time.
 
 ![Light mode](/resources/img/getting_started/deposit_light.png#only-light)
 ![Dark mode](/resources/img/getting_started/deposit_dark.png#only-dark)
