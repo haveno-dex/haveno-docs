@@ -234,6 +234,9 @@ When your account is signed:
 - Your buy limit increases after 30 days.
 - Your buy limit increases again after 60 days.
 
+![Light mode](/resources/img/getting_started/signed_account_light.png#only-light)
+![Dark mode](/resources/img/getting_started/signed_account_dark.png#only-dark)
+
 !!! note
     - Not all payment methods support account signing (only those with chargeback risk).
     - Signing is tied to a specific payment account.
