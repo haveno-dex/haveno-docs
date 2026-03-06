@@ -271,7 +271,7 @@ Your seed phrase can restore your main Haveno wallet.
 
 However, the seed phrase is NOT a complete backup of all critical application data, like trade history, payment accounts, etc. To create a complete backup, you must backup your entire application folder.
 
-To view your seed phrase, navigate to **Account** > **Wallet seed**.
+To view your seed phrase, go to **Account** > **Wallet seed**.
 
 - Store it securely.
 - Do not share it.
