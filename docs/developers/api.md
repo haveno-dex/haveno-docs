@@ -10,7 +10,7 @@ If you are interested in integrating Haveno into your app, let us know and we'll
 
 Documentation is automatically generate using Typedoc: 
 
-[:material-web: API Docs](https://haveno-dex.github.io/haveno-ts/classes/HavenoClient.HavenoClient.html){ .md-button .md-button--primary }
+[:material-web: API Docs](https://haveno-dex.github.io/haveno-ts/typedocs/classes/HavenoClient.HavenoClient.html){ .md-button .md-button--primary }
 
 
 ## Run API tests
@@ -34,7 +34,7 @@ Running the [API tests](https://github.com/haveno-dex/haveno-ts/blob/master/src/
 
 ## Adding new API functions and tests
 
-1. Follow [instructions](https://github.com/haveno-dex/haveno-ts#run-tests) to run Haveno's existing API tests successfully.
+1. Follow [instructions](https://github.com/haveno-dex/haveno-ts/blob/master/docs/run-api-tests.md) to run Haveno's existing API tests successfully.
 2. Define the new service or message in Haveno's [protobuf definition](https://github.com/haveno-dex/haveno/blob/master/proto/src/main/proto/grpc.proto).
 3. Clean and build Haveno after modifying the protobuf definition: `make clean && make`
 4. Implement the new service in Haveno's backend, following existing patterns.<br>
