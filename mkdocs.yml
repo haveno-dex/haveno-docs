@@ -151,11 +151,11 @@ nav:
     - Account Limits: 'overview/account_limits.md'
 - Users:
   - Getting Started: 'users/getting_started.md'
-  - Application Logs: 'users/logs.md'
-  - Haveno UI:
+  - Haveno Desktop:
     - No-deposit Trading: 'users/haveno-ui/no_deposit.md'
     - Cloning Offers: 'users/haveno-ui/cloning_an_offer.md'
     - Backup & Restore: 'users/haveno-ui/backup_and_restore.md'
+    - Application Logs: 'users/logs.md'
   - Tor configuration:
     - Direct Bind: 'users/tor-config/direct-bind-tor.md'
     - External Tor: 'users/tor-config/external-tor-usage.md'
