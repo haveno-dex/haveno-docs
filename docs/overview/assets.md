@@ -38,6 +38,8 @@ These are the cryptocurrencies currently listed on Haveno:
 
 ![Cardano](../resources/img/crypto/ada_logo.png){ .crypto-logos } [Cardano](https://cardano.org/)
 
+![ZCash](../resources/img/crypto/zec_logo.png){ .crypto-logos } [Zcash](https://z.cash/)
+
 
 ## Payment Methods and fiat currencies
 
