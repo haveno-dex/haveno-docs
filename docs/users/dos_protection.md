@@ -49,9 +49,9 @@ A list of entries to amend to Haveno's internal `torrc`. Note that critical syst
 
 ---
 
-## Configuration Example
+## Default Configuration
 
-The following baseline configuration mitigates known attack vectors and provides a resilient starting point for users:
+Haveno is pre-configured with the following baseline settings to mitigate known attack vectors. These values are applied by default and only need to be specified if you wish to override them:
 
 ```bash
 --hiddenServiceParams="PoWDefensesEnabled=1,PoWQueueRate=10,PoWQueueBurst=100" \
