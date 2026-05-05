@@ -43,7 +43,7 @@ Per-connection rate limit overrides for specific envelope types.
 *Format: EnvelopeName=ratePerSec, burstCapacity, numStrikes[;...]*
 
 ### `torrcOptions`
-**Default:** `NumCPUs 0` (use all available CPUs)
+**Default:** `NumCPUs 0` (use all available CPUs)   
 A list of entries to amend to Haveno's internal `torrc`. Note that critical system entries cannot be overwritten.  
 *Format: Option Value[; ...]*
 
