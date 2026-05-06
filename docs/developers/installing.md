@@ -7,7 +7,7 @@ These are the steps needed to build and run Haveno. You can test it locally or o
 
     The official Haveno repository does not operate or endorse any mainnet network.
 
-    Find a third party network and use their installer or build their repository. Alternatively [create your own mainnet network](https://github.com/haveno-dex/haveno/blob/master/docs/create-mainnet.md).
+    Find a third party network and use their installer or build their repository. Alternatively [create your own mainnet network](https://docs.haveno.exchange/admins/create-mainnet-poc/).
 
 ## Install dependencies
 
