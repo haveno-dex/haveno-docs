@@ -117,7 +117,6 @@ That was all to configure a HiddenService for our Haveno app in Whonix.
 
 !!! warning
     The official Haveno repository does not operate or endorse any mainnet network.<br>
-    <br>  
     To make real trades with Haveno, first find a third party network, and then use their installer or build their repository. We do not endorse any networks at this time.
 
 There is an installation guide in the Whonix Wiki for a Haveno main network:
