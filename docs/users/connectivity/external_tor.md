@@ -14,6 +14,10 @@ Install the Tor daemon using the [official instructions](https://support.torproj
 
 To integrate with Haveno, you must enable the Control Port in your torrc file. This file is typically located at `/etc/tor/torrc` (Linux) or `/opt/homebrew/etc/tor/torrc` (macOS).
 
+!!! note "Note"
+
+    Optionally change the `ControlPort` and `SocksPort` to use a specific tor instance, separate from system tor.
+
 ### Baseline configuration
 
 Add at least these lines to ensure Haveno can communicate with Tor and maintain high availability during network stress:
@@ -45,8 +49,8 @@ For high-traffic environments, we recommend an expanded configuration. This temp
 
 ??? info "Hardened torrc template"
 
-    Note: Update `HiddenServiceDir` to a valid path on your system.<br><br>
-   
+    Note: Update `HiddenServiceDir` to a valid path on your system.<br>
+
     ```text
     ## Configuration file for Haveno
     ##
@@ -126,8 +130,8 @@ For high-traffic environments, we recommend an expanded configuration. This temp
     ## Rate limiting at the Introduction Points
     ## Intropoint protections prevents onion service DoS from becoming a DoS for the entire machine and its guard.
     HiddenServiceEnableIntroDoSDefense 1
-    HiddenServiceEnableIntroDoSRatePerSec 10       # (Default: 25)
-    HiddenServiceEnableIntroDoSBurstPerSec 100     # (Default: 200)
+    HiddenServiceEnableIntroDoSRatePerSec 25       # (Default: 25)
+    HiddenServiceEnableIntroDoSBurstPerSec 200     # (Default: 200)
 
     # Number of introduction points the hidden service will have. You can’t have more than 20.
     #HiddenServiceNumIntroductionPoints 3           # (Default: 3)
@@ -136,27 +140,17 @@ For high-traffic environments, we recommend an expanded configuration. This temp
     ## Proof of Work (PoW) before establishing Rendezvous Circuits
     ## The lower the queue and burst rates, the higher the puzzle effort tends to be for users.
     HiddenServicePoWDefensesEnabled 1
-    HiddenServicePoWQueueRate 50          # (Default: 250)
-    HiddenServicePoWQueueBurst 250        # (Default: 2500)
+    HiddenServicePoWQueueRate 10          # (Default: 250)
+    HiddenServicePoWQueueBurst 100        # (Default: 2500)
 
     ## Stream limits in the established Rendezvous Circuits
     ## The maximum number of simultaneous streams (connections) per rendezvous circuit. The max value allowed is 65535. (0 = unlimited)
     HiddenServiceMaxStreams 25
     #HiddenServiceMaxStreamsCloseCircuit 1
 
-    HiddenServiceEnableIntroDoSDefense 1
-    #HiddenServiceEnableIntroDoSRatePerSec 25       # (Default: 25)
-    #HiddenServiceEnableIntroDoSBurstPerSec 200     # (Default: 200)
-    #HiddenServiceNumIntroductionPoints 3           # (Default: 3)
-
-    HiddenServicePoWDefensesEnabled 1
-    HiddenServicePoWQueueRate 50          # (Default: 250)
-    HiddenServicePoWQueueBurst 250        # (Default: 2500)
-
-    HiddenServiceMaxStreams 25
-    #HiddenServiceMaxStreamsCloseCircuit 1
-
-    #####################################################################
+    ## Optionally limit tor bandwidth
+    #BandwidthRate 1000 KBytes
+    #BandwidthBurst 2000 KBytes
 
     LongLivedPorts 9999
     ```
@@ -178,3 +172,12 @@ Alternatively, you can [bind directly](./direct_bind_tor.md) to a pre-configured
 
 `./haveno --hiddenServiceAddress=your_address.onion --nodePort=9999`
 
+---
+
+!!! Warning "Note"
+    - Using an external tor instance will change the onion address used by your Haveno application.
+    - Optionally preserve your onion address by converting the private keys to have the same onion identity on both external and internal tor instances.
+    ??? info "Private keys conversion script"
+        ```
+        { printf '== ed25519v1-secret: type0 ==\0\0\0'; sed '/^-----BEGIN OPENSSH PRIVATE KEY-----$/d;/^-----END OPENSSH PRIVATE KEY-----$/d' private_key | tr -d '\r\n' | base64 -d; } > hs_ed25519_secret_key && chmod 600 hs_ed25519_secret_key
+        ```

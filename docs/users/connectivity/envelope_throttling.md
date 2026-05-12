@@ -13,27 +13,27 @@ Rate limiting uses a three-part configuration: `ratePerSec`, `burstCapacity`, an
     
     Incoming messages are like pouring water into the bucket. If the water ever overflows the 50-unit capacity, the node records a Strike. This system allows for short bursts of activity while enforcing a steady, sustainable pace over time.
 
-### `envelopeLimitsGlobalDefault`
+### `--envelopeLimitsGlobalDefault`
 **Default:** `0`  
 Default global rate limits for all envelope types. Set to `0` for no limit.  
 *Format: ratePerSec, burstCapacity, numStrikes*
 
-### `envelopeLimitsGlobalUnknownPeers`
+### `--envelopeLimitsGlobalUnknownPeers`
 **Default:** `50,10000,0`  
 Global rate limits applied only to messages from unknown peers.  
 *Format: ratePerSec, burstCapacity, numStrikes*
 
-### `envelopeLimitsGlobalOverrides`
+### `--envelopeLimitsGlobalOverrides`
 **Default:** `None`  
 Global rate limit overrides for specific envelope types.  
 *Format: EnvelopeName=ratePerSec, burstCapacity, numStrikes[;...]*
 
-### `envelopeLimitsConnectionDefault`
+### `--envelopeLimitsConnectionDefault`
 **Default:** `0`  
 Default rate limits applied per individual peer connection. Set to `0` for no limit.  
 *Format: ratePerSec, burstCapacity, numStrikes*
 
-### `envelopeLimitsConnectionOverrides`
+### `--envelopeLimitsConnectionOverrides`
 **Default:** `None`  
 Per-connection rate limit overrides for specific envelope types.  
 *Format: EnvelopeName=ratePerSec, burstCapacity, numStrikes[;...]*

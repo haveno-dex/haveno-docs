@@ -138,7 +138,7 @@ or to use in `~/.local/share/Haveno[-.*]/haveno.properties`
 ## Qubes OS
 
 For Qubes/Whonix there are installation scripts for using Haveno in 2 ways:<br>
-with DirectBindTor (static HiddenService) or [ExternalTor](external_tor.md) (dynamic HiddenService) with the help of Netlayer/jtorctl.
+with direct bind (static HiddenService) or [external tor](external_tor.md) (dynamic HiddenService) with the help of Netlayer/jtorctl.
 
 - [Haveno on Qubes/Whonix](https://github.com/haveno-dex/haveno/tree/master/scripts/install_whonix_qubes)
 - [Install Haveno on Qubes/Whonix](https://github.com/haveno-dex/haveno/blob/master/scripts/install_whonix_qubes/README.md)

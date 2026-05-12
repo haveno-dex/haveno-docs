@@ -2,20 +2,20 @@
 
 By default, Haveno includes an integrated Tor binary. This provides a "plug-and-play" experience that requires no external dependencies or manual configuration.
 
-!!! warning "DDoS Mitigation"
-    The internal configuration is optimized for standard use. If your node experiences sustained DDoS attacks, we recommend transitioning to an [External Tor](./external_tor.md) setup for more robust hardware-level hardening.
+!!! warning "Advanced DDoS Configuration"
+    The internal configuration is optimized for standard use. If your node experiences sustained DDoS attacks, we recommend transitioning to an [External Tor](./external_tor.md) setup for more robust hardening.
 
 ## Supported configuration
 
-### `hiddenServiceParams`
+### `--hiddenServiceParams`
 **Default:** `PoWDefensesEnabled=1,PoWQueueRate=10,PoWQueueBurst=100`  
 Passes configuration directly to the `ADD_ONION` dynamic service to enable and tune Proof of Work defense.
 
-### `hiddenServiceFlags`
+### `--hiddenServiceFlags`
 **Default:** `""`  
 Passes behavior modifiers directly to the ADD_ONION command. These are binary or state-based toggles rather than key-value pairs.
 
-### `torrcOptions`
+### `--torrcOptions`
 **Default:** `NumCPUs 0` (use all available CPUs)   
 A list of entries to amend to Haveno's internal `torrc`. Note that critical system entries cannot be overwritten.  
 *Format: Option Value[; ...]*
