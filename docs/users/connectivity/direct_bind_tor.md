@@ -117,7 +117,6 @@ That was all to configure a HiddenService for our Haveno app in Whonix.
 
 !!! warning
     The official Haveno repository does not operate or endorse any mainnet network.<br>
-    <br>  
     To make real trades with Haveno, first find a third party network, and then use their installer or build their repository. We do not endorse any networks at this time.
 
 There is an installation guide in the Whonix Wiki for a Haveno main network:
@@ -139,7 +138,7 @@ or to use in `~/.local/share/Haveno[-.*]/haveno.properties`
 ## Qubes OS
 
 For Qubes/Whonix there are installation scripts for using Haveno in 2 ways:<br>
-with DirectBindTor (static HiddenService) or [ExternalTor](external-tor-usage.md) (dynamic HiddenService) with the help of Netlayer/jtorctl.
+with direct bind (static HiddenService) or [external tor](external_tor.md) (dynamic HiddenService) with the help of Netlayer/jtorctl.
 
 - [Haveno on Qubes/Whonix](https://github.com/haveno-dex/haveno/tree/master/scripts/install_whonix_qubes)
 - [Install Haveno on Qubes/Whonix](https://github.com/haveno-dex/haveno/blob/master/scripts/install_whonix_qubes/README.md)
