@@ -22,9 +22,9 @@ Install the Tor daemon using the [official instructions](https://support.torproj
 
 To integrate with Haveno, you must enable the Control Port in your torrc file. This file is typically located at `/etc/tor/torrc` (Linux) or `/opt/homebrew/etc/tor/torrc` (macOS).
 
-!!! note "Note"
-
-    Optionally change the `ControlPort` and `SocksPort` to use a specific tor instance, separate from system tor.
+!!! note "Notes"
+    - Optionally change the `ControlPort` and `SocksPort` to use a specific tor instance, separate from your system tor.
+    - Do not edit the internal torrc located in /xmr_mainnet/tor. Any manual changes will be overwritten on startup. All internal Tor configurations must be specified via Haveno command-line parameters.
 
 ### Baseline configuration
 

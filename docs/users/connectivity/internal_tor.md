@@ -5,9 +5,6 @@ By default, Haveno includes an integrated Tor binary. This provides a seamless e
 !!! warning "Advanced DDoS Configuration"
     The internal configuration is optimized for standard use. If your node experiences sustained DDoS attacks, we recommend transitioning to an [External Tor](./external_tor.md) setup for more robust hardening.
 
-!!! note "Note"
-    Editing the internal torrc in /xmr_mainnet/tor has no effect, as it will be overwritten. All configuration for internal tor must be specified via Haveno command line parameters.
-
 ## Supported configuration
 
 ### `--hiddenServiceParams`
