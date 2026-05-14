@@ -1,7 +1,16 @@
-# Haveno using OS provided tor aka little-t-tor
+# Configure Tor for Your Operating System
 
-Since Haveno v1.0.10 there is the [DirectBindTor](https://github.com/haveno-dex/haveno/commit/3d44f3777c7bdf56707ca5d0768877535ac854c5) option.
-This means that we can create and use a HiddenService (aka Onion Service) with portforward 9999 with tor (the network daemon) provided by the operating system.
+This guide describes how to use a [static onion service](./static_onion.md) for specific operating systems.
+
+??? Info "Optionally preserve your onion address"
+
+    Using a static Tor instance will change the onion address used by Haveno, so peers will not recognize previous trades with your node.
+
+    You can optionally preserve your onion address, by converting the private keys to have the same onion identity on both external and internal tor instances, using the following conversion script:
+
+    ```
+    { printf '== ed25519v1-secret: type0 ==\0\0\0'; sed '/^-----BEGIN OPENSSH PRIVATE KEY-----$/d;/^-----END OPENSSH PRIVATE KEY-----$/d' private_key | tr -d '\r\n' | base64 -d; } > hs_ed25519_secret_key && chmod 600 hs_ed25519_secret_key
+    ```
 
 ## Debian
 
@@ -117,7 +126,6 @@ That was all to configure a HiddenService for our Haveno app in Whonix.
 
 !!! warning
     The official Haveno repository does not operate or endorse any mainnet network.<br>
-    <br>  
     To make real trades with Haveno, first find a third party network, and then use their installer or build their repository. We do not endorse any networks at this time.
 
 There is an installation guide in the Whonix Wiki for a Haveno main network:
@@ -139,7 +147,7 @@ or to use in `~/.local/share/Haveno[-.*]/haveno.properties`
 ## Qubes OS
 
 For Qubes/Whonix there are installation scripts for using Haveno in 2 ways:<br>
-with DirectBindTor (static HiddenService) or [ExternalTor](external-tor-usage.md) (dynamic HiddenService) with the help of Netlayer/jtorctl.
+with direct bind (static HiddenService) or [external tor](external_tor.md) (dynamic HiddenService) with the help of Netlayer/jtorctl.
 
 - [Haveno on Qubes/Whonix](https://github.com/haveno-dex/haveno/tree/master/scripts/install_whonix_qubes)
 - [Install Haveno on Qubes/Whonix](https://github.com/haveno-dex/haveno/blob/master/scripts/install_whonix_qubes/README.md)
