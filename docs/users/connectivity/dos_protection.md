@@ -1,6 +1,6 @@
 # Denial of Service (DoS) Protection
 
-If your application is under sustained Denial of Service (DoS) attack, binding to a hardened [Static Tor](./static_onion.md) instance is highly recommended to resolve most issues.
+If your application is under sustained Denial of Service (DoS) attack, binding to a [hardened Tor](./hardened_tor.md) instance is highly recommended to resolve most issues.
 
 ## Envelope Throttling
 

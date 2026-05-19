@@ -1,6 +1,6 @@
 # Configure Tor for Your Operating System
 
-This guide describes how to use a [static onion service](./static_onion.md) for specific operating systems.
+This guide describes how to use a [static onion service](./hardened_tor.md) for specific operating systems.
 
 ??? Info "Optionally preserve your onion address"
 
