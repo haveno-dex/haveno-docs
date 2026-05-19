@@ -150,7 +150,7 @@ nav:
       - Zelle: 'overview/payment_methods/Zelle.md'
     - Account Limits: 'overview/account_limits.md'
 - Users:
-  - Getting Started: 'users/getting_started.md'
+  - Getting Started: 'users/getting-started.md'
   - Haveno Desktop:
     - No-deposit Trading: 'users/haveno-ui/no_deposit.md'
     - Cloning Offers: 'users/haveno-ui/cloning_an_offer.md'
