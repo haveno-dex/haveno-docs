@@ -2,7 +2,7 @@
 
 Haveno can bind directly to a static onion service running on your system using the startup flag `--hiddenServiceAddress=your_onion_address.onion [--nodePort=9999]`.
 
-This mode allows advanced features to be used in your `torrc` configuration file and is preferred for users who require DDoS hardening, utilize [Whonix or Qubes OS](./operating_systems.md), or prefer managing Tor as a system service.
+This mode allows advanced features to be used in your `torrc` configuration file and is preferred for users who require DDoS hardening, utilize [Whonix or Qubes OS](./operating-systems.md), or prefer managing Tor as a system service.
 
 ??? Info "Optionally preserve your onion address"
 
