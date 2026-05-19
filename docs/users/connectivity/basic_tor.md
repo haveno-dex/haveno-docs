@@ -4,7 +4,7 @@ By default, Haveno manages a dynamic onion service automatically.
 
 Basic configuration is supported if using the default Tor setup, or if connecting via a control port (e.g. `--torControlPort=9051`).
 
-To use more advanced features in `torrc`, or if your node is experiencing a sustained Denial of Service (DoS) attack, connect to a hardened [Static Tor](./static_onion.md) instance instead.
+To use more advanced features in `torrc`, or if your node is experiencing a sustained Denial of Service (DoS) attack, connect to a [hardened Tor](./hardened_tor.md) instance instead.
 
 ## Basic configuration
 

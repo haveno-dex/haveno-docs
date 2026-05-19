@@ -158,8 +158,8 @@ nav:
     - Application Logs: 'users/logs.md'
   - Connectivity:
     - Tor Overview : 'users/connectivity/tor_overview.md'
-    - Basic Tor Setup: 'users/connectivity/dynamic_onion.md'
-    - Static Tor Setup: 'users/connectivity/static_onion.md'
+    - Basic Tor Setup: 'users/connectivity/basic_tor.md'
+    - Hardened Tor Setup: 'users/connectivity/hardened_tor.md'
     - Operating Systems: 'users/connectivity/operating_systems.md'
     - WebTunnels: 'users/connectivity/webtunnels.md'
     - DoS Protection: 'users/connectivity/dos_protection.md'

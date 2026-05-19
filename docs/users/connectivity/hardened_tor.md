@@ -1,4 +1,4 @@
-# Static Tor Setup
+# Hardened Tor Setup
 
 Haveno can bind directly to a static onion service running on your system using the startup flag `--hiddenServiceAddress=your_onion_address.onion [--nodePort=9999]`.
 
