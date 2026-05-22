@@ -1,6 +1,6 @@
 # ACH Transfer
 
-ACH Transfer, or Automated Clearing House Transfer, is a payment method in Haveno. It is primarily used for domestic, low-value payments between participating financial institutions. ACH transfers are one of the two main bank transfer payment methods in the United States, the other being [domestic Wire transfers](Domestic_Wire_Transfer.md).
+ACH Transfer, or Automated Clearing House Transfer, is a payment method in Haveno. It is primarily used for domestic, low-value payments between participating financial institutions. ACH transfers are one of the two main bank transfer payment methods in the United States, the other being [domestic Wire transfers](Domestic-Wire-Transfer.md).
 
 #### What countries offer ACH Transfer?
 

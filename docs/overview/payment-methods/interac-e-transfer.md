@@ -33,7 +33,7 @@ The maximum trade time is 1 day. Generally Interac e-Transfer will be completed 
 
 #### Is Interac e-Transfer a payment method that can be signed?
 
-Yes, Interac e-Transfer accounts require [signing](../account_limits.md/#account-signing) to lift limits to above 3 XMR.
+Yes, Interac e-Transfer accounts require [signing](../account-limits.md/#account-signing) to lift limits to above 3 XMR.
 
 #### How do I set up a Interac e-Transfer account?
 

@@ -33,7 +33,7 @@ The maximum trade time is 1 day. Generally SEPA payments will be completed insta
 
 #### Is SEPA Instant a payment method that can be signed?
 
-Yes, SEPA Instant payment accounts on Haveno require [signing](../account_limits.md/#account-signing) to lift limits to above 3 XMR.
+Yes, SEPA Instant payment accounts on Haveno require [signing](../account-limits.md/#account-signing) to lift limits to above 3 XMR.
 
 #### How do I set up a SEPA Instant account?
 

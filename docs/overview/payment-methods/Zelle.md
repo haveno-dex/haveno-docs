@@ -34,7 +34,7 @@ The maximum time for Zelle trade is 4 days. Most Zelle payments arriving instant
 
 #### Does the Zelle payment method require account signing in Haveno?
 
-Yes. Trades are limited to 3 XMR until the payment account is [signed](../account_limits.md/#account-signing).
+Yes. Trades are limited to 3 XMR until the payment account is [signed](../account-limits.md/#account-signing).
 
 #### How do I setup a Zelle account
 

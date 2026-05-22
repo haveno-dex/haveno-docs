@@ -79,11 +79,11 @@ If you built from source, start Haveno with `make haveno-desktop-mainnet`.
 
 It can take a moment to connect to Tor and sync with the Monero network.
 
-![Light mode](/resources/img/getting_started/startup_light.png#only-light)
-![Dark mode](/resources/img/getting_started/startup_dark.png#only-dark)
+![Light mode](/resources/img/getting-started/startup_light.png#only-light)
+![Dark mode](/resources/img/getting-started/startup_dark.png#only-dark)
 
-![Light mode](/resources/img/getting_started/market_light.png#only-light)
-![Dark mode](/resources/img/getting_started/market_dark.png#only-dark)
+![Light mode](/resources/img/getting-started/market_light.png#only-light)
+![Dark mode](/resources/img/getting-started/market_dark.png#only-dark)
 
 ## Create a payment account
 
@@ -95,10 +95,10 @@ Go to the **Account** tab and click **Add new account**.
 
 Choose your preferred payment method and enter your details exactly as they appear with your bank or provider. Then click **Save**.
 
-![Light mode](/resources/img/getting_started/add_new_account_light.png#only-light)
-![Dark mode](/resources/img/getting_started/add_new_account_dark.png#only-dark)
-![Light mode](/resources/img/getting_started/save_new_account_light.png#only-light)
-![Dark mode](/resources/img/getting_started/save_new_account_dark.png#only-dark)
+![Light mode](/resources/img/getting-started/add_new_account_light.png#only-light)
+![Dark mode](/resources/img/getting-started/add_new_account_dark.png#only-dark)
+![Light mode](/resources/img/getting-started/save_new_account_light.png#only-light)
+![Dark mode](/resources/img/getting-started/save_new_account_dark.png#only-dark)
 
 !!! info "Tips"
     - Make sure your details are accurate. Incorrect information can delay or prevent a trade.
@@ -120,10 +120,10 @@ To fund your Haveno wallet:
 
 Funds are stored in your non-custodial Haveno wallet and can be withdrawn at any time.
 
-![Light mode](/resources/img/getting_started/deposit_light.png#only-light)
-![Dark mode](/resources/img/getting_started/deposit_dark.png#only-dark)
-![Light mode](/resources/img/getting_started/deposit_qr_light.png#only-light)
-![Dark mode](/resources/img/getting_started/deposit_qr_dark.png#only-dark)
+![Light mode](/resources/img/getting-started/deposit_light.png#only-light)
+![Dark mode](/resources/img/getting-started/deposit_dark.png#only-dark)
+![Light mode](/resources/img/getting-started/deposit_qr_light.png#only-light)
+![Dark mode](/resources/img/getting-started/deposit_qr_dark.png#only-dark)
 
 
 ## Create or take an offer
@@ -142,8 +142,8 @@ In this example, we'll create an offer to buy XMR with USD using Zelle.
 
 Navigate to the **Buy XMR** tab. Under the **Fiat** tab, select **USD** and click **Create offer to BUY XMR**.
 
-![Light mode](/resources/img/getting_started/offers_fiat_light.png#only-light)
-![Dark mode](/resources/img/getting_started/offers_fiat_dark.png#only-dark)
+![Light mode](/resources/img/getting-started/offers_fiat_light.png#only-light)
+![Dark mode](/resources/img/getting-started/offers_fiat_dark.png#only-dark)
 
 ### Set your offer terms
 
@@ -155,8 +155,8 @@ Navigate to the **Buy XMR** tab. Under the **Fiat** tab, select **USD** and clic
 
 Click the **Next step** button to continue.
 
-![Light mode](/resources/img/getting_started/create_offer_light.png#only-light)
-![Dark mode](/resources/img/getting_started/create_offer_dark.png#only-dark)
+![Light mode](/resources/img/getting-started/create_offer_light.png#only-light)
+![Dark mode](/resources/img/getting-started/create_offer_dark.png#only-dark)
 
 ### Fund your offer
 
@@ -170,18 +170,18 @@ You can deposit XMR from an external wallet or apply existing funds from your wa
 
 When the trade completes successfully, the security deposit is returned to your main wallet.
 
-![Light mode](/resources/img/getting_started/create_offer_fund_light.png#only-light)
-![Dark mode](/resources/img/getting_started/create_offer_fund_dark.png#only-dark)
+![Light mode](/resources/img/getting-started/create_offer_fund_light.png#only-light)
+![Dark mode](/resources/img/getting-started/create_offer_fund_dark.png#only-dark)
 
-![Light mode](/resources/img/getting_started/create_offer_fund_qr_light.png#only-light)
-![Dark mode](/resources/img/getting_started/create_offer_fund_qr_dark.png#only-dark)
+![Light mode](/resources/img/getting-started/create_offer_fund_qr_light.png#only-light)
+![Dark mode](/resources/img/getting-started/create_offer_fund_qr_dark.png#only-dark)
 
 ### Post your offer
 
 After your offer is funded, confirm your offer details to post the offer.
 
-![Light mode](/resources/img/getting_started/confirm_offer_light.png#only-light)
-![Dark mode](/resources/img/getting_started/confirm_offer_dark.png#only-dark)
+![Light mode](/resources/img/getting-started/confirm_offer_light.png#only-light)
+![Dark mode](/resources/img/getting-started/confirm_offer_dark.png#only-dark)
 
 ## Complete a trade
 
@@ -197,13 +197,13 @@ For example, if buying XMR with Zelle:
 - The XMR buyer sends the Zelle payment to the seller.
 - The buyer confirms the payment in Haveno.
 
-![Light mode](/resources/img/getting_started/confirm_payment_sent_light.png#only-light)
-![Dark mode](/resources/img/getting_started/confirm_payment_sent_dark.png#only-dark)
+![Light mode](/resources/img/getting-started/confirm_payment_sent_light.png#only-light)
+![Dark mode](/resources/img/getting-started/confirm_payment_sent_dark.png#only-dark)
 
 When the XMR seller confirms that the payment was received, the trade funds are released to your Haveno wallet and the trade is complete.
 
-![Light mode](/resources/img/getting_started/confirm_payment_received_light.png#only-light)
-![Dark mode](/resources/img/getting_started/confirm_payment_received_dark.png#only-dark)
+![Light mode](/resources/img/getting-started/confirm_payment_received_light.png#only-light)
+![Dark mode](/resources/img/getting-started/confirm_payment_received_dark.png#only-dark)
 
 ## Withdraw funds
 
@@ -234,8 +234,8 @@ When your account is signed:
 - Your buy limit increases after 30 days.
 - Your buy limit increases again after 60 days.
 
-![Light mode](/resources/img/getting_started/signed_account_light.png#only-light)
-![Dark mode](/resources/img/getting_started/signed_account_dark.png#only-dark)
+![Light mode](/resources/img/getting-started/signed_account_light.png#only-light)
+![Dark mode](/resources/img/getting-started/signed_account_dark.png#only-dark)
 
 !!! note
     - Not all payment methods support account signing (only those with chargeback risk).
@@ -258,8 +258,8 @@ The data folder contains:
 
 You can create a backup of your application folder by navigating to **Account** > **Backup**.
 
-![Light mode](/resources/img/getting_started/backup_light.png#only-light)
-![Dark mode](/resources/img/getting_started/backup_dark.png#only-dark)
+![Light mode](/resources/img/getting-started/backup_light.png#only-light)
+![Dark mode](/resources/img/getting-started/backup_dark.png#only-dark)
 
 Alternatively, you can copy your entire application folder to another location.
 
@@ -280,8 +280,8 @@ To view your seed phrase, go to **Account** > **Wallet seed**.
 - Do not share it.
 - Anyone with your seed can access your funds.
 
-![Light mode](/resources/img/getting_started/seed_light.png#only-light)
-![Dark mode](/resources/img/getting_started/seed_dark.png#only-dark)
+![Light mode](/resources/img/getting-started/seed_light.png#only-light)
+![Dark mode](/resources/img/getting-started/seed_dark.png#only-dark)
 
 !!! Warning
     The seed phrase is NOT a complete backup of the application.
