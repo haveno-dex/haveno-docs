@@ -31,7 +31,7 @@ The maximum trade time is 6 days. Generally, SEPA payments will be completed wit
 
 #### Is SEPA a payment method that can be signed?
 
-Yes, SEPA payment accounts on Haveno require [signing](../account_limits.md/#account-signing) to lift limits to above 3 XMR.
+Yes, SEPA payment accounts on Haveno require [signing](../account-limits.md/#account-signing) to lift limits to above 3 XMR.
 
 #### How do I set up a SEPA account?
 
