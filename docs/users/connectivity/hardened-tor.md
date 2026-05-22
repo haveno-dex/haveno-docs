@@ -16,7 +16,7 @@ This mode allows advanced features to be used in your `torrc` configuration file
 
 ## Configure `torrc`
 
-The following `torrc` configuration is recommended for hardening against Denial of Servce (DoS) attacks.
+The following `torrc` configuration is recommended for hardening against Denial of Service (DoS) attacks.
 
 This template includes aggressive rate limiting, PoW tuning, and restricted SOCKS policies.
 
