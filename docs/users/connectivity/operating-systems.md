@@ -153,6 +153,131 @@ with [direct bind](hardened-tor.md) or via [control port](basic-tor.md) with the
 - [Install Haveno on Qubes/Whonix](https://github.com/haveno-dex/haveno/blob/master/scripts/install_whonix_qubes/README.md)
 - [Documentation Haveno on Qubes/Whonix](https://github.com/haveno-dex/haveno/blob/master/scripts/install_whonix_qubes/INSTALL.md)
 
+## Windows
+
+1. Download and install [Tor Browser](https://www.torproject.org/download/).
+2. Create a new folder at `C:\TorData` (change as desired throughout these instructions)
+3. Create a subfolder at `C:\TorData\haveno_onion_service`
+4. Open **Notepad** and paste the following configuration:
+
+    ??? note "Hardened `torrc` template for Windows"
+
+        ```text
+        ## Configuration file for Haveno
+        ##
+        ## See 'man tor', for more options you can use in this file.
+
+        ## NOTE: In order to use the ControlPort, the <user> must belong to the tor group.
+        ##  sudo usermod -aG debian-tor <user>
+        ##
+        ## The port on which Tor will listen for local connections from Tor
+        ## controller applications, as documented in control-spec.txt.
+        #ControlPort 9051
+        ## If you enable the controlport, be sure to enable one of these
+        ## authentication methods, to prevent attackers from accessing it.
+        ##
+        ## Compute the hash of a password with "tor --hash-password password".
+        #HashedControlPassword 16:872860B76453A77D60CA2BB8C1A7042072093276A3D701AD684053EC4C
+        CookieAuthentication 0       # (Default: 1)
+
+        ## Tor opens a socks proxy on port 9050 by default -- even if you don't
+        ## configure one below. Set "SocksPort 0" if you plan to run Tor only
+        ## as a relay, and not make any local application connections yourself.
+        SocksPort 9050 ExtendedErrors
+
+        ## Entry policies to allow/deny SOCKS requests based on IP address.
+        ## First entry that matches wins. If no SocksPolicy is set, we accept
+        ## all (and only) requests that reach a SocksPort. Untrusted users who
+        ## can access your SocksPort may be able to learn about the connections
+        ## you make.
+        SocksPolicy accept 127.0.0.1
+        SocksPolicy accept6 [::1]
+        SocksPolicy reject *
+
+        ## Tor will reject application connections that use unsafe variants of the socks protocol
+        ## — ones that only provide an IP address, meaning the application is doing a DNS resolve first.
+        ## Specifically, these are socks4 and socks5 when not doing remote DNS. (Default: 0)
+        #SafeSocks 1
+
+        ## Tor will make a notice-level log entry for each connection to the Socks port indicating
+        ## whether the request used a safe socks protocol or an unsafe one (see above entry on SafeSocks).
+        ## This helps to determine whether an application using Tor is possibly leaking DNS requests. (Default: 0)
+        #TestSocks 1
+
+        ## Logs go to stdout at level "notice" unless redirected by something
+        ## else, like one of the below lines. You can have as many Log lines as
+        ## you want.
+        ##
+        ## We advise using "notice" in most cases, since anything more verbose
+        ## may provide sensitive information to an attacker who obtains the logs.
+        ##
+        ## Send all messages of level 'notice' or higher to /var/log/tor/notices.log
+        #Log notice file /var/log/tor/notices.log
+        ## Send every possible message to /var/log/tor/debug.log
+        #Log debug file /var/log/tor/debug.log
+        ## Use the system log instead of Tor's logfiles (This is default)
+        #Log notice syslog
+        ## To send all messages to stderr:
+        #Log debug stderr
+
+        # Try to write to disk less frequently than we would otherwise. This is useful when running on flash memory.
+        AvoidDiskWrites 1
+
+        #### Haveno incoming anonymity connections ###
+        HiddenServiceDir C:\TorData\haveno_onion_service\ 
+        HiddenServicePort 9999 127.0.0.1:9999
+        HiddenServicePort 9999 [::1]:9999
+
+        ## NOTE: HiddenService options are per onion service
+        ## https://community.torproject.org/onion-services/advanced/dos/
+        ##
+        ## Rate limiting at the Introduction Points
+        ## Intropoint protections prevents onion service DoS from becoming a DoS for the entire machine and its guard.
+        HiddenServiceEnableIntroDoSDefense 1
+        HiddenServiceEnableIntroDoSRatePerSec 25       # (Default: 25)
+        HiddenServiceEnableIntroDoSBurstPerSec 200     # (Default: 200)
+
+        # Number of introduction points the hidden service will have. You can’t have more than 20.
+        #HiddenServiceNumIntroductionPoints 3           # (Default: 3)
+
+        ## https://tpo.pages.torproject.net/onion-services/ecosystem/technology/pow/#configuring-an-onion-service-with-the-pow-protection
+        ## Proof of Work (PoW) before establishing Rendezvous Circuits
+        ## The lower the queue and burst rates, the higher the puzzle effort tends to be for users.
+        HiddenServicePoWDefensesEnabled 1
+        HiddenServicePoWQueueRate 50          # (Default: 250)
+        HiddenServicePoWQueueBurst 250        # (Default: 2500)
+
+        ## Stream limits in the established Rendezvous Circuits
+        ## The maximum number of simultaneous streams (connections) per rendezvous circuit. The max value allowed is 65535. (0 = unlimited)
+        HiddenServiceMaxStreams 25
+        #HiddenServiceMaxStreamsCloseCircuit 1
+
+        ## Optionally limit tor bandwidth
+        #BandwidthRate 1000 KBytes
+        #BandwidthBurst 2000 KBytes
+
+        LongLivedPorts 9999
+        ```
+
+5. Save the file inside `C:\TorData` as **All Files (*.*)** and name it exactly `torrc` (make sure it does not end in .txt).
+6. Open **Command Prompt**.
+7. Run this command to start your custom service (replace <YourUsername> with your real Windows profile name):
+   ```
+   "C:\Users\<YourUsername>\Desktop\Tor Browser\Browser\TorBrowser\Tor\tor.exe" -f C:\TorData\torrc
+   ```
+8. Keep this window open. Once the terminal logs `Bootstrapped 100% (done)`, your service is live online.
+9. Copy your static onion address by opening `C:\TorData\haveno_onion_service\hostname`.
+10. Right click the Haveno shortcut on your desktop and select **Properties**.
+11. Add a startup flag to **Target** with your onion address:
+    ```
+    --hiddenServiceAddress=your_onion_address.onion [--nodePort=9999]
+    ```
+    For example:
+    ```
+    C:\Users\YourUsername\AppData\Local\Haveno\Haveno.exe --hiddenServiceAddress=wkisvdobtloqx5grm25o7vr6rjkhbs5qbqoqkw3tzqusr3ppi6wvceid.onion
+    ```
+12. Double click the Haveno shortcut to open the application bound to your onion service.
+
 ## Every OS
 
 Backup your Tor Hidden (Onion) Service Private Key

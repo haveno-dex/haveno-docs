@@ -46,7 +46,7 @@ This template includes aggressive rate limiting, PoW tuning, and restricted SOCK
     ## Tor opens a socks proxy on port 9050 by default -- even if you don't
     ## configure one below. Set "SocksPort 0" if you plan to run Tor only
     ## as a relay, and not make any local application connections yourself.
-    SocksPort 9050 OnionTrafficOnly ExtendedErrors
+    SocksPort 9050 ExtendedErrors
 
     ## Entry policies to allow/deny SOCKS requests based on IP address.
     ## First entry that matches wins. If no SocksPolicy is set, we accept
