@@ -33,3 +33,28 @@ Path to an existing `torrc` file whose entries are added to Haveno's internal `t
 --hiddenServiceFlags="" \
 --torrcOptions="NumCPUs 0" \
 ```
+
+## Connect through a proxy
+
+If your network only allows outbound traffic through a proxy, route the included Tor through it with `--torrcOptions`:
+
+```
+--torrcOptions="Socks5Proxy host:port" \
+```
+
+Use `HTTPSProxy host:port` instead for an HTTPS (CONNECT) proxy, common on corporate networks. Add credentials if required, e.g. `Socks5ProxyUsername user, Socks5ProxyPassword pass` or `HTTPSProxyAuthenticator user:pass`.
+
+!!! Info "Note"
+    A proxy helps Tor reach the network through a restrictive firewall. If Tor itself is blocked, use [WebTunnels](./webtunnels.md) or another bridge instead.
+
+## Enable Tor logging
+
+By default, Tor's own logs are not written to a file, which can make connection problems hard to diagnose. Capture them with a `Log` entry via `--torrcOptions`:
+
+```
+--torrcOptions="Log notice file tor.log" \
+```
+
+A relative filename is saved inside Haveno's Tor directory; use an absolute path to write elsewhere.
+
+Use the `notice` level for troubleshooting; more verbose levels (`info`, `debug`) may record sensitive information.
