@@ -39,6 +39,12 @@ SocksPort 127.0.0.1:9050
 
 Haveno will use the control port to create a dynamic onion service in your application folder. This mode supports [basic configuration](./basic-tor.md) only.
 
+If your control port requires authentication, or Tor runs on another host, set the matching flags:
+
+- `--torControlHost` — host running Tor (default `127.0.0.1`).
+- `--torControlPassword` — plaintext password for a control port protected with `HashedControlPassword` (generate the torrc hash with `tor --hash-password <password>`).
+- `--torControlCookieFile` + `--torControlUseSafeCookieAuth` — cookie file for a control port using `CookieAuthentication`.
+
 !!! Info "Note"
     Do not modify the internal `torrc` file inside the /xmr_mainnet/tor/ subdirectory. That file is used internally by Haveno and will be overwritten on every application startup.
 

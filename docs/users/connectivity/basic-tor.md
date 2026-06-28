@@ -19,7 +19,12 @@ Passes behavior modifiers directly to the ADD_ONION command. These are binary or
 ### `--torrcOptions`
 **Default:** `NumCPUs 0` (use all available CPUs)   
 A list of entries to amend to Haveno's internal `torrc`. Note that critical system entries cannot be overwritten.  
-*Format: Option Value[; ...]*
+*Format: Option Value[, ...]*
+
+### `--torrcFile`
+**Default:** `""`  
+Path to an existing `torrc` file whose entries are added to Haveno's internal `torrc`. Note that critical system entries cannot be overwritten.  
+*Format: /path/to/torrc*
 
 ## Example configuration
 
