@@ -12,25 +12,44 @@ TODO Payment Methods:
 -Advanced Cash
 -Alipay
 -Australian PayID
+-BLIK
+-Capitual
+-Card-to-card
 -Cardless Cash (Cash at ATM)
 -Cash App
 -Cash deposit
 -Cell Pay
+-DuitNow
+-FPS
 -HalCash
 -Japan Zengin Furikomi
+-Kaspi
+-MB WAY
+-Mir card transfer
 -MoneyBeam (N26)
 -MoneyGram
 -National Bank Transfer
+-NIP
+-Pago Móvil
+-Papara
+-PayNow
 -PayPal
+-PayPay
 -Perfect Money
 -PromptPay
--Skrill
+-QRIS
+-Raast
+-SBP
 -Swish
 -Tikkie
--Transfer with Same Bank
 -Transfer from Specific Banks
+-Transfer with Same Bank
+-TWINT
 -Uphold
 -Venmo
+-Vipps MobilePay
 -Wechat Pay
+-Wero
 -Western Union
+-YooMoney
 ```
