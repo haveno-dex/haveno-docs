@@ -5,9 +5,9 @@
 [data-md-color-scheme="youtube"] {
     --md-primary-fg-color: #0b65da;
 }
-[data-md-color-scheme="youtube"] img[src$="#only-dark"],
-[data-md-color-scheme="youtube"] img[src$="#gh-dark-mode-only"] {
-    display: none; /* Hide dark images in light mode */
+[data-md-color-scheme="youtube"] .md-typeset img[src$="#only-dark"],
+[data-md-color-scheme="youtube"] .md-typeset img[src$="#gh-dark-mode-only"] {
+    display: none; /* Hide dark images in light mode (scoped to content, not lightbox) */
 }
 
 [dir="ltr"] .md-header__title {

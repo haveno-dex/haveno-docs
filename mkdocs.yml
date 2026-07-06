@@ -52,6 +52,7 @@ plugins:
     - privacy
     - search
     - glightbox:
+        auto_themed: true
         touchNavigation: true
         zoomable: true
         draggable: true
