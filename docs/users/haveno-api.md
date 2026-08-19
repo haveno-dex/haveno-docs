@@ -20,15 +20,12 @@ your program (haveno-ts)  →  Envoy proxy  →  Haveno daemon  →  Haveno netw
 ## Requirements
 
 - [Node.js](https://nodejs.org)
-- A running Haveno daemon (see [Build and Run Haveno](../developers/installing.md))
-- The [Envoy](https://www.envoyproxy.io/docs/envoy/latest/start/install.html) proxy
-
-!!! note
-    The examples assume a daemon reachable at `http://localhost:8080`. Any Haveno network can be used.
+- A [Haveno build](../developers/installing.md)
+- The [Envoy](https://www.envoyproxy.io/docs/envoy/latest/start/install.html) proxy, e.g. `brew install envoy`
 
 ## Start a daemon
 
-Build Haveno, then start a daemon and the Envoy proxy in separate terminals:
+From the `haveno` repository, start the daemon and its proxy in separate terminals:
 
 ```bash
 # terminal 1: start the Haveno daemon
@@ -37,10 +34,13 @@ make haveno-daemon-mainnet
 
 ```bash
 # terminal 2: start the Envoy proxy
-envoy -c config/envoy.yaml
+make envoy-mainnet
 ```
 
-The [Haveno sample app](https://github.com/haveno-dex/haveno-sample-app) is the quickest way to run this end to end. It includes ready-made Envoy configurations and a minimal program to build from.
+The daemon joins the Haveno network and serves its API over gRPC. The proxy exposes that API to your program at `http://localhost:8080`, which is the address the examples below connect to.
+
+!!! note
+    These commands join mainnet. To develop with test funds instead, run `make haveno-daemon-stagenet` and `make envoy-stagenet`. Your program connects to `http://localhost:8080` either way.
 
 !!! warning "Secure your daemon"
     The API grants full control of the daemon and its wallet. Anyone who can reach the API port and provide the password can move your funds. By default the password is empty and the daemon listens on every network interface, so an exposed daemon is open to anyone.
@@ -57,6 +57,8 @@ In a project, install haveno-ts:
 ```bash
 npm install haveno-ts
 ```
+
+Or start from the [Haveno sample app](https://github.com/haveno-dex/haveno-sample-app), a minimal working program using the library.
 
 ## Connect to a daemon
 
