@@ -12,7 +12,7 @@ All fiat payment methods in all markets limit total trade size depending on the 
 
 Despite these limitations, chargebacks can still be possible for certain payment methods. Haveno reduces this risk with a mechanism called **account signing**.
 
-Account signing only applies to payment accounts that are subject to chargeback risk: SEPA, SEPA Instant, Interac e-Transfer, Zelle, Revolut, Chase QuickPay, Popmoney, MoneyBeam, Uphold, and any kind of bank transfer.
+Account signing only applies to payment accounts that are subject to chargeback risk: SEPA, SEPA Instant, Interac e-Transfer, Zelle, Revolut, Chase QuickPay, MoneyBeam, Uphold, and any kind of bank transfer.
 
 
 ## Account aging
