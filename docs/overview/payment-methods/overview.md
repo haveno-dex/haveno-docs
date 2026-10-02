@@ -53,7 +53,6 @@ Below is a list of fiat payment methods currently supported by Haveno.
 | [PayTM](PayTM.md)* | India | 1 day |12.00 XMR | PayTM limits to Rs. 100,000 per transaction. |
 | Perfect Money* | Europe and USA | 1 day | 48.00 XMR |
 | [Pix](Pix.md)* | Brazil | 1 day | 12.00 XMR |
-| Popmoney | USA | 1 day | buy: 3.00 XMR  sell: 12.00 XMR |
 | PromptPay* | Thailand | 1 day | 48.00 XMR |
 | [Revolut](Revolut.md) | Global | 1 day | buy: 3.00 XMR  sell: 12.00 XMR | [See article](Revolut.md) for recent changes to avoid issues. |
 | [RTGS](RTGS.md)* | India | 1 day | 12.00 XMR | RTGS Minimum of Rs. 200,000, Maximum of Rs. 1,000,000 per transaction. |

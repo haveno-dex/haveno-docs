@@ -23,7 +23,6 @@ TODO Payment Methods:
 -National Bank Transfer
 -PayPal
 -Perfect Money
--Popmoney
 -PromptPay
 -Skrill
 -Swish
