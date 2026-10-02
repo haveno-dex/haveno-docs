@@ -25,11 +25,13 @@ your program (haveno-ts)  →  Envoy proxy  →  Haveno daemon  →  Haveno netw
 
 ## Start a daemon
 
-From the `haveno` repository, start the daemon and its proxy in separate terminals:
+From the `haveno` repository, start the daemon and its proxy in separate terminals. Replace `<your-api-password>` with a strong, randomly generated secret, for example from `openssl rand -hex 32`. On Windows, run `haveno-daemon.bat` instead of `./haveno-daemon`.
 
 ```bash
 # terminal 1: start the Haveno daemon
-make haveno-daemon-mainnet
+./haveno-daemon --baseCurrencyNetwork=XMR_MAINNET --useLocalhostForP2P=false --useDevPrivilegeKeys=false \
+  --nodePort=9999 --appName=Haveno --apiPassword=<your-api-password> --apiPort=1201 \
+  --useNativeXmrWallet=false --ignoreLocalXmrNode=false
 ```
 
 ```bash
@@ -40,15 +42,15 @@ make envoy-mainnet
 The daemon joins the Haveno network and serves its API over gRPC. The proxy exposes that API to your program at `http://localhost:8080`, which is the address the examples below connect to.
 
 !!! note
-    These commands join mainnet. To develop with test funds instead, run `make haveno-daemon-stagenet` and `make envoy-stagenet`. Your program connects to `http://localhost:8080` either way.
+    These commands join mainnet. To develop with test funds instead, run `make haveno-daemon-stagenet` and `make envoy-stagenet`, and connect with the stagenet target's password, `apitest`. Your program connects to `http://localhost:8080` either way.
 
 !!! warning "Secure your daemon"
-    The API grants full control of the daemon and its wallet. Anyone who can reach the API port and provide the password can move your funds. By default the password is empty and the daemon listens on every network interface, so an exposed daemon is open to anyone.
+    The API grants full control of the daemon and its wallet. Anyone who can reach the API port and provide the password can move your funds. The daemon listens only on `127.0.0.1` unless `--apiBindAddress` sets another interface.
 
-    Protect it with at least one of the following, and preferably both:
+    Protect it as follows:
 
-    - **Set a strong password** with `--apiPassword`.
-    - **Block the API port** with a firewall so it is reachable only from the machine your program runs on.
+    - **Set a strong password** with `--apiPassword`. Never use `apitest`, the password built into the Makefile targets, with real funds.
+    - **Keep the API port private.** If you set `--apiBindAddress`, use a firewall so the port is reachable only from the machines your programs run on.
 
 ## Install the library
 
@@ -68,14 +70,14 @@ Create a client and request the daemon's version to confirm the connection.
 import { HavenoClient } from "haveno-ts";
 
 // connect to a Haveno daemon
-const haveno = new HavenoClient("http://localhost:8080", "apitest");
+const haveno = new HavenoClient("http://localhost:8080", "<your-api-password>");
 
 console.log("Connected to Haveno " + await haveno.getVersion());
 
 await haveno.disconnect();
 ```
 
-The second argument is the daemon's API password, set when the daemon starts.
+The second argument is the daemon's API password, set when the daemon starts. After five failed password attempts within a minute, the daemon refuses every API call, including ones with the correct password, for up to a minute.
 
 ## Read the market
 
@@ -84,7 +86,7 @@ The following program reads live market data: the current price of XMR, and the 
 ```ts
 import { HavenoClient, HavenoUtils, OfferDirection } from "haveno-ts";
 
-const haveno = new HavenoClient("http://localhost:8080", "apitest");
+const haveno = new HavenoClient("http://localhost:8080", "<your-api-password>");
 
 // the current price of 1 XMR in USD
 const price = await haveno.getPrice("USD");
@@ -112,7 +114,7 @@ The daemon exposes the network's public trade history, which can be used for res
 ```ts
 import { HavenoClient } from "haveno-ts";
 
-const haveno = new HavenoClient("http://localhost:8080", "apitest");
+const haveno = new HavenoClient("http://localhost:8080", "<your-api-password>");
 
 // count completed trades by currency
 const stats = await haveno.getTradeStatistics();
@@ -137,7 +139,7 @@ Register a listener to receive updates as a trade progresses: a new trade, a pay
 ```ts
 import { HavenoClient, NotificationMessage } from "haveno-ts";
 
-const haveno = new HavenoClient("http://localhost:8080", "apitest");
+const haveno = new HavenoClient("http://localhost:8080", "<your-api-password>");
 
 await haveno.addNotificationListener((notification: NotificationMessage) => {
   if (notification.getType() === NotificationMessage.NotificationType.TRADE_UPDATE) {
@@ -157,8 +159,8 @@ This example runs a full trade between two traders, Alice and Bob, each connecte
 import { HavenoClient, HavenoUtils, OfferDirection, TradeInfo } from "haveno-ts";
 
 // two traders, each connected to their own daemon
-const alice = new HavenoClient("http://localhost:8080", "apitest");
-const bob = new HavenoClient("http://localhost:8081", "apitest");
+const alice = new HavenoClient("http://localhost:8080", "<alice-api-password>");
+const bob = new HavenoClient("http://localhost:8081", "<bob-api-password>");
 
 // each creates a payment account to send and receive BTC
 const aliceAccount = await alice.createCryptoPaymentAccount("Alice's BTC", "BTC", "<alice-btc-address>");
