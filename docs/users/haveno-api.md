@@ -206,6 +206,23 @@ async function waitUntil(client: HavenoClient, tradeId: string, met: (trade: Tra
 !!! note
     Both wallets must hold enough XMR to cover the trade amount, the security deposit, the trade fee, and mining fees
 
+## Remote access over Tor
+
+To reach a daemon from another device without opening a port, add `--apiHiddenService=true` to the daemon command. The daemon publishes its API as an onion service on its own Tor connection and logs the address:
+
+```
+API hidden service created at <address>.onion:1201
+```
+
+The address stays the same across restarts and is saved in `xmr_mainnet/tor/hiddenservice/api/hostname` in the data directory: `~/.local/share/Haveno` on Linux, `~/Library/Application Support/Haveno` on macOS, or `%APPDATA%\Haveno` on Windows.
+
+The onion leads to the daemon's gRPC port, not the Envoy proxy, so connect with a gRPC client that routes through Tor. The daemon requires an `--apiPassword` of at least 8 characters and cannot be started with `--useLocalhostForP2P=true` or `--hiddenServiceAddress`.
+
+If the account is protected by a password, the onion is published once the account is opened. To publish it before then, add `--apiHiddenServiceBeforeLogin=true`, which starts Tor without the account's saved bridge settings.
+
+!!! warning
+    Anyone with the onion address and the API password controls the daemon and its wallet. Keep both private.
+
 ## Further reading
 
 - [**API reference**](https://haveno-dex.github.io/haveno-ts/typedocs/classes/HavenoClient.HavenoClient.html): complete method documentation
