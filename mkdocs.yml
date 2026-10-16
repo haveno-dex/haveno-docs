@@ -169,7 +169,7 @@ nav:
     - Basic Tor Setup: 'users/connectivity/basic-tor.md'
     - Hardened Tor Setup: 'users/connectivity/hardened-tor.md'
     - Operating Systems: 'users/connectivity/operating-systems.md'
-    - WebTunnels: 'users/connectivity/webtunnels.md'
+    - Bridges: 'users/connectivity/bridges.md'
     - DoS Protection: 'users/connectivity/dos-protection.md'
 - Admins:
   - Quick Start Guide: 'admins/create-mainnet-poc.md'
