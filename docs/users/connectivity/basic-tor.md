@@ -45,7 +45,7 @@ If your network only allows outbound traffic through a proxy, route the included
 Use `HTTPSProxy host:port` instead for an HTTPS (CONNECT) proxy, common on corporate networks. Add credentials if required, e.g. `Socks5ProxyUsername user, Socks5ProxyPassword pass` or `HTTPSProxyAuthenticator user:pass`.
 
 !!! Info "Note"
-    A proxy helps Tor reach the network through a restrictive firewall. If Tor itself is blocked, use [WebTunnels](./webtunnels.md) or another bridge instead.
+    A proxy helps Tor reach the network through a restrictive firewall. If Tor itself is blocked, use [bridges](./bridges.md) instead.
 
 ## Enable Tor logging
 
