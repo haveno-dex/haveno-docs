@@ -168,7 +168,7 @@ nav:
     - Tor Overview : 'users/connectivity/tor-overview.md'
     - Basic Tor Setup: 'users/connectivity/basic-tor.md'
     - Hardened Tor Setup: 'users/connectivity/hardened-tor.md'
-    - Operating Systems: 'users/connectivity/operating-systems.md'
+    - Hardened Tor by OS: 'users/connectivity/operating-systems.md'
     - Bridges: 'users/connectivity/bridges.md'
     - DoS Protection: 'users/connectivity/dos-protection.md'
 - Admins:
