@@ -20,3 +20,8 @@
     max-height: 1.5rem;
     text-align: left !important;
 }
+
+/* Keep option names in the first table column on one line */
+.md-typeset td:first-child code {
+    white-space: nowrap;
+}

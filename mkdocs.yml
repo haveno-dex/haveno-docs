@@ -164,6 +164,7 @@ nav:
     - Application Logs: 'users/logs.md'
   - Haveno API: 'users/haveno-api.md'
   - Haveno CLI: 'users/haveno-cli.md'
+  - Startup Options: 'users/startup-options.md'
   - Connectivity:
     - Tor Overview : 'users/connectivity/tor-overview.md'
     - Basic Tor Setup: 'users/connectivity/basic-tor.md'
