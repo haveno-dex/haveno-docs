@@ -175,7 +175,7 @@ nav:
   - Quick Start Guide: 'admins/create-mainnet-poc.md'
 - Developers:
   - Build and Run Haveno: 'developers/installing.md'
-  - Haveno API: 'developers/api.md'
+  - Extending the API: 'developers/api.md'
   - Bounties: 'developers/bounties.md'
   - Development Environment: 'developers/importing.md'
   - Contributor Guidelines: 'developers/contributor-guidelines.md'
