@@ -87,7 +87,7 @@ Command line values take precedence over the config file. `--help` and `--config
 | Option | Default | Description |
 |--------|---------|-------------|
 | `--nodePort` | `9999` | Port this node listens on for peer connections. |
-| `--hiddenServiceAddress` | | Existing onion address to bind to directly. See [Hardened Tor Setup](connectivity/hardened-tor.md). |
+| `--hiddenServiceAddress` | | Existing onion address to bind to directly. Outbound connections use port 9050 on `--torControlHost`, or the SOCKS port reported by `tor` when `--torControlPort` is set. See [Hardened Tor Setup](connectivity/hardened-tor.md). |
 | `--seedNodes` | | Seed nodes (`host:port[,...]`) to use instead of the built in ones. |
 | `--bannedSeedNodes` | | Seed nodes (`host:port[,...]`) to avoid. |
 | `--banList` | | Peers (`host:port[,...]`) to refuse connections with. |

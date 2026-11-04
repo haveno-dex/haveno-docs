@@ -132,3 +132,5 @@ Restart `tor` to apply your changes.
 ## Start Haveno
 
 Start haveno with `--hiddenServiceAddress=your_address.onion [--nodePort=9999]` to bind directly to the static onion service.
+
+Outbound connections go through the SOCKS port of your `tor`, port 9050 on `127.0.0.1` by default. If `tor` uses a different `SocksPort`, also pass `--torControlPort` and any authentication flags (see [Connect via control port](./tor-overview.md#connect-via-control-port)) so Haveno reads the SOCKS port from `tor`. If there are several `SocksPort` lines, the first one is used and must be a TCP port.
