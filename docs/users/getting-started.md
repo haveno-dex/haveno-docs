@@ -225,12 +225,12 @@ Some fiat payment accounts can be signed in order to increase trading limits.
 In order to sign a payment account, you must:
 
 - Buy at least 0.05 XMR
-- From a trader whose account is already signed
+- From a trader whose account was signed at least 30 days ago (or by an arbitrator)
 - Using a supported fiat payment account (with chargeback risk)
 
 When your account is signed:
 
-- Your account can sign other accounts.
+- Your account can sign other accounts after 30 days.
 - Your buy limit increases after 30 days.
 - Your buy limit increases again after 60 days.
 
